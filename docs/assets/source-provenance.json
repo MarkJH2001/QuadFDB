@@ -35,13 +35,13 @@
     {
       "destination": "assets/dataset-coverage.webp",
       "source": "dataset_coverage.pdf \u2014 author research figure",
-      "source_sha256": "0cd8f8ddc9b93bc7902b85cbb77b171c72cf0f4b5c01687b34868e2cf790448c",
-      "destination_sha256": "e4d16658bc827401b0e5afca72251c67c54e4e7b3b2063f30e94876f8625fb5a",
+      "source_sha256": "4fa87b2326132354d8d6d4f1fdfa47d209bfceb77cc8cb1dfa9e541bce48beee",
+      "destination_sha256": "dfc88f10942ae4a98b274f5d6b64c5ccb51a4cbdf8b376faa437dc68aa981fd0",
       "pixels": [
         2300,
         595
       ],
-      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; scientific content preserved."
+      "transformation": "Updated one-page author figure rasterized with Poppler at 2300px width and encoded as WebP quality93; panel (b) lists the discrete tested PWM multipliers using set notation."
     },
     {
       "destination": "assets/flight-demonstration.mp4",
