@@ -6,7 +6,7 @@
   "scientific_sources": [
     {
       "kind": "Current author manuscript v2",
-      "sha256": "4d6575333dc15c530d9b507e45bb8fd20a47468e8e772eb54bb0688a2950f487",
+      "sha256": "38be849cdd90449e5b6ab4f19bf9218de4225e1749d97bea78aee500dbccb0b0",
       "document_distributed": false
     },
     {
@@ -15,7 +15,7 @@
       "source_records_distributed": false
     },
     {
-      "kind": "Accepted complete54-cell controlled attribution summary",
+      "kind": "Audited 54-cell controlled attribution summary",
       "sha256": "a49cae3865bce7bc551116e6c44c7f874d1c71acfe86f3e8fea39e352b475d09",
       "source_records_distributed": false
     }
@@ -30,18 +30,7 @@
         2300,
         837
       ],
-      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; no scientific content changed."
-    },
-    {
-      "destination": "assets/fault-response-matrix.webp",
-      "source": "flight_response_matrix.pdf \u2014 author research figure",
-      "source_sha256": "a53d18cb809686b7015740df23375776c2ca2a30f4afa35f78a65de66f4ff7bc",
-      "destination_sha256": "dd515ae051b7d47bf2a4620589bc8e68627bd6dd36f956ac6964e0e7516952c1",
-      "pixels": [
-        2300,
-        808
-      ],
-      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; no scientific content changed."
+      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; scientific content preserved."
     },
     {
       "destination": "assets/dataset-coverage.webp",
@@ -52,7 +41,7 @@
         2300,
         595
       ],
-      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; no scientific content changed."
+      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; scientific content preserved."
     },
     {
       "destination": "assets/flight-demonstration.mp4",
@@ -86,7 +75,7 @@
   "public_summary": {
     "file": "assets/benchmark-results.json",
     "sha256": "6e8f5728c099caef7225903ea777a8e5243037a28197a89ae9f61fcf265334e5",
-    "content": "Only aggregate means, sample standarddeviations, runcounts and faultflight denominators. No individual records, time series, checkpoints or private filesystem paths.",
+    "content": "Aggregate means, sample standard deviations, run counts, and fault-flight denominators.",
     "methods": 10,
     "event_groups": 3,
     "controlled_head_mask_cells": 24
@@ -95,15 +84,18 @@
     "demonstration": "Measured-pose replay above real camera recordings; three M1 examples with targetPWM multiplier0.75.",
     "playback_rate": "0.25 times physicalspeed, preserved from the existing author comparisonvideo.",
     "platform_figure": "Simulation model and real flight; control diagram is schematic.",
-    "response_matrix": "Poses rendered from real flight records; M1, three profiles, multipliers0.95/0.75/0.40.",
-    "method_diagram": "Schematic of implementedRAGB informationflow; no synthetic signal traces presented as observations."
+    "response_matrix": "One recorded-pose representative for each of 156 fault conditions; final dataset counts and historical presentation media are documented separately."
   },
-  "excluded_material": [
-    "manuscriptPDF/LaTeX",
-    "per-flight JSON",
-    "raw telemetry and time series",
-    "NPZ or model checkpoints",
-    "usernames, credentials and absolute local paths"
-  ],
-  "site_scope": "Static project page; no model execution or remote experiment controls."
+  "site_scope": "Paper project page presenting the dataset, evaluation protocol, method, and results.",
+  "dataset_matrix": {
+    "manifest": "assets/dataset-matrix/manifest.json",
+    "provenance": "assets/dataset-matrix/provenance.json",
+    "conditions": 156,
+    "representatives": 156,
+    "final_flights_per_condition": 10,
+    "telemetry_distributed": false,
+    "manifest_sha256": "ef01a978ea2f4f091c41bcbfc23ecd11b4b51db3c92a7870d57bf0237c1d290c",
+    "provenance_sha256": "b23a08f3605151f8db96355899ec1bafdc8ba54566af4c08c154bd515d29bbd3",
+    "selected_replay": "156 recorded-pose clips; one selected video loads at a time, with native playback controls."
+  }
 }

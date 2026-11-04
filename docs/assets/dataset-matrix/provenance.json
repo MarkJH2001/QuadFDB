@@ -1,0 +1,3158 @@
+{
+  "scope": "Public recorded-pose presentation media and aggregate condition metadata for the final QuadFDI benchmark.",
+  "count_scope": "Counts use the final audited QuadFDI benchmark composition (156 conditions \u00d7 10 repetitions), not the incomplete counts in the historical presentation-media snapshot.",
+  "original_overview_video_sha256": "32ee778c98819aaf8ade548f3fc812430dd6a37781925d40a5b8a5788d636774",
+  "original_overview_composition_sha256": "41c3f3b75350eb86cbb81dcdd0df34ce55f5195af4dbef1c7e198e146137a2a8",
+  "overview_operation": "Crop existing 192-pixel left/right margins and 26-pixel top margin, retaining all 13 \u00d7 12 recorded-pose tiles; scale to 2304 \u00d7 1404 and re-encode H.264 CRF22 retaining recorded timing and BT.709 color metadata.",
+  "representative_pose_physical_time_ms": 200,
+  "assets": [
+    {
+      "asset": "step-m1-a0970.webp",
+      "source_video_sha256": "97f319f495df5781def2d2437ab3e287512960a56d85cf9c10ce639018938726",
+      "sha256": "b44c0c9f8598d2bf57375265fb6489b991354788e35f1c1e21a42b1315a5b81e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0970.webp",
+      "source_video_sha256": "2ab2e2b802af6675a4cf9f8aeae51f3b86fa27a18f0a5a27b1bbccf337a0153f",
+      "sha256": "6f14edab86e005100842c3225561d2362d698e7ed405415fd0818fd644d08110",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0970.webp",
+      "source_video_sha256": "86103b239115a3fe62787bd8d00f00143165a4910845d4f2c5f73d0b54f0563d",
+      "sha256": "d29df1e29c0165b48785122c08373e6c05a535e0c8bae1703f45ab0e7efda095",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0970.webp",
+      "source_video_sha256": "3c4412e637c37272a3c8db933434a88908f780c7542fc81373bb2cd9dfd29a0b",
+      "sha256": "eb2aa89ac1a0ea1f86ab38a9449e52de844a4bf87a161f51966d42ceda5115ea",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0970.webp",
+      "source_video_sha256": "f43785548641470ea4fc14e8e236ad8c53c1978f0cb76441af5efbd9e7d374d7",
+      "sha256": "f23bd4dd0dce0946f8dee564149cb99aac4cba0ade76dc52209b568208ac8970",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0970.webp",
+      "source_video_sha256": "5b12820c919d5f5f0133b0f7168df2a8d244a88a4c3e4fec6dd5915aa95be9ae",
+      "sha256": "7c8358d3cd68f851981520d26ee10a01c460cbd144afa3b52ef5927be4ef85ee",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0970.webp",
+      "source_video_sha256": "1f75a90c669492c46acb1b0e67e8a7ea8ce2fc9bd03e43da20e03652fc49612a",
+      "sha256": "103097fb60667b59268d660bce946e0f583bb9bbe5a0d2338a48804864f0a8b5",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0970.webp",
+      "source_video_sha256": "0f96c467d9afc0d01c05cb55836b7f2b6ef297efbaeec76f42e0b33de1ca5aa8",
+      "sha256": "5af6f0973d380efa4be9de2818e90a388de5ca3abc77e4a09413dd90c437ada0",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0970.webp",
+      "source_video_sha256": "ccf13b543deb249a5ee6bd32ceb1ba14f379dd52cf2342e8e5d4a72032852726",
+      "sha256": "f05277a5444869688b4769d8b392155575a69107c2cab08c280516bcf109ce2a",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0970.webp",
+      "source_video_sha256": "538171379d72e6692d65c1f4e8ee5f21b11998c94d46d06e211a7f649d34d73f",
+      "sha256": "d82668f7798df649349cda1a3a00981bac4bdf02e201b9007c1159eca26922bb",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0970.webp",
+      "source_video_sha256": "880a20c2ff78e81392272b969593a8fb26a78f17e89825b368582d0fc0dad2b8",
+      "sha256": "a5c3cabff83384656ae62e9a541561daa6e4ce70a7450ddbc2d68f126147d163",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0970.webp",
+      "source_video_sha256": "c391152cabaa21c9ffdc79fce242fbd73ff05cc379fea6f8585ee9baf7850c4a",
+      "sha256": "25c4d97c6f298e05bf1603cd5c4808818469ddbbcd0c0f7b030cb349c37f0d05",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0950.webp",
+      "source_video_sha256": "82612b9f7d91827bf21d32081cc1696e25a9be6cbce99d07429d80cfd9ae40f6",
+      "sha256": "c145c486e3ec8017a8c9d61a63f5a8557153b9fe950cdd70b73d1eba9d1b72c4",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0950.webp",
+      "source_video_sha256": "8b896cd2e7a09c9063371b7702a7e1f6655322fe7c6135f124419409c62d8a34",
+      "sha256": "c6964f6ccffa357726bb05ec58fd83a53ca396dc06f9453c4d1560f8afb53212",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0950.webp",
+      "source_video_sha256": "33a39086a22d8df41827f01632aaea8fee69ceacc0262bc208971ee05a1375b2",
+      "sha256": "c6cb9cc3162b798bb41c66a4c6e588547018559d8b2b572827506463458e1097",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0950.webp",
+      "source_video_sha256": "0c7f16ac92a14316f4082f89cbf685edb633169414ec2267d50d9482958d256c",
+      "sha256": "6f441ab69b919b719f4ff557207bde206167ff6ea7353f39c1af4bdc78dfea92",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0950.webp",
+      "source_video_sha256": "7915f50ee41570c67910d4211ed50b0b7df94231374529d455a558600284d87c",
+      "sha256": "b340d41f4135e768ce34183592d326358174b6dd2d0259b7c775b28511fcc304",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0950.webp",
+      "source_video_sha256": "df66b5682f5c50240285af1d62414c8706c75862bdd47c4bd11b76b39090c986",
+      "sha256": "62e91466fd3604497d3d19e39ee0c57a8f98e50ffa8291a395d17266db057f19",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0950.webp",
+      "source_video_sha256": "d46bc81b7d866f5fdedd54ab9e51bd3cbac4df248281b53c10c0775ed1aa41b9",
+      "sha256": "7a4a4ae739e3a60cfdce4afaba78c540ff4e54e98a3649c7705ec64680cde282",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0950.webp",
+      "source_video_sha256": "7e6aad5fb0ba857869af82be3f51ddb14f324146624ded0270b5969055fd730d",
+      "sha256": "b2800aa61358a0ae6e3ecbc90823278fca24045d7329901c38743feb595c0c4e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0950.webp",
+      "source_video_sha256": "c149bc2029174615f4904efc812769d83db72918c4d91f31e3d37ccb82a40738",
+      "sha256": "60d9a280b9909e80f08bb3ca4812f503b457ed8292d191a2202d1354c952b085",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0950.webp",
+      "source_video_sha256": "ce7a2925fe5bcc0cdcbfd0e998d067801c2910954f7f7db2a45de9015a95f1df",
+      "sha256": "eed8d8a3794e0cfc5000145abe970de86e372ba8211a6af6106ed903e2858f6c",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0950.webp",
+      "source_video_sha256": "d96927df47bad3676676abbbaaa6f020ecb35657621ebcec732697c13e5d490a",
+      "sha256": "91270be31a438b03e358671e1b0afbba439b5774bd31c524b51a39955911e10e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0950.webp",
+      "source_video_sha256": "5effcb28bc7ecae478501e04a58c24f5617910ddbb1282341c654d0f9362aed5",
+      "sha256": "a645063f39e7bd0f6b2cdc07d4e703503124bdee4c83e7e02e29991b10245f2c",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0900.webp",
+      "source_video_sha256": "f3e797c757852c146a5cfd18ef4dc242e109f6040e29e62aa1ddb893fa8b39fa",
+      "sha256": "279ca7dc5d6d2d9bdc05865b45a0d9cd4927f5f0c4b76527cda1e58a2754cbdc",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0900.webp",
+      "source_video_sha256": "5145ed5626121cc0a9a4d0c339d837f13ed48a33ee0eebb41f8ad6b13416f8c2",
+      "sha256": "e2c9507a00ac85ee86d237139d185689af7abb4692eb3e92c9739fd4f5fa1b0d",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0900.webp",
+      "source_video_sha256": "8963c747e997f456fb01556a620f0d1569b1945a8fcee04301966cc39c7e76be",
+      "sha256": "b9546e8bbf741689a24a32224533158f3751424f5cce7a9e7ee21fa649eb4231",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0900.webp",
+      "source_video_sha256": "4cb0a1faef866768144d1d105881b65673cd2c49d6c13b7b2c6af6ed9c32bcef",
+      "sha256": "a505320f169b8af1582ec3905adf0301e8088bec89b07817f95cdeb8a4eecee7",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0900.webp",
+      "source_video_sha256": "6ef40349fd0404127bd35f537d7ed16303de42c25efb462fc3255271ca045507",
+      "sha256": "f96fc05d3dad0dabb2f23e1b0eecd16a08abed7ca7d8b7bd5a48aeab4af1e4f5",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0900.webp",
+      "source_video_sha256": "792d04caee7cbe295001ce481841b2ce73f057ac7eb6144061dbf7d616098960",
+      "sha256": "87a4e016e1605add34fc346a7cb3cbdc9cae821a4649b132ca9e1fa9c6eaef2f",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0900.webp",
+      "source_video_sha256": "ec05afb66e46cb268caf868a627285337402e30e09970773ae9a37f995c53aa6",
+      "sha256": "549f0bff2a7f385b7fa726ee623114896e73a8a331fd1ad4447412348ae31076",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0900.webp",
+      "source_video_sha256": "b2d0001e3e58c3e2463448aa9378819cfe2d1a56b37ab586abca0e68266d95e2",
+      "sha256": "02652b03d47b68b65dfa14fc82be40094ed110ce9e9fea342f2c3c6816093e9e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0900.webp",
+      "source_video_sha256": "9e66476ca3783dbf628d4d77fe3e6fd0982617084581b8db63adad52ce7ac12b",
+      "sha256": "7856e0f86dbeec5b18f5587d3ae161e231582b536aed839923e149dec0170ae1",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0900.webp",
+      "source_video_sha256": "e2784e59f8f0ae99e68b51c924f5304310c59a879e99df8ad44273a7e61104f4",
+      "sha256": "071281b7f262a55fde184fa6190a40522910aec1e869d0d2f227a42c3250eff3",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0900.webp",
+      "source_video_sha256": "c810d3412c8978c52884b983739a241099be337e009ab83b7753e3476e005bfa",
+      "sha256": "ae97eeafca6b2ad5f485efc1e51b09f7618a4a29f156949b0b14e6360682b59f",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0900.webp",
+      "source_video_sha256": "d96ebbda828b8ebef85e8dfab25f21c526096c1e181e46044954f69e418e5577",
+      "sha256": "9e47ad801bae37c2e8b8d0bbaad6544fdbf5f0e69ef71d2d39ae46b918159711",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0850.webp",
+      "source_video_sha256": "5fefcacf1ecd973c9701bcb003261216f65a143f648923793ac5542eb1b33d68",
+      "sha256": "5a76280d44e0b1627d9a4a64d6f06de28b67c3c96a5ed64b6f217d3abe0c7f91",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0850.webp",
+      "source_video_sha256": "33124069bcc784868739d5f2cf5a9338e7ef1c6813d284f91426def5c663ec63",
+      "sha256": "c710eec81e24582dd2a8184915703e0279f35ade12c728dd11459e3001452ecc",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0850.webp",
+      "source_video_sha256": "d2df4720ecd8269becd91ce249073ae84b4fdad0115c80f96315aa9b1fbc99b7",
+      "sha256": "5398f632faa13692693a8a14788050a9d97bc2bd174c03bb049da23e79e14a40",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0850.webp",
+      "source_video_sha256": "608f049ad60bc5ccda589e58452283245be0585af405c71eea53f3f428681d78",
+      "sha256": "9099aa81a2758edd6bd1004544d328a02893747e09ee1cdf9d8b05c11f249159",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0850.webp",
+      "source_video_sha256": "486d791540bac5685a33369c3bc756d0a9b8f348bd2b52905f84a0a214d9038f",
+      "sha256": "45f47f04a378f0b652d8ba4b9b0f0b60f357d0fa027b7ae102a412aa894b34cf",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0850.webp",
+      "source_video_sha256": "7ae5a9793e2c5922db2a5e5cdc407eb9864e58dd043cf95c676d4b120ad907c0",
+      "sha256": "c610f4f43c49621f6580a76bfc45bd91f3dd2f1b55941e34c95db115bc4eb017",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0850.webp",
+      "source_video_sha256": "a0a9cc21289fb84f6a4cfbce3cd6ca8c7e64a4e3e1e54b87e546b0a271d35540",
+      "sha256": "76da2a5c804dae417659cff789c73e97752525931fb8f0b28830ce2f8caaed21",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0850.webp",
+      "source_video_sha256": "02ad3ce180997238bb4ca498e0c6fbe0d26788b646ad1e85e5816e5d1fb56db9",
+      "sha256": "ef97fb378bea5a7926c8523b033e87b73022226f88a3c50c41a74e012ed4a01b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0850.webp",
+      "source_video_sha256": "41dec35878bd22fec9202d48e51a02ff440835753dfecc4eb84c36286d3f0d4a",
+      "sha256": "089b5c359b1f81ece4941c215687beff28093eef0668ba1989bd75f78ef618d2",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0850.webp",
+      "source_video_sha256": "db89c5c962c09888c4a8f76aafbcb89eba0b690622939d602048a6b77182f112",
+      "sha256": "0dbbfceb6ab94ac0af1a9168fd54820f303484b2579f5e1f572ae448ef3f37c9",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0850.webp",
+      "source_video_sha256": "fc8ecf69fb31fa03d9abd7165db263cf4bc0ef221c1c967f8923a64b7cd13d31",
+      "sha256": "8b52daf2c70679237f381373451936298b24a119363e627625b87814313035de",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0850.webp",
+      "source_video_sha256": "f4671e8aee84ed348bc89024d2d8d1eccd4ad95362dd64a623acb6d95a11216e",
+      "sha256": "6afec8d554cdc33b4349fea157bf11877e0630969c6e4989a85cb03cf3f1f652",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0800.webp",
+      "source_video_sha256": "2416d115d1d25fce6325e048179359e1b0824a8255fcb101542fef1129da611a",
+      "sha256": "e62504e603c622ac69eca55e0f4c384f86ecab741b94ea167a7170a37012f4f5",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0800.webp",
+      "source_video_sha256": "694d09fe6a2ba170905371caac1ccc6e1fa3ce14530fdaafd65e0b09816581d6",
+      "sha256": "5effabe5ceb5aed8c12645b96174f456bd99b02df0a42ed1cd0b0e1baa6e7c36",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0800.webp",
+      "source_video_sha256": "b59fe9b9dca1602ed261cb831113a826b768259b92924f261313d2eaed2daf5a",
+      "sha256": "fd1ba99ee7d76dfb848cdea7691bdd6d804ff1118f926754a2019c348e726218",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0800.webp",
+      "source_video_sha256": "0d5ebe0a7c89255234caaf7f0a2b6cbeb591e7b92e354d4e12152615dda56e69",
+      "sha256": "7a46432ed1ea5ecb1000ce8db6a0406542c170e6ccc899f08b62094e6967eae9",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0800.webp",
+      "source_video_sha256": "266ddeb148ed77d7e6391bded88dd8b179fda58e73076d8b4443057def1f6976",
+      "sha256": "2fb9b9e10aa15a4fa115f0280126428808a56245423c774d12af35db0129b9e1",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0800.webp",
+      "source_video_sha256": "6bdabbed7d53746d645320ebe62010265d238c3fa15c066e902a040a90daaada",
+      "sha256": "f1bde60d36e6ebfce9ab59d7712a27a6c82ea353c4ff583078db30a70e986324",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0800.webp",
+      "source_video_sha256": "9083793b03c73eb9aadefaddcff0696cebfef81c17faf4e6c1b0b20ca350b485",
+      "sha256": "cdb9eb993531206b85fc6c41f9da5dd14f9fe9aaa5407379f67f4bd302a115af",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0800.webp",
+      "source_video_sha256": "9772f470c09261cd7bb191ddf2d56e018303e9ea59ffe4563c67009c8d7725c0",
+      "sha256": "ada41d365b1ad146fc6f003fc3e6aed40eeb33ac258508a8ed966af98ee2d4b4",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0800.webp",
+      "source_video_sha256": "e31f4da22c103daf7b82c39646046f1effc4c7123bd4b9ec528d8fd932de63a5",
+      "sha256": "95df8541f1980858b6dfc59f056cff29833e03b673efff26ad5d41fec345a1ba",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0800.webp",
+      "source_video_sha256": "54900f1561b277dc802ce75cd0487a8dceed6130191e10c62a0ae4eb4452ab61",
+      "sha256": "d29bf537d667134eab96a2f23c2d8ae187a0fbc33087309ee9cdfdfdc8016482",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0800.webp",
+      "source_video_sha256": "11bb065dcfde04852c1b161e0fce355cba02ffa811084af996e453e7655f2b03",
+      "sha256": "c78970898ab57c0de9eecd45f4123d48bc72f4e105bfaa097ead60138701cfce",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0800.webp",
+      "source_video_sha256": "02613310939ad3824ea2fe259eb2fa3858f6ee119d15134714b2deeb662a8070",
+      "sha256": "144f8c04fcf69725d84c7fa2de07663a522dc9a8d5fb535df56f2ecfc28df14a",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0750.webp",
+      "source_video_sha256": "dc93e0c018b5c355cc2d6daeb471fd1cd34de0ea8710b2aec7110ff8d3ea2197",
+      "sha256": "bb23933356be8df2d84a227977984bcd74808adbe2ca4f5ef272ead18c27c6a5",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0750.webp",
+      "source_video_sha256": "31c39e5beb98b8a73ce25d467b5e2e713d56ea8453557fdfda7a31545edb4d4b",
+      "sha256": "ca5b03555d3672086f0d84f17dfcee09be7a2d72674fb688937095ed4f1aeaa7",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0750.webp",
+      "source_video_sha256": "8f38c1b0c5ec6f6308d8029d8050e24360768406610789b5db73bb7674ff40a5",
+      "sha256": "d40860b1e21af56d71f0071e75449cd072bd9c57dc115c90a4e5e0d5231c6fd0",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0750.webp",
+      "source_video_sha256": "bf74a5a65e34f98292f2f16e15dd504ee2463831eb9dc5eefb08458f37fe9c02",
+      "sha256": "60ddad04aedf5125fe93435e39029a54ddf8f8560b03c03ff39e79b26d1d8771",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0750.webp",
+      "source_video_sha256": "b6b3e3e9af0515847f1277b8b28954f44136bf2a15ca132de137e2e18d3b71c1",
+      "sha256": "84cd49e464e7f460f1c026bb571e7c3f6d085e85feac7b0ab58b19de95806803",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0750.webp",
+      "source_video_sha256": "3b7eba4acb0d7c3011eff548e8181b092f314c8628463d6554a983b4dd44904c",
+      "sha256": "8169b2b4efffbbaa588b14640a5580f53791dae07364713873f7c85e84b12480",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0750.webp",
+      "source_video_sha256": "1a54180e1372d818bad444bf20659440c16eee0cc5d235936f22f90f0fe80490",
+      "sha256": "00e14ff62290088984c64bb4d5dee67a7f1059ba3abc61022031c806953392ab",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0750.webp",
+      "source_video_sha256": "49b383a0f1d7b5de10293b3e1d31a37db63a5c064640f6f6c7388e862c7896f5",
+      "sha256": "f8ab6e801ac7546fe704b6ddf0afa2f1499325c1483d8a2f2eb7a1b564e4b5d2",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0750.webp",
+      "source_video_sha256": "887bfdeb6bcb650639a768831d3d094e0109d2489f2f5af4a847f6d1344fb3aa",
+      "sha256": "d591b5abd0d867b912611598c45027f296561c43c5bac64eb640c19252ee58fd",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0750.webp",
+      "source_video_sha256": "8c4f5ee014a7104ffde64796463f2baecb7fa30e35ff467d502dd0839dd4f0bf",
+      "sha256": "cdd1f587fb85b04ab992868029af789c3fdfeb330710a9952b895fcddb048747",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0750.webp",
+      "source_video_sha256": "0ef7a44bf88000c7ccb5a07f0ead38d2f580dfc4e927ba9dce1472dd38c0c9f5",
+      "sha256": "72db4e724b72a0515a0eb5c27f56965004969cc2ff740a694a28fc904e74fb59",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0750.webp",
+      "source_video_sha256": "de9d5f20ebdbd324aa20d6d45758ac4bb8bb61fa8b278830d14f6ffd0ad78432",
+      "sha256": "1ff4f19600e71b9b456bcf7c183ea756339424874622f2b148674ec5e6e8582d",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0700.webp",
+      "source_video_sha256": "803ad96e7b622e59e2ae10b40014c715b64e4f01a3f725fb35e5698df684c20c",
+      "sha256": "a9a7618956db0dbd88f8403f52f3e676a4528ab0a06e7b13d4432133c4d6a828",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0700.webp",
+      "source_video_sha256": "2a18a0e9d6c531ed53ef8cc95a30338e5eafa428dcea72167edce4d15d42700b",
+      "sha256": "5a87cae92b519e8e6df002a8a9b6e495656ec64573fc3fcecdb47829e797e0f5",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0700.webp",
+      "source_video_sha256": "123d783233589d53f2ee4fc74adb7bbc5a2e332021de33dd557dcb1b22d7c0fc",
+      "sha256": "c4ec449f77c3b61747bb73744e927176fcc4d1e1b0f4aab5fca526f516dd9c1b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0700.webp",
+      "source_video_sha256": "fe6dd8e595426b368154b488999c0ab66d864ed5ad82d89999069467e81aa174",
+      "sha256": "9df762ff020c79d4f68082a4e9b342764fecf014f6f103cab3f0989be12e2146",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0700.webp",
+      "source_video_sha256": "d8087043f748a74a23aca2bf75c8ced489b75256e03e16b713f5aa22571429b8",
+      "sha256": "7993538e63c582d0fb87500e0cc3869097e43935b9d1168caa311b82f4259ccc",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0700.webp",
+      "source_video_sha256": "8083c0ba02aa7d2c5b3baaba9c119e6cbdcc00dfdfbec0b03aaf4bc20c346dab",
+      "sha256": "aacef0e614f0bfb57f1bdd115f05eef45161aee3032b685e607b843499fbc7f7",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0700.webp",
+      "source_video_sha256": "b94acb2a4c9165c2cc0a0ba38466b07dc1e6eca349dc3ce681a342c741966e29",
+      "sha256": "af6a2bc2b7c37da9d114f08a4f494991aff37bae333f6c38f00b6a744b6a7ddd",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0700.webp",
+      "source_video_sha256": "1577ddd1476f80be9f76ac0bc5d3aecbff2db7bb244ec4d2089ea15faa1e05d4",
+      "sha256": "48c8b957987b43652b5fa44637a526564efa3ed7817d15352f2c9a9b749cb2bf",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0700.webp",
+      "source_video_sha256": "9a0aab404ab7434056cca7cf8bfe4a7d0e28434a011d6e167f21c2f7d76969f9",
+      "sha256": "6a6b6cdb91edfcbcb2de0957b966172cfd1a7f8f8b7bdfea3d4cdf6d51a5a719",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0700.webp",
+      "source_video_sha256": "4517dc6135d403f827f95022a356482cc9616eeeb9ca2fd41cf07b8aa1afbec3",
+      "sha256": "518d6095d37593936eb179d8d8c9dcba6d565e32df244269b0522d155b158bcd",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0700.webp",
+      "source_video_sha256": "60079b1d3e9b6936557edf564ad3f7bd9fab6419618c255a7020b62c0824b5f0",
+      "sha256": "c4138769f17eb65e53efa40888c7334df3f8fc69926ac35471df1f47bf0c0375",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0700.webp",
+      "source_video_sha256": "c7ebbe7f5ed0163b47bd04f88fddf5dd44306b43756ba531421921cefdc8967b",
+      "sha256": "06cda314a4eb384644c362055a60079eb11e80d2d62ea5f8a678bbb905a746a1",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0600.webp",
+      "source_video_sha256": "d0a36250e5b11d0b417b1ee36459985d5d6b5771e073e5a9c18488aad34c5309",
+      "sha256": "2a306fdd7244880f02f1f38ca72a1fc88e0b8b02f7a88f34d72c9e615f0470b8",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0600.webp",
+      "source_video_sha256": "3c72a7547dc1859e5ab737d074b9b5518758647b245f8324a3e6ce978cd42378",
+      "sha256": "9416af59e405276179115c2a916dd44f973f78541bee5c0e3ecaef9eaa51aa8e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0600.webp",
+      "source_video_sha256": "8b912212b0459e4ac6d11f7969bf2ed14a03c88b41fad84b64be0f98c1621ee7",
+      "sha256": "b60e839d60735c8ae4f0789db15d99a09e955e63f4dd16cd0e7f05eabe325073",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0600.webp",
+      "source_video_sha256": "294f52fbb3a8ce9cdbca7546cce015da23b7975afac4e2a222c7d2dd97e70d1c",
+      "sha256": "8593b8396aea08b15f66dfa52f8213bf97922234a9fa31c10ec3491eaa9bc4e9",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0600.webp",
+      "source_video_sha256": "1a6761208b43804dc3fa9a6946476ef4025a530640ccadc9c006ddfbe4ad51e2",
+      "sha256": "3392cbe4689cf9baf8fae76aed34b26865cb9390d7b96e23a97dcf5eeeeb4428",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0600.webp",
+      "source_video_sha256": "5fb026a7c73c9de3320049c18499597efd9c33f4d52df97f06fed1a62adc008a",
+      "sha256": "26442a7c193ae839270975161bf46bd1d30b593e6060be2ecce8ccc849dbaf56",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0600.webp",
+      "source_video_sha256": "0d6fa2f6bfda19c57ed512111ad8ad92a897794552067633bb445272fc45a16f",
+      "sha256": "9f6edddd78cc9bbe0ddbd9380c7762dfea3ef47b556abfa13d059f4699cb62f9",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0600.webp",
+      "source_video_sha256": "3fc38e73ee411cc53e9817ae6179c44afbb54ed2266b0e9dde422a04be79370c",
+      "sha256": "55b57ef205def59f9741efb4bd781c8461ba8128b30e3af6448518ccf52b956e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0600.webp",
+      "source_video_sha256": "5b6b046338e43f0f683688dd7bbe5ee463bdd674a862e22b9b5b8fd0b6eb8f2c",
+      "sha256": "e5d6a670280f8ef7976e833202a8a040b8c6990e044129dd067c9f8973a00b8e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0600.webp",
+      "source_video_sha256": "e38a16b5fb767534bfce06313b5555bc9a69812dc6fec2395da5e7a72cac0906",
+      "sha256": "60a2706d7e84291249615d06744fde7195187f29ccd92833087057c262bb6629",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0600.webp",
+      "source_video_sha256": "b837c4ee83de2091db684feae98ed5548953e9a9e02fc693eca2643d56db7b88",
+      "sha256": "0fdad7f5a817189d24e724973a0a9bf25f1fa3036802b3a04a6c901e68661a27",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0600.webp",
+      "source_video_sha256": "1985c8c2a42d3a33e1bbdbadb5f871eec7df005abb7b46915069160cd899f447",
+      "sha256": "4799cc99876bb4008cd629e8c453455177521789e41afd789ca09ddb3857e393",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0500.webp",
+      "source_video_sha256": "3829b0be17237cc80d7e5f2426bd9af4c7647bf84b51b41f7a26747370398fc8",
+      "sha256": "e711537e4cd059fb270f58b6058fd16ea57ba88d91d47df513287b3cfe528ff7",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0500.webp",
+      "source_video_sha256": "c99443c6016c4b101544a847e46adbf1fd4e26bba3c8bbbf0c936e683d8491de",
+      "sha256": "11740804200b971b7034c366ae0c25e2cdc71b947033c3e9625ec56d710a4ee4",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0500.webp",
+      "source_video_sha256": "726fb27f5da381dbf0e06433d8083e45d78cb6a7bc4290ab6f7330294298c7a7",
+      "sha256": "ca4672811449f03ea9c7cb7c07e5c90601b2356fbabe16d2b36b44b74e7e9c95",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0500.webp",
+      "source_video_sha256": "d93dd5aa222affeba14a67609fea2a28924095590c3730c268daaa8cd311e1dc",
+      "sha256": "44a1f50d568386f59644e2b0475da76bcd16141bf4223df1867de5a5a5ec232d",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0500.webp",
+      "source_video_sha256": "f654c741e68ca4761a11ffd891ea57ace20726e18098b79bd8dc51ba1acb5b62",
+      "sha256": "cfdf223e7600dac2c9b823b54459a646ed8b7b2ae553ec62008b58c21af39c39",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0500.webp",
+      "source_video_sha256": "4aec229341069955002fa024d5d0de8358b28dd2ad3db91f82541f75c8855e8d",
+      "sha256": "a0e1b832187d7ed1d0fad32d9b2c33c29667f9ef56be74cfdee4069c1db92b57",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0500.webp",
+      "source_video_sha256": "f7c1458e1f0db5a90b6b4e73db7066d6b72002f438209c9d3ecae3089f5a5de2",
+      "sha256": "a716211ab9cc17124561b1cecfe976693fce1c594563e45e35fd38a21879609a",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0500.webp",
+      "source_video_sha256": "bcd4306d2a06f472330aeda5520388dc5d8142682296dce91246ef56a8a71af7",
+      "sha256": "e630e5249893ae9b738c7c374a1297715cad3e9ed9d8cba9e0b9175da2142082",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0500.webp",
+      "source_video_sha256": "560345ef5ad7964b734252862f7160e2876239777dde84429ac5ce676e180894",
+      "sha256": "bbe9e9ef2fde6e647273e81fab6ea20036516fc688b4cff05445e49efd4a9953",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0500.webp",
+      "source_video_sha256": "b68e59d631405656cc3d744dd899847ce756d6a7f69057b63409a87838da6155",
+      "sha256": "fb247c345e090fb6d8f1c332a5c4f1a6025934d760f16e94ea2ce481ea598e6b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0500.webp",
+      "source_video_sha256": "1f43c19ea491216a06718e3344f16abf0e5924ce1b2e19d9e19cb4da7d4ed9af",
+      "sha256": "0c9b1db101d8397390052ac66f17f20a86a5fbf2d7cb751912a15c3fc373e81d",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0500.webp",
+      "source_video_sha256": "07be904e222cd0387efdec332989aef268115682175871ba3ddf5dd26aaeaa79",
+      "sha256": "7655f3c0e6da732b8c29beb7b10d8408e1bcdb93fdd0b4203702a7350e4e8e37",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0400.webp",
+      "source_video_sha256": "03fec526c7f961361cd3fe0906758ddbff61fed4e8e733db17f346033b4bc2a6",
+      "sha256": "d716246e44c9a24a6a4575d60ed51e2e0e11746f93e5e55c86bb5c280b199833",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0400.webp",
+      "source_video_sha256": "3cde951f0a403229be9ff486dd2e12f23a7479d59045877941600504a2b51bd2",
+      "sha256": "3a38509fd504f6cfde6ef0e804436c88f3d054a2b9902bfc7074442a7253db0e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0400.webp",
+      "source_video_sha256": "12d20155378d8f7efdfe10f35fd44977e5b09bb9258ec4756d045d2ebcb93e55",
+      "sha256": "988ac71781ac2a37ea6895b068f44164d53dbdce5e05ba128abc4dce5d65f655",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0400.webp",
+      "source_video_sha256": "c26380d30b23d1605ed58c6e19629016a180765249190282554866563593628c",
+      "sha256": "44bb8472668e01b106c554fd32758ac5893ee3120feaef49f3a0e1aa9caceb85",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0400.webp",
+      "source_video_sha256": "11b3f4e45a00ace4fa0d85b42e31d06bc91d42cc538e69c5c0dcfe9492e6c0aa",
+      "sha256": "6bd0d7375a00a8c9b36537ff5d4738cc825aae48b6c3829d62aa473fc84a95ab",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0400.webp",
+      "source_video_sha256": "9070004f47a971c3e0fd4ad595ecbd487b96b9496cf5fd8c7f7ccca4c43bd1b9",
+      "sha256": "1e24297264ee2e5a7d2b869c29f56a0392ec4861c1ebeed1b0808ca6802b8f24",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0400.webp",
+      "source_video_sha256": "d47ebcdad65c7cd282f1802e0e5c00b23a5fe981b27211bceee9158abd540b1f",
+      "sha256": "b695799d8ef7da6e07fc4ec926d43aa9434bd0dfcdeee17657d16c3d25458c74",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0400.webp",
+      "source_video_sha256": "ec5e116e07ec84a1c9fae033d7cf95a0eb1ce4476117dd0f05d7ac3e46dee669",
+      "sha256": "a19bf07b9a2420b453ecf7060ce5d763013f1db35439ddcaef214e2560ddfbee",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0400.webp",
+      "source_video_sha256": "d6fe44eed37846ed2bc020a8e4102bab34b3ee772b38c31b003a45c53ee3d63b",
+      "sha256": "2b8e8908da35baa487ecc1b219be259ae850551c55a2fbd575a28b6f0a950da2",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0400.webp",
+      "source_video_sha256": "3614ecdc040f238636a4a1c57d4106e6de0b21847eb3986f13868de5decff3cf",
+      "sha256": "2cc6a800836f4ac128bada7cc7c89c9bf35d9ad707688e82550c5b24695ba31b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0400.webp",
+      "source_video_sha256": "154ef41dfad4323e91a011b1042bb00c8fb41070070ec1b47d706b8a9dbacf8f",
+      "sha256": "b24324f25ab7f0a100b7872f95616890faead2ac72cd0a4a6755835fb62aad2b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0400.webp",
+      "source_video_sha256": "17f53c261ccbf828e1977061075dea71d7ae3946afa65eb2fee573fa92886656",
+      "sha256": "07d7eb86adbad03fbd24f59908c23c2e46ab32f2e804694ea8da68c4af3cdb4a",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0300.webp",
+      "source_video_sha256": "70cc7c911ec979a3f9f91e4578f936fb230abf2cecf939a4dcc378fabd0ba207",
+      "sha256": "ca1c1271207d405a697d11ce7e069e2fb6a2d1d1cfdb01e7393f54af5955370c",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0300.webp",
+      "source_video_sha256": "471a04fb8e0bcdfb3320ba1d7bcee92e02927ec244571ae2ec65888164a214dc",
+      "sha256": "497b0129357335bf8d4f8b5f9a5087d4ee33dae63c30b88690421a15ca318d5e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0300.webp",
+      "source_video_sha256": "fc578f35a30b517cb5e8e04253c84e7c795c2c604952a88303e84e99f19d844b",
+      "sha256": "4a98ebd3a83c08e468b46019892d23d2ec71c349f75908d44b603e3b6a17c720",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0300.webp",
+      "source_video_sha256": "a856fe2d44476ed093779155bb46e7ddb6878385b5a5bc63b0d17dd367a4f2ec",
+      "sha256": "ea6f531560d736b0ac17ee9c599f2bbd62fdfe1af10cbd03486bee13d0480bd5",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0300.webp",
+      "source_video_sha256": "06f33f69bf5778af52e25f54e3e581ccd9d06f042b9d65c13b61978145e032c6",
+      "sha256": "8afa2184885ba0320d201d4ea9955004390091d61223bdbb576b9d8a757efecd",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0300.webp",
+      "source_video_sha256": "d6a41efae99872d0ce7af5e44e806667d7b9c8e2ea3928ff79fbe5224348cb38",
+      "sha256": "4443031f32f87daa6f52192b6afcf8d57117287f295e2b78db234d1ece368465",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0300.webp",
+      "source_video_sha256": "74f0fb737191df3b0566099ad54d5f1fde7c987ece481a8c8abfbbaa65413c20",
+      "sha256": "246239560ae8212ad323f79fc4cc3a2d2e5b4a1c2b9a89221a3b1324e0f3c844",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0300.webp",
+      "source_video_sha256": "b59786573477ff944de96d41f2c137a92de2f014597cba6ad2d9b6aa7535752c",
+      "sha256": "d57ed839598e7378d7662c62e74acd7be908a36acaf00af8739ae5ceaedd8194",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0300.webp",
+      "source_video_sha256": "f4ccc91f3f83ecf4dd89e709587fb8dbf6b85e2b08770223b7e23599c9ed7339",
+      "sha256": "d154f16a8d6e06c615428163429e818815b183b103c0f4849addededbb25c841",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0300.webp",
+      "source_video_sha256": "0d3e1a6520078c85f8d772f6c2d1f4619f6e8e996dcdcbac61ac07e363956cd7",
+      "sha256": "ba907b25c62bf2c6e3afb0149bc4d13f15615f303beff859010341cd38bb5639",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0300.webp",
+      "source_video_sha256": "0d70c1f152338fb4f374662b8f08b4226543a2caf2f0ed74615abacfc93c16e4",
+      "sha256": "8726eeb6c18d74bacb7959edaeacfba7f4e95eae4d95b3a2b644e8e3a1df6500",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0300.webp",
+      "source_video_sha256": "7aff348d6399228d35f1f8b50cb8890751464d3290f32a6cb2e3491939bfa3ea",
+      "sha256": "8dc6b6636f0f338eb2b8965be99725bcab1f4d48bac9962e5dfaf34db538ec3a",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0200.webp",
+      "source_video_sha256": "32d3960c078fe13c604cce6a262c8c318b1ecfcacefbc3cd83b14e3a08924c30",
+      "sha256": "98155055984123ad7421c9ff941ce7d94e7ef16c688459e4a602e9822e48728a",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0200.webp",
+      "source_video_sha256": "bdc6f250da7edee1fe5a8f87b60a7946de3813a8f2351ef1a777097fefa2d1df",
+      "sha256": "113d4ad2f1e37463f7e0fa5c1221cb82bd895038405cc72b0a70ec3e336c2220",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0200.webp",
+      "source_video_sha256": "3cd84509b4e12ba03b2e5953310b8f9ba90b933a304cf0bf71b67a9d6cc563eb",
+      "sha256": "7eb46e282ad599bde8d82cda288c84fe1c27864881d1256a4143740389cb5171",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0200.webp",
+      "source_video_sha256": "f4684bcbc1fdbdc406e9e08fe324bb1c762c9d0b01c1ade1e6ded6f00ed11d74",
+      "sha256": "82095efbfc199b639d89f19c362d0bed8c3ca41b41312ca11d69f68ded130276",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0200.webp",
+      "source_video_sha256": "000886fe37a5eb24e477af22756febff5fb6c2ce5e707af68177a42a9b55c8c5",
+      "sha256": "caba5c00592a8b1c3d411a43cefea1d4817f6c979908668627e7690e1efefb7e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0200.webp",
+      "source_video_sha256": "9e82b445a20932a56a9748c7fb55b5e581db38e45a0d032a835b87cc60105d51",
+      "sha256": "f3959b5a8b34daf128ec64afd25898e4a2f556baeec56d25a5b25fe602f86d38",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0200.webp",
+      "source_video_sha256": "4da4d23f24a0b63879bc0372f9b1976a01bb6a0cc5be2c286daab8cedf4edd14",
+      "sha256": "65e21eefbf377588bf849f54a91e20892117391b660f547254e4f5f8b26b8071",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0200.webp",
+      "source_video_sha256": "29ce036b5e80a1920e4e865aafcbd3884804bad2fcaa263522a43a4e849a526c",
+      "sha256": "87b26aef36bfef74bcb0a020392dffe76d6fb1bdb638b9eca6e1059737f32c4e",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0200.webp",
+      "source_video_sha256": "89a1219fa42194f3ebe90cd7eb5803079396a615e9d53c36f5406c614075273f",
+      "sha256": "14b9491504259c6377030a108e7800a3614a008dbc32aed109f4387ec7c110dc",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0200.webp",
+      "source_video_sha256": "6d2ea6947e140b6b4d88f4503056767bc4a91a84871792be8319da4cd66d5c7a",
+      "sha256": "7f3b1bf95648b559b5fc72189de7b37f3947cb9159f79b47bc5571df220eb212",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0200.webp",
+      "source_video_sha256": "cb3a6bc3027e03f71eef3dfa2cf4d19064e85a6afeb8321681dbf3d126d1c4bd",
+      "sha256": "35e0e3f2432896394dd4ce7cf413832ea4b191c7c57e3db66cf619950e00e937",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0200.webp",
+      "source_video_sha256": "8db34de64c1d8db0c25ccbed4a7343e1be56016f0255c4760d18c98c8fac3d7c",
+      "sha256": "3eacc19e1f24645b72e80c536ef7fb19163bf280df3681d327c886c1281e9a76",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m1-a0100.webp",
+      "source_video_sha256": "f44b76e7956bbaffafcdd3647a21f5fcfc2daa7c7fc720fdad99c8235e280efa",
+      "sha256": "210bc06efd144f915101e83e035a3fb8a9bf9015ff30abe4f965634279c21b70",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m2-a0100.webp",
+      "source_video_sha256": "862f3af242442aa6f7a016698dc5e936274c1b719f0fcb20c802dae208bf56ec",
+      "sha256": "26567b9e8fcb4cda4cd5a9f7f96cce712baa29294b4034f124b6eb10073accea",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m3-a0100.webp",
+      "source_video_sha256": "dddb0798734d6c1aee8a0a67769306c2a8df74ce181019bd09c355744e8c2ce0",
+      "sha256": "6a50ae2182b9d0c8eb27be9d494cecef74c7a303e063e5d600f828e931f867f6",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "step-m4-a0100.webp",
+      "source_video_sha256": "9ae0bf8414448f984f4ba8223d72787838fef273a33a4bb82f8aa0ac44278f04",
+      "sha256": "ce6343199c8999d57d1a05a40024be0f370eb1f31338b0f417b3b1b94b7ef8b3",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m1-a0100.webp",
+      "source_video_sha256": "1290ca5e944f041002e0800103af548c1365e219a1c534bec9276f49320ed4f3",
+      "sha256": "41f3b6361f644b2e338b13acc3a485f71904c390b6faef7428cb9ab3aabee91b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m2-a0100.webp",
+      "source_video_sha256": "cd3b6fb9c4e4563651931d47f1a7b26425a1d3c4e9f92d57ad3fcc2438dffc3d",
+      "sha256": "1cf643b0be4dda965655271acb47458ae3937f75cb322a811a8f69724b69b464",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m3-a0100.webp",
+      "source_video_sha256": "d948685700b6a4b740ca9adad22c83da431f9c4c2a3c7906e0e75f6e080f456b",
+      "sha256": "20be0f03dd523c0cae534383dc10072eea566019eb2f0ba999dbbc9f627cfb2d",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "ramp-m4-a0100.webp",
+      "source_video_sha256": "3908bf5d0f54dbc604ebf434df042ecab081ea8b20f61df46aabe77a2df4f2e4",
+      "sha256": "ba547352834aca533f6889f8be3ce87df83982befc5b1c3d523215c28bfb01a8",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m1-a0100.webp",
+      "source_video_sha256": "868352f4362325d6e1f647bb0b10d7140c2d84e535fd35fbcad1d788d8328704",
+      "sha256": "2d25b6d75a0460e0e7655aabca9665a5ee02598f7a40a28af8805da6d1227d19",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m2-a0100.webp",
+      "source_video_sha256": "b8a9f083e388df4a55d2eb2af7b98991676468313429d7b1b51774d9174ac93f",
+      "sha256": "d2103f39df2150dca990b7f02a66db7aee3343f74295738a94d8e464b3161f74",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m3-a0100.webp",
+      "source_video_sha256": "f72e4c1a8aeda3f1df57129b1385355683538c0bda10b33eac9cccd906ccfc38",
+      "sha256": "5fe784a1fad38e35cc273bd43992b65c818fb98a323da9dfd15b46d7424474f4",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    },
+    {
+      "asset": "intermittent-m4-a0100.webp",
+      "source_video_sha256": "722a898cb2b59fb79fcf4f3c46933a7b6e299cab753d2693703ff6914d5885a4",
+      "sha256": "e44f999fafa86d6d798e397599dd50ad158734b271bca6a19ab920b16685df2b",
+      "operation": "Recorded-pose video frame at encoded 1.6 s (physical 200 ms after fault onset), scaled to 768 \u00d7 432; retaining the recorded pose and original colors."
+    }
+  ],
+  "overview_sha256": "dc39745cab0d7843c5eda70bf67f1600c0230352267a7626b80b482f004aafc4",
+  "overview_poster_sha256": "8bb0f0546e270f8a847e5a482a204bd745a02c9fcd321bf0161de21e644e6beb",
+  "manifest_sha256": "ef01a978ea2f4f091c41bcbfc23ecd11b4b51db3c92a7870d57bf0237c1d290c",
+  "final_dataset_composition": {
+    "cohort_sha256": "52e5c847f8cf174924b106fab4a5fa97b6180455c3276614f588c0b4de37aea0",
+    "unique_real_flights": 1680,
+    "fault_conditions": 156,
+    "repetitions_per_condition": 10,
+    "fault_flights": 1560,
+    "healthy_controls": 120,
+    "verification": "Final cohort inventory independently verified; ten repetitions for every profile \u00d7 motor \u00d7 multiplier condition."
+  },
+  "selected_replays": {
+    "operation": "Four bounded CPU encoders, two threads each; complete original recorded-pose clips scaled to 960 \u00d7 540.",
+    "encoding": {
+      "codec": "libx264",
+      "preset": "fast",
+      "crf": 24,
+      "fps": 30,
+      "pixel_format": "yuv420p",
+      "faststart": true
+    },
+    "browser_playback_rate": 1,
+    "physical_playback_speed": 0.25,
+    "verified_count": 156,
+    "assets": [
+      {
+        "asset": "videos/step-m1-a0970.mp4",
+        "source_video_sha256": "4859b1b61387ae27eeb2568e315f27caf12b324ff3ca716996ce0191f7391d99",
+        "sha256": "bffc3be9ef0626e4068cdd14e0ac3d065986da2df339a6ebfe3ca24c9a9fbcbc",
+        "size_bytes": 79719,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0970.mp4",
+        "source_video_sha256": "df26918bcf5bc5d8bbea2c2121eafb2ce2516c387d99ed92e2f692dafdc53631",
+        "sha256": "a7e17ccece5c1ac37186bfb15d8d5bc878b493fdb5f264e59b316237cbb62388",
+        "size_bytes": 82060,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0970.mp4",
+        "source_video_sha256": "69f25e6080c6d5a8b5f5cd25cbbbe8bd7b9348500c27d11918ecb6166b5c3014",
+        "sha256": "8814ba287862f11f07524ecde0a7f558397aa0cc00c0849af43feb3560136d43",
+        "size_bytes": 76996,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0970.mp4",
+        "source_video_sha256": "827ac429565836ed5b92e4b999af03a4aad092f274b1b904497c41b2468dda11",
+        "sha256": "4b13262ab446e681614f4058718f228b5b4e78a22aadc43cc714a416ad914c28",
+        "size_bytes": 82219,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0970.mp4",
+        "source_video_sha256": "80b3542683ddfd477241d9916f5065c1571069ad85382ef4ca4e4ecee5bde104",
+        "sha256": "979c8d95499dd169ea7cf3577fb4584f1e8e0c3449acb76c6b26a66ee8162c78",
+        "size_bytes": 79967,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0970.mp4",
+        "source_video_sha256": "76a900dc9bfea4e38eda01df283c2f20d34609b7b9c71c613f0de3cd25af425a",
+        "sha256": "b879b325ed2f1d5fda358c22a92e270a638980ca2a70b7acc14241bd51f41e19",
+        "size_bytes": 83636,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0970.mp4",
+        "source_video_sha256": "adc23b8a7a9088c35b63513ca90c51f6341bfff1651889c6fceed30181022f9a",
+        "sha256": "900bae388fa771eb0849078b7f15e6e4c9f8d8312b4a3d5d3fd8776cbf8d1ab2",
+        "size_bytes": 86322,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0970.mp4",
+        "source_video_sha256": "ba6fd6ee3299579c5031a380a02bf8234d8e40077c48092bcadd019431f0a1cd",
+        "sha256": "319a53109fa28427e70f3d2ddb9f5419a93e60aa3707b96c5161289af7a540a7",
+        "size_bytes": 83467,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0970.mp4",
+        "source_video_sha256": "ccf1dd5a8716ca57157a59369196cb47c945b8ccfc88b52a2a45ebb5cac7fef5",
+        "sha256": "aaaecfa010313f0ac34e570c4041adb76800c058ac5e694209d8d62fdedbfb73",
+        "size_bytes": 78593,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0970.mp4",
+        "source_video_sha256": "494db7ab6d57490e820fa4a4f452302eeac8f0ebe4dc93030add712bf57b6a08",
+        "sha256": "d5dd57cdf43a02e6637db5c6f6cba2c9887fd714ed3bf00f4c0a73d5d88d478e",
+        "size_bytes": 84812,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0970.mp4",
+        "source_video_sha256": "f4c4d96c7bf81bb66bb47b1c7760c7122fa13ad0ae27f9e742e24c9b5c50ef39",
+        "sha256": "98ee83f736fddcfdf73a60fe499ad469c6cd790d9af598779e6d405c705028fe",
+        "size_bytes": 83213,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0970.mp4",
+        "source_video_sha256": "d499b622574b28a21dde8c2ab13a93ef77cea964081190fefa9d2ca8f509dda3",
+        "sha256": "9ecb92ec228404bcbd986cd9dc036f60db15b223925fd033fcc8f0882720be41",
+        "size_bytes": 86568,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0950.mp4",
+        "source_video_sha256": "38a20559e71842aa0b7c4d162f47c07127a351f1270bd71867afb74d52cdbc3c",
+        "sha256": "33d44dea1284650f99b03faa32cf47a596cd0cec3b8c063e07e3cc1a7cc30de7",
+        "size_bytes": 81955,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0950.mp4",
+        "source_video_sha256": "9e853c55cb2fce6bb266d53e0c3e9ff55ad721c0707668115106b4d894e232ac",
+        "sha256": "f0dc80145f60803b7f34a5507ca6eaaf74a83e91a1956595b41b81c8da3142db",
+        "size_bytes": 82809,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0950.mp4",
+        "source_video_sha256": "de641c06fdde287bf2008f4ccc64329f6945931031515141b320811754f199c5",
+        "sha256": "f0d6e6b90161aca2b9733dcb3e8155c891ee3dde7318d6c40fbdbc1c5de29d18",
+        "size_bytes": 83115,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0950.mp4",
+        "source_video_sha256": "c37d3606aca594470eff3c2bb47ab884072714556150ba4a8e448cf612fcfdd8",
+        "sha256": "f40768b6c063c8dac6b53bc9c12034915f6987840d0d9efbc22722731626853d",
+        "size_bytes": 78988,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0950.mp4",
+        "source_video_sha256": "637e94942ebc26525e7d0eb7eef6322c91b9c0c54193fe785042374a862a0444",
+        "sha256": "fa2de109f84e239bdad4c64b4dfdc6ef4f4800e404c7c5e860804e9d2d45930e",
+        "size_bytes": 82050,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0950.mp4",
+        "source_video_sha256": "53110447d9f85363dc416133ff68847b8a12b5a383ddb753105d50dbc8952b3d",
+        "sha256": "3fd1fc809de62e60524ae3a10721f5784f397d71015f6680b2c2887678ef8e98",
+        "size_bytes": 81213,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0950.mp4",
+        "source_video_sha256": "f68a69723bb4aa879d16dd10a293e222206c650c03a3053d42e9f397639c5f13",
+        "sha256": "0c3cb830a85805787220201b7f9ae979added32ec8a49ec53d93d4734220271d",
+        "size_bytes": 85311,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0950.mp4",
+        "source_video_sha256": "f30780b4e338443935e95ecb67df82d8c504d9dadce61787272176318fb1f4f9",
+        "sha256": "ca4f96d26023cbc40e51f7f63b09c3ef9adc99c59002e5796ce6c5287f91b5a8",
+        "size_bytes": 81681,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0950.mp4",
+        "source_video_sha256": "6fd674d1e1d53475adfe4f770fbd0ce5d2c24a218997f355859baf1003d8b94c",
+        "sha256": "7cd81c4701b3c7c4bdeb023784cf6db7e8f3bf430b4c9da1e72d90d37944ead4",
+        "size_bytes": 85470,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0950.mp4",
+        "source_video_sha256": "56d69a5fce1adda86305bc45bec92ddd385096d9a7f05f0da5285b275142ad13",
+        "sha256": "0ae475e6c9375fe5d9d5522467252dbea26f1f52c8ee3e89b10d7f460a0c86f5",
+        "size_bytes": 84230,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0950.mp4",
+        "source_video_sha256": "3b63345c696e1b76916530343a6a720acfd65d705764e372fe397fb5347ee6ac",
+        "sha256": "193fc829878e671dd9ca35c8ac6648485c8b7184d443ee9383bbf67406a1e847",
+        "size_bytes": 82873,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0950.mp4",
+        "source_video_sha256": "f3e66b49b417dd11896f907f5b8f766139216d728b359bb2de4b19bf0d7b64ee",
+        "sha256": "55c5d6717779067a8c7b4bb7f389b630a6929269ee1a22b20855af00d5fa90ff",
+        "size_bytes": 82287,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0900.mp4",
+        "source_video_sha256": "33133e8f7dba8fa36296dfb77a008a6058c69aa3b13d33f9a697bddb35579ae5",
+        "sha256": "a02749d78942bd81f1f32a7c5954e94b8f75d506087e32d556d32302025ace75",
+        "size_bytes": 85230,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0900.mp4",
+        "source_video_sha256": "62a94d3b9a79ee51658b240338fdb056d70a922d92d42534749dce3117269d68",
+        "sha256": "c8485bba7ceaa31b3d763c174253c48cda55d11a69da08cb650c02919e808c89",
+        "size_bytes": 86923,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0900.mp4",
+        "source_video_sha256": "b112e5114319f3bc3a47b0729e91c6559083193f5aa766be31b8a3e70eb7018c",
+        "sha256": "cc463672486dda07ff539ecfa7047a4a0d9e4fd8acab5ceee55616c35d372c14",
+        "size_bytes": 81726,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0900.mp4",
+        "source_video_sha256": "e34f4434669ac9c992a341387496802dedc20b791f84840faf1e1b829b722a78",
+        "sha256": "a79ce848904ca315585a44b42e1df0bd282c17d65634559ad2556dca968bc188",
+        "size_bytes": 82359,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0900.mp4",
+        "source_video_sha256": "a529eaa36e7ae82cd0df25cd57f178caf092e3f96f37d05a86aa6e6b58cf6984",
+        "sha256": "18a2e1542c469992e5522ea9bf63ffb15fa014419f80d064f6c40bc529bd2056",
+        "size_bytes": 85709,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0900.mp4",
+        "source_video_sha256": "65794fca9ba575c1ca08222c6aa9f64e84efdfb48d6d9f57cb1547f8a2c99caa",
+        "sha256": "bc0eae1734f31d425f4c919c0a703fe8c27c21558a6761836827a0d822496d51",
+        "size_bytes": 82388,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0900.mp4",
+        "source_video_sha256": "be9e6be659357068c20d919e5eaee8a2dae4f24996dd177921017e916e402d02",
+        "sha256": "142c0005d01a4c258b8e91656ee40125f258df9f5e04730959c7cb2d28029e9b",
+        "size_bytes": 84223,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0900.mp4",
+        "source_video_sha256": "7218c7b541dd58f6b7634f3dad90328462770ef4291669cb873b373ff90595b5",
+        "sha256": "b310f62b05027f962e339ade11eabfb079e726d6a974ffcb5dd3c001b6bb3bbb",
+        "size_bytes": 85707,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0900.mp4",
+        "source_video_sha256": "2e39b06ac5f8e968ef7bb28e6165b0e723cf1123dd72bbef301abda52878e75b",
+        "sha256": "8458e9d485cbcd7f67da497b72cb0547cf7ba3805783014736dfbfa362ca77a0",
+        "size_bytes": 84411,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0900.mp4",
+        "source_video_sha256": "b06a82fe27e8a4112a974e1fd119fb266d8f9ca8fd562d168609b36f334f1ebd",
+        "sha256": "4180bd584edc261c1c054467124f4ba775ef06d20c4f8a6de758b1a3f3354ccb",
+        "size_bytes": 83738,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0900.mp4",
+        "source_video_sha256": "d929788882babdaa3cb1d9f4ef038bccf7d656af03116efbdd8bd647e60bd8cc",
+        "sha256": "0822f59611c8a2247bd855d5dfa47d55c558cff673aa130ff70291ca182720d6",
+        "size_bytes": 83317,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0900.mp4",
+        "source_video_sha256": "2b36f2dede0726cce3e0ec15e830a5cb1e300f2a499770da2744e44249b0d73c",
+        "sha256": "c0ebaa90a234836a366f43610e3e499933bc7dc9028b8e077b2ceca064727e2c",
+        "size_bytes": 85955,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0850.mp4",
+        "source_video_sha256": "9339d53435e9c64671e3f6de94e02d6fa94cf129554a7744b0d1eaa54b667f71",
+        "sha256": "f3750999025a4c0fb94b87171b8c3c38f9e1e87801c7c19ec384e54dbc2146b1",
+        "size_bytes": 84787,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0850.mp4",
+        "source_video_sha256": "086273a203e8b0f40aee1fcdc53ed9d193c6feced4b4f0a0d8ea899fc89273c8",
+        "sha256": "c9570f6f7d2f8a4319fb5dd9571e69f6754558ab086077f522b8531d05c85c39",
+        "size_bytes": 83529,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0850.mp4",
+        "source_video_sha256": "b46b2ae97dbbadf4ad58ddf91109e5efe3d495cf4fd409feb523bd5165318464",
+        "sha256": "a1cba36cda569dd1cdbcc8d410f49106742d867e99a799c7e7759b4393d668ed",
+        "size_bytes": 86754,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0850.mp4",
+        "source_video_sha256": "51a4886a87c0cb9ce5bb7473da11e67b94ffd192cea9e5015d3e3beff36cd7bb",
+        "sha256": "69c07beffae076db84bc603b171dbd3a6d2b69c3aff85f61072993e9b14ee250",
+        "size_bytes": 89252,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0850.mp4",
+        "source_video_sha256": "97a06108c1eb86afb8163b576efda9bf6aa95656423afd6a7af6dce2ca93df77",
+        "sha256": "8c1997c717d5058c0b98d29d7081c41cdb4f9f99c5e3bb9f62bbb71d706d5046",
+        "size_bytes": 83428,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0850.mp4",
+        "source_video_sha256": "b859af98b2c282dcd2020edd71096800ef3d9e8251b52701e85c288d6d54432f",
+        "sha256": "b964b0637e3081a164235f0ae9c8e664b34b822515f7f9a117ea963bc6e4e91f",
+        "size_bytes": 82848,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0850.mp4",
+        "source_video_sha256": "d14cdec112e80b1cf812e8d18c23fdfdbc2e390a796107c083c98d830e4efa65",
+        "sha256": "e2235763a9d014fff5dfc51d367f04372a1abb3fe257ecefcf6e37a3260ed570",
+        "size_bytes": 88937,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0850.mp4",
+        "source_video_sha256": "fe2813ff9034ee23cf9205419854947aeda2618f53045f3b6db89a93ef066e5b",
+        "sha256": "2ecf130e59a923c047559da51ebe03237bb517e1b0173fefcc2b0e368cb1d4ba",
+        "size_bytes": 87434,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0850.mp4",
+        "source_video_sha256": "50c7f620ca757dce75f17f0ec343c6bddb24c92fcf235bc1ce8010f576d3c190",
+        "sha256": "254da2a0ab5c88f9ec46e3f29156a109e946af0d204048a49bd7870591dc91df",
+        "size_bytes": 84119,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0850.mp4",
+        "source_video_sha256": "6f6301b1ac744df889f12ffe03dbe9d12f2a5d283815fe13ddb78b7c4df37d81",
+        "sha256": "18c48df91240f3e18bdefe9e02aa2b745ea3c272b97c05720093d596e1c0d6d5",
+        "size_bytes": 85677,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0850.mp4",
+        "source_video_sha256": "c46c5a9a94d1bcc519a69d6684fb2e557be146b8006f8a4605664974eccea98e",
+        "sha256": "02d6c8e6b5dfea98bf6319556014ce641dcc73ca39c9e7f16a2b8fcca7930e83",
+        "size_bytes": 84215,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0850.mp4",
+        "source_video_sha256": "87e69c51a060076517508cd5c5326903651bf4b564cbbacd06b92e0da1b1523b",
+        "sha256": "81164bbef203c53b9ccd58795549ed81357bfea8805b38328060f5b9a2ecb358",
+        "size_bytes": 83908,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0800.mp4",
+        "source_video_sha256": "09352d5d819217f24aa3f4252fdc233c067fa3bc0fca382daac676731962cbb2",
+        "sha256": "a1adc2db13f28105f0bce52241d57714e8b17b161fd29fb1148787738d64cbe0",
+        "size_bytes": 85710,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0800.mp4",
+        "source_video_sha256": "9ffc9eb57e7652daadaa8599261534fd748773821cc3858e8006702966f860e6",
+        "sha256": "c17ec20d9058488c9a220af433c86bb0de7b2c08e4ad9739064247c005970fab",
+        "size_bytes": 86872,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0800.mp4",
+        "source_video_sha256": "b44828d14f38556a28c9b08f761abd89d7fac7ff669f72a5e8fb7291df067d19",
+        "sha256": "caf945e2cf6429a6bd25c6d53e9650522c2833e77c51acf6124d2041ffcd1dec",
+        "size_bytes": 89508,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0800.mp4",
+        "source_video_sha256": "42aa4751595674d61d5a745479de5cb3f24dcae5cfe114f8b2ba336fcb0339d8",
+        "sha256": "7a55b48f2d449f968e7981b906a41919924d94d80a8e17f8d0c31a3ff3e209ff",
+        "size_bytes": 91650,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0800.mp4",
+        "source_video_sha256": "98a9719f42bd3881f5d27c0c1b359152a6f1f557e4fd54c5567fd547b2088255",
+        "sha256": "ca8c6d9e1d7c9f361aac8134a7822c446872c5724d1a03b7464e8278377d9d55",
+        "size_bytes": 85458,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0800.mp4",
+        "source_video_sha256": "1fea16c498e170959bb8b7337675822850e0ce6ad561f50e0e511e8822ffef39",
+        "sha256": "be99c383e6fbbbda3c1e8dd94b7788c0d9e594786f263121821a9f62987515cf",
+        "size_bytes": 87837,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0800.mp4",
+        "source_video_sha256": "53ceacc07bd32cd74e0774c869ea7af42b9fdac031929be2f31a1d02c606885b",
+        "sha256": "96fe969069cd9e46120fa731e3f886d1ec2541266f8f59436521ef9ef1eb04ea",
+        "size_bytes": 85572,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0800.mp4",
+        "source_video_sha256": "0b08718f7baa33cce294bfe54cf49a806ca037ccd44c5d9caa8817d37b5c7f34",
+        "sha256": "af270d4f2658dfff312f61b7946216713144bca9809cf70dabdc6143f0e58d58",
+        "size_bytes": 90266,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0800.mp4",
+        "source_video_sha256": "76ba9a1c4261aaf35637762bd4fb5af411db163f1f439411601dc6a2e6e453e4",
+        "sha256": "4103048d92f348f54db5b85b6991653b7ec0f17b0282f4f0dc6b7129d3989741",
+        "size_bytes": 86460,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0800.mp4",
+        "source_video_sha256": "cb8371ebb945aeaba79edad76d192647ea40b1e8a32e3ce7a35de284eafe8c07",
+        "sha256": "04e42128adc49cb056c9048355302208c407a25ca7a65140ac18c03da43940a8",
+        "size_bytes": 86132,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0800.mp4",
+        "source_video_sha256": "e2145c64372d9146e61ec92c3599002f10c98f19e0bf2c440324071b3ebfa6cc",
+        "sha256": "e5e425c6babbe7423f118c612ac687b1ac5933aa835368c4df3ad4fcedd6428b",
+        "size_bytes": 86336,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0800.mp4",
+        "source_video_sha256": "1fd0a2f39c5ddfe18a6c301f33fe4eea584a2dd9bd5d195fde77029de6d3b3b9",
+        "sha256": "dba8d6fa0a92cfee84a09f10bb5bd3ea41e05e01174da764fdd154da0ee41499",
+        "size_bytes": 86821,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0750.mp4",
+        "source_video_sha256": "ce1bb646a62983f8bdb3497745a4b4a277269dc5b5c9f65b353fe98bfb8f97b5",
+        "sha256": "bf6951293354fcc68ec5163428dc157557202a2ad4a0206bbe0f068c6d37388d",
+        "size_bytes": 84918,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0750.mp4",
+        "source_video_sha256": "a1e7e667342f2df8c011300dd95bce6edd5a4e1f082f5428b4c2795bd775184b",
+        "sha256": "2b35b89f1647e5aac3046f7995f705b886c3d477361f6cf148429740df289dbd",
+        "size_bytes": 84907,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0750.mp4",
+        "source_video_sha256": "3ea1fdd32a58e967678ba0d22e1c7a74f0cc2794c847b88c10153c244b1832d4",
+        "sha256": "4490daca427aba775ebaa43fd608dc63c82ae2a790a3281d064c0c5d6dae0f0e",
+        "size_bytes": 89211,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0750.mp4",
+        "source_video_sha256": "e58a6fb93a76e0f53f4bacbd0ab07322067df29327ba88229b490ff60f27b490",
+        "sha256": "e4d01452d48f0f21989ab48c90740e9a1543e89804ea437cb9e48639de5895e8",
+        "size_bytes": 90653,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0750.mp4",
+        "source_video_sha256": "f5ec50dcab09050807e312ed1ae5bbbacf9027d7f1e1fde4f1f4a81d892ec4c2",
+        "sha256": "9d6741fb9099e55947223d03e4fca19212ab819cfd16506abb90b78bfafba47d",
+        "size_bytes": 89963,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0750.mp4",
+        "source_video_sha256": "496d482e76e103d08423d38f1f9c01c49254612103d176316be54a94f7942181",
+        "sha256": "dc8990ed6b66909323b920170281f9c537b16e87eb9e7856066bf1da311187b9",
+        "size_bytes": 85870,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0750.mp4",
+        "source_video_sha256": "829bd44b1d4be3344f86b458fb968bb563f5cb91504ba4bbacc21a9c8a9e1851",
+        "sha256": "120080ded71d9c2960bb34dd5f51ac34a40fde5d6874301609634bcb6febcfd7",
+        "size_bytes": 87277,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0750.mp4",
+        "source_video_sha256": "3ab75f445382ffe5a1c2fff87a12882576850defd5dd803037ce92b5a669bcd7",
+        "sha256": "b3651c9e628f1916f460ade1425bdc8bfc1ef31d2def1af078db9f59ad7c68a3",
+        "size_bytes": 88085,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0750.mp4",
+        "source_video_sha256": "33fa5463b4b2f4b7b91ad61cfccdc206eccf709d9e426c783ad2c665c8a0f50a",
+        "sha256": "1e54d5bd996be2421974d1fefa68b23f49382d788c27a21b5ba1b39267893725",
+        "size_bytes": 87789,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0750.mp4",
+        "source_video_sha256": "2fe97498508a46308a0f0964df80b53222b083e0f6cfa1ffa8b80aeaa2e1f821",
+        "sha256": "c5e5cb1247bc050fc736ec7e7213e19723b31a315e571d6b66051919e47088d7",
+        "size_bytes": 85327,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0750.mp4",
+        "source_video_sha256": "b11009a8936f387ca99e906e9540d975dc1a70b4e0d02af79ebef59bfacac0df",
+        "sha256": "cadf03e8456b7c41bfe9170160ec117407285e1c6594d0e4ccccd02f962c6bc2",
+        "size_bytes": 84891,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0750.mp4",
+        "source_video_sha256": "9e48f2436ad6d1a76b2411b78a763f20d4e249a98a8725f7d21b5ff72531c6f8",
+        "sha256": "5897048bc914e1049918a6b2364622d01cf61e0608f4ca32d5f9ec96d73a8700",
+        "size_bytes": 88121,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0700.mp4",
+        "source_video_sha256": "90c9b92b759b046e43f0ec527cdfc8b119db66d6b6685a1aee34ff995b8fc143",
+        "sha256": "1c153ddde8edcda3a8bf581e6677becc23844cb1ae2440ea08afac46bbd2fd27",
+        "size_bytes": 89306,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0700.mp4",
+        "source_video_sha256": "211364549aae239bfcff09868b27b1de3231418a64e8728a23dbcb3351d02a1d",
+        "sha256": "18b049e5559345941f38972143449b7ba5d06f6d515f6e6d7a31d35519dd9f0e",
+        "size_bytes": 85686,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0700.mp4",
+        "source_video_sha256": "7f189f5faa8e649b9f5e3206eba2f52a16ae5bb1840a8214ade5185df6b5b01d",
+        "sha256": "74034b1865a5f7903e7e1357c24cd57995515eeb0168ed8afaaadf49912c3202",
+        "size_bytes": 87428,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0700.mp4",
+        "source_video_sha256": "a64ce9cb741b44b49dd0710ce10c3d3d0435c7316b193e06c17c5567d4f7f214",
+        "sha256": "83bb9798af0fc0ce3a5e7e1c578223e5a929cb68042e6a1eb0a2fecd372c0214",
+        "size_bytes": 91490,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0700.mp4",
+        "source_video_sha256": "c687df97769cc1cecd2ec66cc45eca3f2c94d85af8337386fe331d6e048b4bcd",
+        "sha256": "bbdcc8753e48a3f3d89b7395693b8bc00259135b20c02555136a1fb6db22dd70",
+        "size_bytes": 86925,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0700.mp4",
+        "source_video_sha256": "8b2380cf4c077a51fd6dbe304d6c13b38e0b5aeadb6c0f0a70ce0fb7c70bf540",
+        "sha256": "f30bff775d5eda7b7325a45fb4e56332a189236f0f4304b0ffe4674f18cabc02",
+        "size_bytes": 87056,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0700.mp4",
+        "source_video_sha256": "bf41a1421b6b9a491c0cd22129e32870dd47ea3753dff4de6d5a4e4c09b32c23",
+        "sha256": "0be2d43da540b5b19580ecc09d7d921d6fcb050246f08e84e3db086407baad49",
+        "size_bytes": 88789,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0700.mp4",
+        "source_video_sha256": "b2e25b7d302336078b1280823ddda7e9a34abdb55267d5aa7986a4f098a6997d",
+        "sha256": "4966dcbdaa92aea2e836118e476e25db21c94dd9d3959deedc8613da5c941ca9",
+        "size_bytes": 91166,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0700.mp4",
+        "source_video_sha256": "763dd8b832ef143bc46fcc563a62b7a2a6ffe8f02bbd6467ce22836d40cfafe5",
+        "sha256": "ec91d3105d4b411c4ceeab81587d663f1997ef4c0060845ab7fc0cdadd8caa2b",
+        "size_bytes": 83792,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0700.mp4",
+        "source_video_sha256": "6d60cef363621afba69e1e81dac9fd1c4fa5741bfc1e1c81a6e712159c90984d",
+        "sha256": "01c3a664bd3282914af6d9f686ff1454700e17e8889001405a43d08d9bf8bd59",
+        "size_bytes": 84772,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0700.mp4",
+        "source_video_sha256": "352b52f9fc8756304b298ba2d473b55089e37972cee812a4c3ec0e86db8ebb56",
+        "sha256": "ecfeaaf0664a9fe6c4c4bbcd3bae068a4961d8cceb1fb4267e493c3effff6bcd",
+        "size_bytes": 87059,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0700.mp4",
+        "source_video_sha256": "2b57ee9b83867946316ec9fb7e0b7d3a1b1ab67b20df438534c26d459b0b6b2b",
+        "sha256": "ff6b193dd341a6ea1214155e642e853f3567d891175f9d81adcae4acae398735",
+        "size_bytes": 81461,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0600.mp4",
+        "source_video_sha256": "f3e6d6ef1342174ad4d9a595243c64f60212ec160da0236413647909c7d71029",
+        "sha256": "b507d5c0cbeed6b2d4ecb367772d7683a012a95af5aeab4ca66ab09bf64c6f8e",
+        "size_bytes": 86608,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0600.mp4",
+        "source_video_sha256": "162882d175cfbdaf6053d057021607f987e98add3756e6349b38f5130f7d7144",
+        "sha256": "d0d977c340c22a0cfbd95af0c273a7665aa5165d9b733b3b3da99ac9097f1666",
+        "size_bytes": 65500,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0600.mp4",
+        "source_video_sha256": "47f1f1a7ec2c33fb2696e1efb120286184606ab7f5df08a46acb9f0fe339d46c",
+        "sha256": "c112359cc630908bcec00770ca528d1b7dca7747a3780a6b8f8770bfc22bf2ee",
+        "size_bytes": 80764,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0600.mp4",
+        "source_video_sha256": "d12e423e7d086cff10afc07fb7805a2c135dd9330fdec0b8892944524d183213",
+        "sha256": "1c3be36aac8cf768616bd1553b84b5e90c6d8c16a5bfc65b07e0e2e0b3655dcc",
+        "size_bytes": 75168,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0600.mp4",
+        "source_video_sha256": "96d8fa2000f7f746e9454c809de959d9575a3b60543b0107a5e3cec0da24f64d",
+        "sha256": "95cdeaacce81fc41a0ac736cff4f676ca1e1cc1f77b631e151b8159d736cfbc6",
+        "size_bytes": 86627,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0600.mp4",
+        "source_video_sha256": "75f4b37574df9cfb09cb7a528bcb20c0d3a676edd9ffa0b5cc2b1b67be3f9263",
+        "sha256": "77b13bce942fcb431f5c2f8b4e8f75d437cfec24c6d53480500f78f57feea5cc",
+        "size_bytes": 82655,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0600.mp4",
+        "source_video_sha256": "6cbb4671e7d36cd7bbacbb87b89699763fd15e5b3f25bbd01a92138389e8e315",
+        "sha256": "9c69dd2abccceff06ea535637befbd85c90080709d00d90a0bbc0940bd155c22",
+        "size_bytes": 86029,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0600.mp4",
+        "source_video_sha256": "8dc78666ba6e62b66e754ed22ca8ec4f197c7b1e75a31d8dd8a55190227348e7",
+        "sha256": "bee00ba91816c52faaa81aa18ba017bc06c48955bbc555263e1da63e909da5a2",
+        "size_bytes": 74851,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0600.mp4",
+        "source_video_sha256": "309a5e156ee0597200eea03cdbb95bc874ff51d36dc13737ad33c1131f9af374",
+        "sha256": "81b4dc83c2e475f012475cea9dee629853848ddc92de650417e98bb8d24177de",
+        "size_bytes": 83024,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0600.mp4",
+        "source_video_sha256": "5059bb2be1796b2479e0eeacd03e700fbc6b1acd6c46082d53b1a31328b2671e",
+        "sha256": "5ec04fdc99d5aeaa7e90018992e607c829c307d28993262a34af23c50bb585dc",
+        "size_bytes": 83357,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0600.mp4",
+        "source_video_sha256": "d100c99cf789fa4511a5c7ba932c1e472a801980c896f6d7e80a1e244e8d6a5c",
+        "sha256": "421a2880a59dcd5377f561843e1ec39669b8042a2a71729d38242a741cd3fa4e",
+        "size_bytes": 85601,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0600.mp4",
+        "source_video_sha256": "570469e80de6e259da1bc4bd53119aaaed94b6d46151e4ec370e64f072c3746f",
+        "sha256": "a19412897ad34f689718f1ea3c75f9193bae68e3d0e125d594e790eafcef1abe",
+        "size_bytes": 87435,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0500.mp4",
+        "source_video_sha256": "8641e0a7d76c0d92f92db0378b7f80805d088acaf81bac5b5ff857507cbae597",
+        "sha256": "6f801823554357f0b8f81c61a14f4c08ab77b498563885a55356d794fad5e67e",
+        "size_bytes": 64380,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0500.mp4",
+        "source_video_sha256": "7ccb4fcf66313958923cf78a1fc8d80f2b88c0a91be6f528538d98a0260a7ee0",
+        "sha256": "189becb057eb912117c12885131ea10f771aa07268da5706863000b91bddd11b",
+        "size_bytes": 68753,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0500.mp4",
+        "source_video_sha256": "e75dc1942a25f43cbfdba50d9210949e4d678b1a81b3a0459976971a53a83601",
+        "sha256": "e6c31ffc02ed235e4de9b1d343cdf31034d07c2ab4d9487d78befa4454659b0a",
+        "size_bytes": 59518,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0500.mp4",
+        "source_video_sha256": "3770f97b6ff7b4903cb9dc4780ecc1fbd3ccb35b5c8bd8b402ccec04f9d21abf",
+        "sha256": "fbd66026766fb5ed628d8e3a610f77b0d048ae7402316b6c55e3408dc4d67e2e",
+        "size_bytes": 74983,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0500.mp4",
+        "source_video_sha256": "7db719830dde17db67e14e8eeee310c7775048f7223e4a3f9578acc45cd257be",
+        "sha256": "d41782aa169a529b52eaaa5199d6fda1e16e4806d0e2c6aa541161a4ff28852c",
+        "size_bytes": 88327,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0500.mp4",
+        "source_video_sha256": "ad65eed6258e764cb4c2431604edebe5e4a7094393d83210324f3c94b3a87afe",
+        "sha256": "887441441392e61aab48ff987ba2fa9b4add79f9d176cc6b78ea740a0f9fd12e",
+        "size_bytes": 80009,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0500.mp4",
+        "source_video_sha256": "4a3127f4b82d4716143642a82b6974e86375d6d686e6eb38cfcce09d70ee5796",
+        "sha256": "e745447e35a829e92eb59634b3813878b5459e5df1000ae63a934a7046af840d",
+        "size_bytes": 65235,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0500.mp4",
+        "source_video_sha256": "9a9ad2cae3fb3b1c0e552fd61bf04e322bf84da8717de5d134896d1cf83b1f81",
+        "sha256": "1fecb9e5a8472f9207b6b8c6f3be1e674f393a91fb03454b23f1644d941e6b90",
+        "size_bytes": 85685,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0500.mp4",
+        "source_video_sha256": "92d0ae50ebf653d30fc0e7c488d720db68641bed498d5bd2998254dd9d1dd8a4",
+        "sha256": "e90150c95c76cd186b5a1aeece72f57633cc81a93cf652e7ca6d59765e9259de",
+        "size_bytes": 84759,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0500.mp4",
+        "source_video_sha256": "3cb56d84a495334a098ce8b1e6451f3db66b71e75cb158e644d651d5966727ce",
+        "sha256": "c71388e30f591ec54ce43fe9d25e1f102ce306edaf318de4234431c8baf7918a",
+        "size_bytes": 86093,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0500.mp4",
+        "source_video_sha256": "f840b3aa626c4067bdfb0ceff012b14877aefdb7d2f85d33879caaed36737f15",
+        "sha256": "a0dc096146acfee9e9fffa6a04deb2ab7cfe315e1c61c84aab2cabb12fb78e1f",
+        "size_bytes": 87146,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0500.mp4",
+        "source_video_sha256": "9f423bdd01bbe0e87622584fddd535c3ce775616863ff2a649b3e6664268307e",
+        "sha256": "d0844e17e6a27e23e0836520448ca06560340e15ec88b422b42e91c97bf6d52a",
+        "size_bytes": 92172,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0400.mp4",
+        "source_video_sha256": "73f613859eae4b7430a1793effda31daeeb77a702be39735d5f096d88066f30d",
+        "sha256": "39f55e43c4811ab3874635b247e984e80892cfa67fd12a3304a0d39e8fb5792d",
+        "size_bytes": 67264,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0400.mp4",
+        "source_video_sha256": "8eb91337cfae398397195390663a0f79748334941fcb2e9df31605937305f3a7",
+        "sha256": "10b44b6d0da47736e785d1f68d14c11665e74057f7644433e5ad12fbeb2723c8",
+        "size_bytes": 66492,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0400.mp4",
+        "source_video_sha256": "42a10e877f9ebf264578ad93cb38bfc45d4ad8ac29f49ccde6bc77ce02e43fc1",
+        "sha256": "b392c998e706c66843a4f5ea2d41835a5fca824805965b698bb1a3106bc9abb8",
+        "size_bytes": 58445,
+        "frames": 95,
+        "encoded_duration_s": 3.166667,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.5833333333333333,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0400.mp4",
+        "source_video_sha256": "a61ff605fe39954fe15d3e1f616de610324bf95db050bb8985b6902f17d467e4",
+        "sha256": "ed6515b6af1afec70b6be93a6f69bd64022ba8cb910c9af4eab0578bd1d622a3",
+        "size_bytes": 64789,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0400.mp4",
+        "source_video_sha256": "7da9abcf6400c74e2dcedefb3d744b81d16d5fa904db56aff8f0a1ffc34e0ad4",
+        "sha256": "a1ce30260eea3935e8c3672f802609353e9cb804994cd3d02a3fa22b39a9b1eb",
+        "size_bytes": 66011,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0400.mp4",
+        "source_video_sha256": "7acd1473cf61a59c83f69dd391ab5f1b0d5e3b06007e46701890ec8cf84994ea",
+        "sha256": "8c8a33cf7f3d6abc7b766bbf012c47a261f03cb4c0e2f3482c27f75a6e2427ba",
+        "size_bytes": 63907,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0400.mp4",
+        "source_video_sha256": "98b59b883f19c91c8cf5064fc8e2eed67aedfe6c19d704b32bd194a591318f2a",
+        "sha256": "84abb4f5843e2377f08b6fe928d1129494b2f9d1312c0ed25c331c5234423516",
+        "size_bytes": 69171,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0400.mp4",
+        "source_video_sha256": "b82dff5c951709d861ada19baeb1b4cf22412ca20728c1bf27970d18e59194d8",
+        "sha256": "9aed7a465e68f6b153dc355332e5dc0f5fadf3f75d0d37e527e8536ea24abfd5",
+        "size_bytes": 73917,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0400.mp4",
+        "source_video_sha256": "bebc649758394ae68d147492727c0068c6d4673ce6780178f47ee3b48a1ad2eb",
+        "sha256": "ebb3eb28a2416b54e2bf785b0889cc33f0c4e5195f641668de584a12770d4d72",
+        "size_bytes": 87045,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0400.mp4",
+        "source_video_sha256": "1944f52c4c326eeb6f921fb1488c6ec4b84871e407d6c4294a20cee107709fe3",
+        "sha256": "99762adf54e6704beb65a981d17ce473b8421b124261fd4be8a24836f81a8324",
+        "size_bytes": 84805,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0400.mp4",
+        "source_video_sha256": "17206059afb87f95e05ab6d5e3efb5e600fb370df9d8110f431259c3bc1bf7be",
+        "sha256": "4ab7f39723d8cec785f78a7cfd53d213f2c4187c228809bad20334e4025739e2",
+        "size_bytes": 88217,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0400.mp4",
+        "source_video_sha256": "6e36c6e4d9137c821e152f193ba252e45333f9f51020d8ae88e465abeac647d8",
+        "sha256": "2297202a5f68f5f29ff0204f9461ae5e488eb05dc1a925baf7b05ef7b4aee2b1",
+        "size_bytes": 86798,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0300.mp4",
+        "source_video_sha256": "42b9182b4697662aeec2e8be38c2f208adde8cb37b830b067820ab35e3bbba3d",
+        "sha256": "935ef7e5d189e6ff68238045fa95c087418215e63c635b975dec269b3c0afa80",
+        "size_bytes": 64140,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0300.mp4",
+        "source_video_sha256": "368ebce971c6b3c5007ceaa99ec1ffa3d75aea3ada3856fa3c89b4bdbfe3b9e4",
+        "sha256": "e0db0b1350abe80a9e7141677b355da0fd044ca6b6d311480ed18b5f952165e1",
+        "size_bytes": 58145,
+        "frames": 92,
+        "encoded_duration_s": 3.066667,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.5583333333333333,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0300.mp4",
+        "source_video_sha256": "f208577678ccabf616b60b5eeb48b73ec76aaa5a7d461bd1c2788a163a848565",
+        "sha256": "f577f24f8f2b5802324af59eee4bcb8e648305fad8f03a4201778a6f50557967",
+        "size_bytes": 58053,
+        "frames": 80,
+        "encoded_duration_s": 2.666667,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.4583333333333333,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0300.mp4",
+        "source_video_sha256": "fb16481b3de8c03ea14edf6c668382e659a6157777a095870a979ef4a207bac3",
+        "sha256": "1520494b6e65686af5b6e3a916558dfdb7667079ad45974a42dbe641d796aea8",
+        "size_bytes": 62868,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0300.mp4",
+        "source_video_sha256": "106145cf89a94717b992e0273ba1122423d2583c0ae50ed10a148967f5c176e1",
+        "sha256": "2f5ba51862e20dd8cd77874f95f1c8981ad2de6dd4ed7cb5cc07ebdece37f1d3",
+        "size_bytes": 62418,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0300.mp4",
+        "source_video_sha256": "0be48069a50d631724791c256be97d1fac5db538f4f61369fa17e9daa2ab01e4",
+        "sha256": "f5fc5589bab5827b11a1803dcd950b723760280b99805e4ca047ecc52bc3b512",
+        "size_bytes": 68692,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0300.mp4",
+        "source_video_sha256": "cd259dca5d14dfc4b299e6084998684e7776e85da5f2e88c90affb20bb657edc",
+        "sha256": "36bd6c4d115d47e5bf441ace16e11c45ed0eb665ff0737af20efc1770d69edba",
+        "size_bytes": 60895,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0300.mp4",
+        "source_video_sha256": "7bf46105fd954ce31a786eb75cce99cc2521fe1fe6e68fe67c0725b7fcdc3296",
+        "sha256": "19e778e6d9f37dd289710741ab48837b8f970e0eb005ecf13ee9b1a547f2ead5",
+        "size_bytes": 61589,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0300.mp4",
+        "source_video_sha256": "90ec65c41216a771cdd2f4eabc1a5d5a9a48bad1f9290c97bc60929a726b63a7",
+        "sha256": "934e2933ea77dffe9e317b3355c50b5d0b747ba7bf634ae2cbfa7db2693d3fcb",
+        "size_bytes": 88133,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0300.mp4",
+        "source_video_sha256": "9c5a88021690877f6e242c76aa00150d1385a2e55cb026784ff2ad13a039966e",
+        "sha256": "ae8eeb0417fbe06153c84ab098090a8e0d7221086719c25a01168f9a4092d7ad",
+        "size_bytes": 86010,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0300.mp4",
+        "source_video_sha256": "91ce21ab5359891d710ed0d0e3bb98463d8786abbc63b06a4d0f8afc231fdd86",
+        "sha256": "bf86470783e6af14a0372524c50e21b5f8b29884a848e2329a2cbb722309b2b8",
+        "size_bytes": 89888,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0300.mp4",
+        "source_video_sha256": "40d30493abe73b61ca246fe9d4731cfab38ec402a33c5da884ad304cbf20c32d",
+        "sha256": "90afc03c9534843ffd3fc2490ca66fcf165d826f1e7ea1b004deda88a814f974",
+        "size_bytes": 88984,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0200.mp4",
+        "source_video_sha256": "a4d968a84740f2fc92927abd66d6822bff7dfd58c231391e64c9c8f4010a40df",
+        "sha256": "c5beaa8e35882bfcd4483c97b3ead0099a56db6e934405903d2d8d26578fa6ba",
+        "size_bytes": 63590,
+        "frames": 90,
+        "encoded_duration_s": 3.0,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.5416666666666667,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0200.mp4",
+        "source_video_sha256": "496347f484e6ad104957dde658018bb6acd995f17e73617afcd13f605ee9446d",
+        "sha256": "35c4a822007d555b6f016751bd3d21f19d3ee5f1a4ae269cab5156b10f00f36e",
+        "size_bytes": 59745,
+        "frames": 81,
+        "encoded_duration_s": 2.7,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.4666666666666666,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0200.mp4",
+        "source_video_sha256": "08f2610bb9198d5c6388cb8c92fd84f6e7ffd6b80aa884df4c3e62e37216611e",
+        "sha256": "5539c2f8af483f00ca3a86b82cadcb5d379de7eec78727de9c1e22a6080dad13",
+        "size_bytes": 58237,
+        "frames": 78,
+        "encoded_duration_s": 2.6,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.4416666666666667,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0200.mp4",
+        "source_video_sha256": "464ac8101e43494d5501f3aa2340b178a32f2922e736d344656a65cf34c5bc62",
+        "sha256": "8b9c47833512ed933ce7a0d363900a9decff707a63253811fe7fa92b3df704f9",
+        "size_bytes": 57772,
+        "frames": 85,
+        "encoded_duration_s": 2.833333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.49999999999999994,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0200.mp4",
+        "source_video_sha256": "bd1f7c1d8bf60449bcc2e83d1d0906f6004247544a6c141393eaf8fa3e7bc5b6",
+        "sha256": "60dc9ca77636da59ab96db185d47470eb33e0ef25992f5f7388054ffebd2b25e",
+        "size_bytes": 63398,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0200.mp4",
+        "source_video_sha256": "ac4c4111777b420bac799184166ac40b8e3486e9a85ee37596461a81bec81dfa",
+        "sha256": "1bae9921c6059a86d3a53dd6cd8cd5ba8243802f20e93877feb4b4545ceb4260",
+        "size_bytes": 67586,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0200.mp4",
+        "source_video_sha256": "a0dba099417af099eadc44dee12f7e986973606df0e607bd3d524b8da32d4c59",
+        "sha256": "d836d1abb95c6d1113b6c6e13b2fd0560371bd959a039117ea0065b42eda5adc",
+        "size_bytes": 58414,
+        "frames": 90,
+        "encoded_duration_s": 3.0,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.5416666666666667,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0200.mp4",
+        "source_video_sha256": "d1e9d7172b833a25e5783829730100c5844afef3f071ac09a8475c810cc9a7e9",
+        "sha256": "79c8810aa5a5958a24d65c8b840a3ab658e99d984b7668e768eed99e9a91c23a",
+        "size_bytes": 62863,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0200.mp4",
+        "source_video_sha256": "d5871b0dafd947e2778e2b0ca95fce86f5efe4839905bdb1c22621bf62385688",
+        "sha256": "b2f5695b5c0bab1a9211699836c44485ac0251b2405e753af7c2995f95e66ead",
+        "size_bytes": 84953,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0200.mp4",
+        "source_video_sha256": "69a1d3a1779fd532e44235c2eeb4a84ac01bbadeeb08aafd0efb92c0d71c8ee9",
+        "sha256": "116e32b7870f6be67f4ff1b9cb550c2705fcc68885058b3af66800083eae8d78",
+        "size_bytes": 89835,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0200.mp4",
+        "source_video_sha256": "334f255c5c59d64ea2fe60452b7acc2eef3726a8aa32b94356ffde54f0b5d65d",
+        "sha256": "c7a377ae54e773175d09addb48847b7e4bcd6fe1a5596e031c4e4e526c6df418",
+        "size_bytes": 90912,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0200.mp4",
+        "source_video_sha256": "030d2bdc03b232c1f21ab8d31dc99c68f492fec5d852c9b1dd69c11a81ea7a69",
+        "sha256": "abacb2d36d5e71cdf903fca34390ba560542598c19d6f7f01b66ea81e13db527",
+        "size_bytes": 91042,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m1-a0100.mp4",
+        "source_video_sha256": "d33c08d4edbbba4bbe71964a43731c9b466076200247a5e9c01f4d62a575e17a",
+        "sha256": "b6c49302a8fdb9440c957513d76fe7f5b793c15a0b12dbdfe672a61b8e274681",
+        "size_bytes": 54876,
+        "frames": 70,
+        "encoded_duration_s": 2.333333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.37499999999999994,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m2-a0100.mp4",
+        "source_video_sha256": "165f0600ef16a50bd0025b465f9fc1b54cbe2688245a33f87859e6e220fbc3ca",
+        "sha256": "2abf128c0876937a55c9c40d515d1e65a0b25a51ab74673186c90fdcefe7d46f",
+        "size_bytes": 56941,
+        "frames": 81,
+        "encoded_duration_s": 2.7,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.4666666666666666,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m3-a0100.mp4",
+        "source_video_sha256": "a8d4ba807d0964a02ae1e32b33c76acd0a2073e188c64e4cfe403a5a549822d4",
+        "sha256": "d30e9860b8fb01a7443d86530e347a3811c8cfe83aafb83187602ec336dacf40",
+        "size_bytes": 55301,
+        "frames": 72,
+        "encoded_duration_s": 2.4,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.39166666666666666,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/step-m4-a0100.mp4",
+        "source_video_sha256": "2a8b26233a064fd0ec3f8f166f6e45f5bfbb487c937d929f77fe5248bff3c385",
+        "sha256": "0bff75e1be84bd68d076cb34a4cb62e5350c0443d6201040208cc8b7f1e403c8",
+        "size_bytes": 55996,
+        "frames": 75,
+        "encoded_duration_s": 2.5,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.4166666666666667,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m1-a0100.mp4",
+        "source_video_sha256": "5afeef48907aead5c71092567d6c8d5111d06f6e8844443cd172a744e1fd2053",
+        "sha256": "ce5bf934c7e5627620a178c21643d59355d65d88aba8657867686fffc07cbbc3",
+        "size_bytes": 60162,
+        "frames": 83,
+        "encoded_duration_s": 2.766667,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.48333333333333334,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m2-a0100.mp4",
+        "source_video_sha256": "62ca664419003bd7c39e5a926224574f2a7f0754176b6c8c19e1667e54bcbfb3",
+        "sha256": "b4b73b3fbb4e828c030c5e22026fae119b7f1ec83aee6a40a94aae870c420245",
+        "size_bytes": 61827,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m3-a0100.mp4",
+        "source_video_sha256": "89b102deef3d87e772214eefacd8f409b08f2e4ee00aff07610eff5dbfce0749",
+        "sha256": "b092329338474ebb342cc91d20aa22338b60789f9eb52f0b4e342e25d2211769",
+        "size_bytes": 60145,
+        "frames": 84,
+        "encoded_duration_s": 2.8,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.49166666666666664,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/ramp-m4-a0100.mp4",
+        "source_video_sha256": "9f3a0995343eb2d6df836491b28073cb65b2b028f2affe17d0ae83a72ccffd17",
+        "sha256": "4a739dcc0ccd5c45feacb67496541895f75d8363398f89c76dcfbf5ef9687029",
+        "size_bytes": 59665,
+        "frames": 86,
+        "encoded_duration_s": 2.866667,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.5083333333333333,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m1-a0100.mp4",
+        "source_video_sha256": "53e2d0c0edb98545d168427db4aba7db16affc1bdb5bb52585945ef032568591",
+        "sha256": "5c32a4694a46d508f942fa7c869e7982e08d9ef75cb4c480382e718628ddf566",
+        "size_bytes": 86551,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m2-a0100.mp4",
+        "source_video_sha256": "63ea65b5ee73c64ef23a0ae672df294556c3076cdcbd63566d61248fb6227466",
+        "sha256": "58ddeba88f653b9da113279ce49989bae3f19524fc1f2674ba9ecea781061c0f",
+        "size_bytes": 86148,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m3-a0100.mp4",
+        "source_video_sha256": "b057aae37ec1dab6e71263c4901afbb31b569e059d5375793c7c7a3623884f05",
+        "sha256": "41dd77f0bc96c0678debff18f3b881cfa63c5e60c4c1c6ef5e2cf4cc288eb7fa",
+        "size_bytes": 89203,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      },
+      {
+        "asset": "videos/intermittent-m4-a0100.mp4",
+        "source_video_sha256": "9dabe5b64ae05633365a1c7b3b5041e392116dfdbb0c9929ed90cc284c8ce90a",
+        "sha256": "fd013b8cc648c286d89fb8dd6ab12a7bd735f9e187dd0dc3703fbbcc113b6451",
+        "size_bytes": 89343,
+        "frames": 97,
+        "encoded_duration_s": 3.233333,
+        "playback_speed": 0.25,
+        "browser_playback_rate": 1,
+        "physical_start_s": -0.2,
+        "physical_end_s": 0.6000000000000001,
+        "color_space": "bt709",
+        "operation": "Complete recorded-pose clip scaled from 3840 \u00d7 2160 to 960 \u00d7 540 and encoded as H.264 CRF24, preserving every frame, clip duration, original 0.25\u00d7 physical timing and BT.709 color metadata."
+      }
+    ]
+  }
+}
