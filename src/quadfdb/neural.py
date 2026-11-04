@@ -1,4 +1,4 @@
-"""Neural architectures used in the QuadFDI paper comparison.
+"""Neural architectures used in the QuadFDB paper comparison.
 
 Extracted from the study implementations in
 ``CrazyFDD/src/crazyfdd/algorithms/{expanded_neural,training}.py`` and

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "One representative recorded-pose clip for each of the 156 fault conditions, with aggregate dataset repetition counts.",
-  "count_scope": "Final QuadFDI benchmark dataset counts; presentation videos were prepared from an earlier collection snapshot and do not define final flight counts.",
+  "count_scope": "Final QuadFDB benchmark dataset counts; presentation videos were prepared from an earlier collection snapshot and do not define final flight counts.",
   "profiles": [
     "step",
     "ramp",

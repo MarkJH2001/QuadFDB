@@ -1,5 +1,5 @@
 {
-  "title": "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
+  "title": "QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
   "methods": [
     "RF",
     "ET",

@@ -1,4 +1,4 @@
-QuadFDI project page — font and attribution notices
+QuadFDB project page — font and attribution notices
 
 Source Sans 3
 The locally bundled Source Sans 3 font is distributed under the SIL Open
@@ -10,7 +10,7 @@ Page design
 The centered research-paper presentation was inspired by the Nerfies
 project page: https://nerfies.github.io/.
 The present HTML, CSS, JavaScript and method diagram were prepared for
-QuadFDI. No Nerfies website code or assets are bundled here.
+QuadFDB. No Nerfies website code or assets are bundled here.
 
 Research figures, media and aggregate results
 The authors' platform, flight response and dataset coverage figures are
@@ -21,4 +21,4 @@ assets/source-provenance.json.
 
 The site contains aggregate evaluation results and presentation media.
 Dataset and code access is provided through the project repository:
-https://github.com/MarkJH2001/QuadFDI
+https://github.com/MarkJH2001/QuadFDB

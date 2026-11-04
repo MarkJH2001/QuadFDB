@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "project": "QuadFDI",
-  "title": "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
+  "project": "QuadFDB",
+  "title": "QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
   "prepared": "2026-11-04",
   "scientific_sources": [
     {
-      "kind": "Current author manuscript v2",
+      "kind": "Author manuscript v2 snapshot used to prepare the page",
       "sha256": "38be849cdd90449e5b6ab4f19bf9218de4225e1749d97bea78aee500dbccb0b0",
       "document_distributed": false
     },
@@ -74,7 +74,7 @@
   ],
   "public_summary": {
     "file": "assets/benchmark-results.json",
-    "sha256": "6e8f5728c099caef7225903ea777a8e5243037a28197a89ae9f61fcf265334e5",
+    "sha256": "9766f4f187990439b1d65239aaa8f9b1e8be1aa624e477b1d4ce9d814cc6cfbb",
     "content": "Aggregate means, sample standard deviations, run counts, and fault-flight denominators.",
     "methods": 10,
     "event_groups": 3,
@@ -94,8 +94,8 @@
     "representatives": 156,
     "final_flights_per_condition": 10,
     "telemetry_distributed": false,
-    "manifest_sha256": "ef01a978ea2f4f091c41bcbfc23ecd11b4b51db3c92a7870d57bf0237c1d290c",
-    "provenance_sha256": "b23a08f3605151f8db96355899ec1bafdc8ba54566af4c08c154bd515d29bbd3",
+    "manifest_sha256": "76aadfa5872034caa139e83e04d28bf1a46b7c3dfcf14e8c9dc60d61d0551290",
+    "provenance_sha256": "ff064f2486173a85f217ac1f50dba745781b2ef1f315421d80f7444910877d52",
     "selected_replay": "156 recorded-pose clips; one selected video loads at a time, with native playback controls."
   }
 }

@@ -8,8 +8,8 @@ import numpy as np
 class NeuralForwardTests(unittest.TestCase):
     def test_reference_shapes_ranges_and_window_independence(self):
         import torch
-        from quadfdi.neural import build_network
-        from quadfdi.common import seed_neural
+        from quadfdb.neural import build_network
+        from quadfdb.common import seed_neural
         torch.set_num_threads(1)
         x = torch.from_numpy(np.random.default_rng(41).normal(size=(3, 16, 10)).astype(np.float32))
         for method in ("mlp", "fcn", "lstm", "tcn", "transformer"):
@@ -26,7 +26,7 @@ class NeuralForwardTests(unittest.TestCase):
 
     def test_control_is_a_distinct_five_class_network(self):
         import torch
-        from quadfdi.neural import build_control_network
+        from quadfdb.neural import build_control_network
         network = build_control_network()
         self.assertEqual(sum(p.numel() for p in network.parameters()), 34437)
         with torch.no_grad():

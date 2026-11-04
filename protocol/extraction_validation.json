@@ -48,5 +48,31 @@
     ],
     "new_optimization_steps": 0,
     "provenance": "Independent extraction agent compared same-seed state_dict tensors and CPU synthetic forwards."
+  },
+  "package_rename_validation": {
+    "date": "2026-11-04",
+    "package": "quadfdb",
+    "status": "passed",
+    "synthetic_only": true,
+    "existing_unit_tests_passed": 40,
+    "failures": 0,
+    "checks": {
+      "numerical_modules_unchanged_except_project_name_strings": true,
+      "new_namespace_joblib_roundtrip": true,
+      "current_extracted_module_hashes": true,
+      "historical_source_identifiers_preserved": true,
+      "result_values_preserved": true,
+      "all_binary_media_unchanged": true,
+      "dataset_matrix_conditions": 156,
+      "public_site_validator": true,
+      "compileall": true
+    },
+    "environment": {
+      "numpy": "2.5.4",
+      "scikit_learn": "1.9.0",
+      "torch": "2.14.1"
+    },
+    "scope": "Package/API and synthetic portability validation after naming changes; no real flight data, original checkpoints, training runs or TEST scoring.",
+    "checkpoint_compatibility": "New snapshots use quadfdb class paths and quadfdb-portable-v1; existing quadfdi joblib snapshots require the original package or explicit migration."
   }
 }

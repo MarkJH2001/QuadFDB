@@ -2,7 +2,7 @@
 import argparse
 from pathlib import Path
 import numpy as np
-from quadfdi import FitBatch, RAGB
+from quadfdb import FitBatch, RAGB
 
 
 def main():

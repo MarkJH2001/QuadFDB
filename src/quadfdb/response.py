@@ -80,7 +80,7 @@ class CausalEvidence:
         _, groups = batch.require_supervision()
         x, normal = batch.windows, batch.normal_rows()
         if x.shape[1] != self.history_points:
-            raise ValueError(f"QuadFDI requires {self.history_points} observed points")
+            raise ValueError(f"QuadFDB requires {self.history_points} observed points")
         ordered = sorted(np.unique(groups).tolist(), key=lambda g: hashlib.sha256(
             (str(self.seed)+"\0"+str(g)).encode()).hexdigest())
         if len(ordered) < self.folds:

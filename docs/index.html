@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="QuadFDI combines 1,680 real quadrotor flights, a fixed event evaluation protocol, and numerical baselines for motor fault detection and isolation.">
+  <meta name="description" content="QuadFDB combines 1,680 real quadrotor flights, a fixed event evaluation protocol, and numerical baselines for motor fault detection and isolation.">
   <meta name="theme-color" content="#167d83">
-  <meta property="og:title" content="QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data">
+  <meta property="og:title" content="QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data">
   <meta property="og:description" content="Real flight data, event-level evaluation, and Residual-Augmented Gradient Boosting for quadrotor motor diagnosis.">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://markjh2001.github.io/QuadFDI/">
-  <title>QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data</title>
+  <meta property="og:url" content="https://markjh2001.github.io/QuadFDB/">
+  <link rel="canonical" href="https://markjh2001.github.io/QuadFDB/">
+  <title>QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
@@ -24,13 +25,13 @@
   </nav>
   <main id="main">
     <header class="paper-header wrap">
-      <h1><span class="project-name">QuadFDI<span class="sr-only">:</span></span><span class="paper-title">Benchmarking Quadrotor Motor Fault Diagnosis<br class="title-break"> with Real Flight Data</span></h1>
+      <h1><span class="project-name">QuadFDB<span class="sr-only">:</span></span><span class="paper-title">Benchmarking Quadrotor Motor Fault Diagnosis<br class="title-break"> with Real Flight Data</span></h1>
       <p class="authors">Junhao Hou<span>,</span> Meng Zhao<span>,</span> <a href="mailto:qiangshen@sjtu.edu.cn">Qiang Shen<sup>*</sup></a><span>,</span> Jing Wang<span>,</span> Xiaohui Zhang</p>
       <p class="affiliation">School of Aeronautics and Astronautics, Shanghai Jiao Tong University</p>
       <p class="corresponding"><sup>*</sup> Corresponding author</p>
       <div class="resource-buttons">
-        <a href="https://github.com/MarkJH2001/QuadFDI" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7.5" ry="3"/><path d="M4.5 5v14c0 4 15 4 15 0V5M4.5 12c0 4 15 4 15 0"/></svg>Dataset</a>
-        <a href="https://github.com/MarkJH2001/QuadFDI" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20"/></svg>Code</a>
+        <a href="https://github.com/MarkJH2001/QuadFDB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="7.5" ry="3"/><path d="M4.5 5v14c0 4 15 4 15 0V5M4.5 12c0 4 15 4 15 0"/></svg>Dataset</a>
+        <a href="https://github.com/MarkJH2001/QuadFDB" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20"/></svg>Code</a>
       </div>
     </header>
 
@@ -48,7 +49,7 @@
       <div class="reading">
         <h2>A benchmark built around real flight</h2>
         <p>Feedback control can keep a quadrotor close to hover even when one motor loses actuation. If the fault lasts only a few hundred milliseconds, a diagnostic method must recognize a subtle response and identify the motor before the event ends.</p>
-        <p>QuadFDI brings together a dataset of <strong>1,680 real flights</strong>, a fixed evaluation protocol, and baseline results. The study also introduces <strong>Residual-Augmented Gradient Boosting (RAGB)</strong>, which combines healthy motion prediction errors, local motor class probabilities, and observed flight histories.</p>
+        <p>QuadFDB brings together a dataset of <strong>1,680 real flights</strong>, a fixed evaluation protocol, and baseline results. The study also introduces <strong>Residual-Augmented Gradient Boosting (RAGB)</strong>, which combines healthy motion prediction errors, local motor class probabilities, and observed flight histories.</p>
       </div>
     </section>
 
@@ -284,7 +285,7 @@
         <div class="reading section-intro">
           <p class="eyebrow">Event evaluation</p>
           <h2>Diagnosis within the fault interval</h2>
-          <p>A brief fault requires an alarm before the event ends and correct motor attribution at the first alarm. QuadFDI evaluates both outcomes using the recorded fault interval, alongside false alarms during healthy flight and the time needed to confirm a diagnosis.</p>
+          <p>A brief fault requires an alarm before the event ends and correct motor attribution at the first alarm. QuadFDB evaluates both outcomes using the recorded fault interval, alongside false alarms during healthy flight and the time needed to confirm a diagnosis.</p>
         </div>
         <ol class="protocol-line" aria-label="Common evaluation sequence">
           <li><span class="step-number">01</span><strong>Observe</strong><span>16 samples over 300 ms<br>Position, rates, motor commands</span></li>
@@ -361,6 +362,6 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer"><div class="wrap"><p>QuadFDI · Shanghai Jiao Tong University</p><p>Layout inspired by <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a>.</p></div></footer>
+  <footer class="page-footer"><div class="wrap"><p>QuadFDB · Shanghai Jiao Tong University</p><p>Layout inspired by <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a>.</p></div></footer>
 </body>
 </html>

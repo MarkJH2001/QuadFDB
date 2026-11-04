@@ -1,4 +1,4 @@
-"""QuadFDI numerical benchmark components."""
+"""QuadFDB numerical benchmark components."""
 from .common import FEATURE_NAMES, FitBatch, ScoreBatch
 from .features import EvidenceBank, mask_inputs
 from .models import RAGB, RFReference, EvidenceClassifier

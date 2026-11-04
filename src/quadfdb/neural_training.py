@@ -1,4 +1,4 @@
-"""Fitting helpers extracted from the QuadFDI study implementations.
+"""Fitting helpers extracted from the QuadFDB study implementations.
 
 The BCE references retain the Adam, Torch replacement-sampler, and
 DataLoader semantics in ``CrazyFDD/.../algorithms/training.py``. The

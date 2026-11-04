@@ -1,14 +1,14 @@
-# QuadFDI
+# QuadFDB
 
-**QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data**
+**QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data**
 
 Junhao Hou · Meng Zhao · Qiang Shen* · Jing Wang · Xiaohui Zhang<br>
 School of Aeronautics and Astronautics, Shanghai Jiao Tong University<br>
 *Corresponding author
 
-[Project page](https://markjh2001.github.io/QuadFDI/)
+[Project page](https://markjh2001.github.io/QuadFDB/)
 
-QuadFDI studies detection and motor isolation during short, controlled reductions of one quadrotor motor's PWM command. The study contains 1,560 fault flights and 120 healthy controls, covering four motors, three temporal profiles, thirteen target multipliers, and ten repetitions per fault condition. These are command-level interventions under real sensing and feedback, rather than measurements of physical motor or propeller damage.
+QuadFDB (Quadrotor Fault Diagnosis Benchmark) studies detection and motor isolation during short, controlled reductions of one quadrotor motor's PWM command. The study contains 1,560 fault flights and 120 healthy controls, covering four motors, three temporal profiles, thirteen target multipliers, and ten repetitions per fault condition. These are command-level interventions under real sensing and feedback, rather than measurements of physical motor or propeller damage.
 
 This private research repository covers this paper. The broader CrazyFDD research project and its other experiments are maintained separately. Raw flight recordings, prepared flight arrays, fitted checkpoints, and manuscript source/PDF files are **not included**.
 
@@ -23,7 +23,7 @@ This private research repository covers this paper. The broader CrazyFDD researc
 | Evaluation | Healthy-CAL q99 threshold, fresh two-endpoint alarms, first-alarm motor isolation, false alarms, coverage, censoring, and conditional delay |
 | Results | Paper aggregates, per-seed event summaries, and the fixed head/input attribution study; no endpoint scores or flight arrays |
 
-The package extracts the numerical dependency closure from the study implementation. It does not require a VLM, image renderer, local research checkout, flight controller, or server scheduler. Source hashes and extraction changes are recorded in [protocol/source_manifest.json](protocol/source_manifest.json). The portable checkpoint format differs from the internal server format.
+The package extracts the numerical dependency closure from the study implementation. It does not require a VLM, image renderer, local research checkout, flight controller, or server scheduler. Source hashes and extraction changes are recorded in [protocol/source_manifest.json](protocol/source_manifest.json). The portable checkpoint format differs from the internal server format. New checkpoints use the `quadfdb` namespace; older `quadfdi` joblib snapshots require the original package or explicit migration.
 
 ## RAGB
 
@@ -54,7 +54,7 @@ The example training command accepts an NPZ archive with:
 
 | Key | Shape / meaning |
 | --- | --- |
-| `windows` | `N × 16 × 10` finite physical observations; channel order is `quadfdi.FEATURE_NAMES` |
+| `windows` | `N × 16 × 10` finite physical observations; channel order is `quadfdb.FEATURE_NAMES` |
 | `motor_health` | `N × 4` binary labels: 1 healthy, 0 faulty; at most one faulty motor |
 | `flight_ids` | `N` integer or Unicode identifiers shared by all windows from a physical flight |
 | `roles` | `N` Unicode entries, all equal to `fit` |
@@ -71,7 +71,7 @@ python scripts/fit_ragb.py \
 Inference and evaluation use physical observation windows and separately prepared eligible calibration scores / scored episode records:
 
 ```python
-from quadfdi import RAGB, calibrate_q99, evaluate
+from quadfdb import RAGB, calibrate_q99, evaluate
 
 model = RAGB.load("checkpoints/mild/20261009")
 scores = model.score(physical_windows)  # N × 16 × 10; no event metadata

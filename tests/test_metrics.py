@@ -6,7 +6,7 @@ import unittest
 
 import numpy as np
 
-from quadfdi.metrics import evaluate_real_episodes
+from quadfdb.metrics import evaluate_real_episodes
 
 
 def fixture(case="step", *, samples=41, onset=0.2, end=0.5, motor=2):

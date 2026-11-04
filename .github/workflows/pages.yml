@@ -1,4 +1,4 @@
-name: Deploy QuadFDI project page
+name: Deploy QuadFDB project page
 
 on:
   push:

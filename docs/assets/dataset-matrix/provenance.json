@@ -1,6 +1,6 @@
 {
-  "scope": "Public recorded-pose presentation media and aggregate condition metadata for the final QuadFDI benchmark.",
-  "count_scope": "Counts use the final audited QuadFDI benchmark composition (156 conditions \u00d7 10 repetitions), not the incomplete counts in the historical presentation-media snapshot.",
+  "scope": "Public recorded-pose presentation media and aggregate condition metadata for the final QuadFDB benchmark.",
+  "count_scope": "Counts use the final audited QuadFDB benchmark composition (156 conditions \u00d7 10 repetitions), not the incomplete counts in the historical presentation-media snapshot.",
   "original_overview_video_sha256": "32ee778c98819aaf8ade548f3fc812430dd6a37781925d40a5b8a5788d636774",
   "original_overview_composition_sha256": "41c3f3b75350eb86cbb81dcdd0df34ce55f5195af4dbef1c7e198e146137a2a8",
   "overview_operation": "Crop existing 192-pixel left/right margins and 26-pixel top margin, retaining all 13 \u00d7 12 recorded-pose tiles; scale to 2304 \u00d7 1404 and re-encode H.264 CRF22 retaining recorded timing and BT.709 color metadata.",
@@ -945,7 +945,7 @@
   ],
   "overview_sha256": "dc39745cab0d7843c5eda70bf67f1600c0230352267a7626b80b482f004aafc4",
   "overview_poster_sha256": "8bb0f0546e270f8a847e5a482a204bd745a02c9fcd321bf0161de21e644e6beb",
-  "manifest_sha256": "ef01a978ea2f4f091c41bcbfc23ecd11b4b51db3c92a7870d57bf0237c1d290c",
+  "manifest_sha256": "76aadfa5872034caa139e83e04d28bf1a46b7c3dfcf14e8c9dc60d61d0551290",
   "final_dataset_composition": {
     "cohort_sha256": "52e5c847f8cf174924b106fab4a5fa97b6180455c3276614f588c0b4de37aea0",
     "unique_real_flights": 1680,

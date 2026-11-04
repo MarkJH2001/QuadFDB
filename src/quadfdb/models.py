@@ -97,7 +97,7 @@ class EvidenceClassifier:
         output.mkdir(parents=True, exist_ok=True)
         joblib.dump(self, output / "model.joblib")
         write_json(output / "descriptor.json", {
-            "format": "quadfdi-portable-v1", "head": self.head,
+            "format": "quadfdb-portable-v1", "head": self.head,
             "mask": self.mask, "seed": self.seed,
             "feature_audit": self.bank.audit,
             "note": "Portable snapshot; not the internal server checkpoint format"})

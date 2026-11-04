@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "title": "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
+  "title": "QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
   "scope": "Retrospective evaluation on fixed held-out physical flights; not an untouched external validation.",
   "source_sha256": "b55c21a89f3334653699ea4b6c4a3797aa6a6485af1c2730838ef7fee55f4e7c",
   "methods": {

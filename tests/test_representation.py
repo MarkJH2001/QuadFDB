@@ -3,10 +3,10 @@ import tempfile
 import unittest
 import numpy as np
 
-from quadfdi import FitBatch, EvidenceBank, RAGB, RFReference, mask_inputs, calibrate_q99
-from quadfdi.common import class_flight_weights, health_to_classes
-from quadfdi.local_rf import local_cue_features, physical_summary_features
-from quadfdi.response import ResponseModel
+from quadfdb import FitBatch, EvidenceBank, RAGB, RFReference, mask_inputs, calibrate_q99
+from quadfdb.common import class_flight_weights, health_to_classes
+from quadfdb.local_rf import local_cue_features, physical_summary_features
+from quadfdb.response import ResponseModel
 
 
 def synthetic_fit():
