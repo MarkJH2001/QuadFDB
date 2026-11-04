@@ -1,0 +1,150 @@
+{
+  "scope": "paper-scoped numerical extraction; no data or fitted weights",
+  "records": [
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/base.py",
+      "sha256": "f6b239910b7a68b35aa004404d2d88ef62ce68080c33f11bdae3d578ef4dff76",
+      "symbols": [
+        "FEATURE_NAMES",
+        "PHYSICAL_FEATURE_NAMES",
+        "validate_windows",
+        "FitBatch",
+        "ScoreBatch"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/koopman.py",
+      "sha256": "f762590f15baf90d4b53a0a2f3aeefb885c00e54ba13d97d0e0a74680e8ba4a2",
+      "symbols": [
+        "ridge_operator"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/image_classifier.py",
+      "sha256": "b3f758f4728d3c356644ec2d7dc173edd1bd5a9d2146b106f52006552841e122",
+      "symbols": [
+        "health_to_classes",
+        "class_flight_weights"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/training.py",
+      "sha256": "cc03d40ba7c47000ba1f67f50fc68e23060fc7e55a20f052822131ab0b685c6a",
+      "symbols": [
+        "_sample_weights"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/evidence.py",
+      "sha256": "0ef2c8f8ec0be247dcbfc468dd6661ba7842a682fa4c9a3e2f8795ead8381a66",
+      "symbols": [
+        "module"
+      ],
+      "changes": [
+        "local numerical helper imports",
+        "error-message naming only",
+        "module docstring clarifies residual-only pipeline use"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/evidence_fusion.py",
+      "sha256": "c5b4cf7fa39820e7bcd4e659f32ce15ac65a2af94bed87c29a5e01fa7272d0d0",
+      "symbols": [
+        "physical_summary_features",
+        "local_cue_features",
+        "_flight_folds",
+        "LocalMotorCue"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/real_metrics.py",
+      "sha256": "b0f729ba29ba86770972192519032df40f27b42d5ce3c9a0bbbc3180a1381dd3",
+      "symbols": [
+        "module"
+      ],
+      "changes": []
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/numerical_evidence_controls.py",
+      "sha256": "f7e2b0c45bc45e5c11a4b07df95c2f6f0cb0956668105760781dc43f21564cb9",
+      "symbols": [
+        "EvidenceHistGradientBoostingAlgorithm"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/evidence_sequence.py",
+      "sha256": "8a9a7b53bb3e6ecc62e1baf089932055b3e5393ad78e246455b3d2a9dac23e7c",
+      "symbols": [
+        "EvidenceSequenceClassifierAlgorithm._join_inputs"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/frozen_evidence_head_ablation.py",
+      "sha256": "5532f1f8e6e09a9b7a545eab09bf2579ee0326c9d513c9ed9823d3efb9d5af2f",
+      "symbols": [
+        "controlled five-class MLP training and 201-width masks"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/expanded_tabular.py",
+      "sha256": "e3886e50453226b3d6b9671e3c56ae485c974c7ecc34104cf89f9d66862fbad8",
+      "symbols": [
+        "_MotorClassifier"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/expanded_neural.py",
+      "sha256": "804ae95c807dd72d97712240a1eea493648e9a2bd02a337f14ae1b8411afd0b8",
+      "symbols": [
+        "MLP/FCN/Transformer architectures"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/training.py",
+      "sha256": "cc03d40ba7c47000ba1f67f50fc68e23060fc7e55a20f052822131ab0b685c6a",
+      "symbols": [
+        "BCE training and TCN"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/algorithms/neural.py",
+      "sha256": "00547eab382cb74e6371906402452999386bb8e4e8df5c0e17f884b82fd26cb6",
+      "symbols": [
+        "LSTM/TCN supervised adapters"
+      ]
+    },
+    {
+      "source": "CrazyFDD/src/crazyfdd/model.py",
+      "sha256": "25eb1a943eceecff0b6a19f312d14eb94ab2c46784f49f72a4dd31ce0e55a4e5",
+      "symbols": [
+        "GargFDI"
+      ]
+    },
+    {
+      "source": "CrazyFDD/tests/test_real_metrics.py",
+      "sha256": "f05b1e865260c51e22d760723d3933c4f0e83d8512f2ecfad14bc98eea7ed999",
+      "symbols": [
+        "synthetic event regression tests"
+      ]
+    }
+  ],
+  "portability_changes": [
+    "Numerical-only dependency closure; original VLM, image renderer, server registry and scheduling imports removed.",
+    "RAGB uses a lightweight feature-bank/classifier API; mathematical features, fixed estimators, masks and event evaluator are preserved.",
+    "Portable joblib checkpoint format is new; no automatic compatibility with internal server checkpoint bundles is claimed.",
+    "Source hash identifiers are retained without local absolute paths, session logs, raw scores, data or fitted model weights."
+  ],
+  "extracted_module_sha256": {
+    "src/quadfdi/__init__.py": "bad6c50bfa03dc0a8fde395fe6c9d7b24ab1d92b00bc67f4041a65a330c778a6",
+    "src/quadfdi/common.py": "83823876e649910d84678f5399eb067f3e56a039a8002aa39e7ed2a78e2f44d6",
+    "src/quadfdi/evaluation.py": "1bea677741245e28df00cac7167d4170c48ca0222db4f5e9186d8d771b8b3e25",
+    "src/quadfdi/features.py": "a0d0decdcbeb16281e824bc638ef08ba72cd1cfd53aef6ca8cf15358dcb24cc0",
+    "src/quadfdi/local_rf.py": "e61e9ac486d874c5e50103d3805c7b40dda66155f4eade88f31315a0402826a6",
+    "src/quadfdi/metrics.py": "b0f729ba29ba86770972192519032df40f27b42d5ce3c9a0bbbc3180a1381dd3",
+    "src/quadfdi/models.py": "35cb09864f82affc504d36910be6b132fc5d694add56c1ddf2a5c335cc2debf1",
+    "src/quadfdi/neural.py": "a87500fc0004e9bed06b938bd2d361503a7e592521e012daca8e3519b8da4bc3",
+    "src/quadfdi/neural_training.py": "05bdd92069a17bb971c83a65bf79140bc7959aa0ec1e39eb86658eee258f5d33",
+    "src/quadfdi/references.py": "cd5ecf57aa9e068cc9f2fc4f292e98136a1be5113ad19fa086f77b63a11181a6",
+    "src/quadfdi/response.py": "20c950705934568f572ec2dc60dc90e5014aaaf193d9613d78651ea18418709f"
+  }
+}

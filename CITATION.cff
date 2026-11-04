@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the QuadFDI study when using these research materials."
+title: "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Hou
+    given-names: Junhao
+  - family-names: Zhao
+    given-names: Meng
+  - family-names: Shen
+    given-names: Qiang
+  - family-names: Wang
+    given-names: Jing
+  - family-names: Zhang
+    given-names: Xiaohui
+repository-code: "https://github.com/MarkJH2001/QuadFDI"
+url: "https://markjh2001.github.io/QuadFDI/"

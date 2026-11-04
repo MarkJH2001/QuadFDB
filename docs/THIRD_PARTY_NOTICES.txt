@@ -1,0 +1,24 @@
+QuadFDI project page — font and attribution notices
+
+Source Sans 3
+The locally bundled Source Sans 3 font is distributed under the SIL Open
+Font License, Version 1.1. The original copyright and license text are
+preserved in assets/FONT-LICENSE.txt.
+Project: https://github.com/adobe-fonts/source-sans
+
+Page design
+The centered research-paper presentation was inspired by the Nerfies
+project page: https://nerfies.github.io/.
+The present HTML, CSS, JavaScript and method diagram were prepared for
+QuadFDI. No Nerfies website code or assets are bundled here.
+
+Research figures, media and aggregate results
+The authors' platform, flight response and dataset coverage figures are
+rendered as web images. The demonstration video preserves the existing
+measured-pose replay and real-flight camera comparison.
+Source identities and transformations are documented in
+assets/source-provenance.json.
+
+The site contains aggregate evaluation results and presentation media.
+Dataset and code access is provided through the project repository:
+https://github.com/MarkJH2001/QuadFDI

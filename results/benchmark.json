@@ -1,0 +1,4200 @@
+{
+  "schema_version": 1,
+  "title": "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
+  "scope": "Retrospective evaluation on fixed held-out physical flights; not an untouched external validation.",
+  "source_sha256": "b55c21a89f3334653699ea4b6c4a3797aa6a6485af1c2730838ef7fee55f4e7c",
+  "methods": {
+    "frozen_evidence_rf_alone": "RF",
+    "extra_trees_motor": "ET",
+    "svm_motor": "SVM",
+    "hgb_motor": "HGB",
+    "mlp_bce": "MLP",
+    "fcn_bce": "FCN",
+    "tcn_bce": "TCN",
+    "lstm_bce": "LSTM",
+    "transformer_bce": "Transformer",
+    "evidence_hist_gradient_boosting": "RAGB"
+  },
+  "table_rows": [
+    {
+      "severity": "Mild",
+      "method_id": "extra_trees_motor",
+      "label": "ET",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 56.48148148148148,
+        "sample_sd": 3.4952937200327536,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 54.166666666666664,
+        "sample_sd": 3.67465459870082,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 2.431705298013246,
+        "sample_sd": 1.1649762261173122,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 126.00000000000092,
+        "sample_sd": 5.19615242270632,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 2.314814814814815,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 43.51851851851852,
+        "sample_sd": 3.4952937200327536,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 45.833333333333336,
+        "sample_sd": 3.67465459870082,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "fcn_bce",
+      "label": "FCN",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 42.592592592592595,
+        "sample_sd": 4.0093768693724,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 42.129629629629626,
+        "sample_sd": 4.4646531300893315,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 1.759105960264901,
+        "sample_sd": 0.23709518289299664,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 180.33333333333258,
+        "sample_sd": 13.576941236277925,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.46296296296296297,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 57.407407407407405,
+        "sample_sd": 4.0093768693724,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 57.870370370370374,
+        "sample_sd": 4.4646531300893315,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "lstm_bce",
+      "label": "LSTM",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 49.53703703703704,
+        "sample_sd": 2.8912027770362956,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 48.148148148148145,
+        "sample_sd": 3.495293720032754,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 3.311258278145696,
+        "sample_sd": 0.9857491144069565,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 145.16666666666734,
+        "sample_sd": 9.647970425604248,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 1.3888888888888888,
+        "sample_sd": 1.3888888888888888,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 50.46296296296296,
+        "sample_sd": 2.8912027770362956,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 51.851851851851855,
+        "sample_sd": 3.495293720032754,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "mlp_bce",
+      "label": "MLP",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 66.20370370370371,
+        "sample_sd": 3.495293720032754,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 66.20370370370371,
+        "sample_sd": 3.495293720032754,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 3.10430463576159,
+        "sample_sd": 0.71128554867899,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 122.16666666666646,
+        "sample_sd": 1.8929694486006818,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 33.7962962962963,
+        "sample_sd": 3.4952937200327536,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 33.7962962962963,
+        "sample_sd": 3.4952937200327536,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "svm_motor",
+      "label": "SVM",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 48.611111111111114,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 47.22222222222222,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 4.656456953642386,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 132.99999999999912,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 1.3888888888888888,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 51.388888888888886,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 52.77777777777778,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "tcn_bce",
+      "label": "TCN",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 53.24074074074074,
+        "sample_sd": 2.8912027770362956,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 51.85185185185185,
+        "sample_sd": 2.121562821738814,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 2.4834437086092724,
+        "sample_sd": 1.1718493018321738,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 121.33333333333388,
+        "sample_sd": 13.07988277215512,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 1.3888888888888888,
+        "sample_sd": 1.3888888888888888,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 46.75925925925926,
+        "sample_sd": 2.8912027770362956,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 48.14814814814815,
+        "sample_sd": 2.121562821738814,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "transformer_bce",
+      "label": "Transformer",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 68.05555555555556,
+        "sample_sd": 4.811252243246887,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 65.74074074074075,
+        "sample_sd": 5.613127617121365,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 4.035596026490067,
+        "sample_sd": 0.8213218060010117,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 107.6666666666668,
+        "sample_sd": 4.618802153516498,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 2.314814814814815,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 31.944444444444443,
+        "sample_sd": 4.811252243246881,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 34.25925925925926,
+        "sample_sd": 5.6131276171213615,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "extra_trees_motor",
+      "label": "ET",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 97.56944444444444,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 97.22222222222223,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 2.849494862274415,
+        "sample_sd": 0.9066574561782229,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 86.66666666666748,
+        "sample_sd": 0.5773502691900729,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.34722222222222227,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 2.430555555555556,
+        "sample_sd": 0.6014065304058601,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 2.7777777777777777,
+        "sample_sd": 0.6014065304058601,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "fcn_bce",
+      "label": "FCN",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 5.483118901649253,
+        "sample_sd": 1.1316244212141573,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 74.16666666666642,
+        "sample_sd": 0.288675134594657,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "lstm_bce",
+      "label": "LSTM",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 98.26388888888889,
+        "sample_sd": 0.6014065304058547,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 97.91666666666667,
+        "sample_sd": 1.0416666666666643,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 4.57646144547103,
+        "sample_sd": 0.6120994248664978,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 80.33333333333351,
+        "sample_sd": 4.041451884328176,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.34722222222222227,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 1.7361111111111112,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 2.0833333333333335,
+        "sample_sd": 1.0416666666666667,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "mlp_bce",
+      "label": "MLP",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.65277777777777,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 98.95833333333333,
+        "sample_sd": 1.0416666666666643,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 3.842500647612469,
+        "sample_sd": 1.1015759280004382,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 70.33333333333313,
+        "sample_sd": 0.7637626158260338,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 1.2028130608117205,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.34722222222222227,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 1.0416666666666667,
+        "sample_sd": 1.0416666666666667,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "svm_motor",
+      "label": "SVM",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 98.95833333333333,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 98.95833333333333,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 3.3675848372333994,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 71.99999999999918,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 1.0416666666666667,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 1.0416666666666667,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "tcn_bce",
+      "label": "TCN",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.65277777777777,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 1.2028130608117176,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 3.540281495553061,
+        "sample_sd": 1.2579917351121204,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 72.66666666666606,
+        "sample_sd": 1.1547005383796372,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.34722222222222227,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.34722222222222227,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 1.2028130608117205,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "transformer_bce",
+      "label": "Transformer",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 98.95833333333333,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 98.61111111111111,
+        "sample_sd": 0.6014065304058547,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 4.01519730593213,
+        "sample_sd": 0.22433953988026212,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 71.33333333333287,
+        "sample_sd": 0.5773502691893058,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.34722222222222227,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 1.0416666666666667,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 1.388888888888889,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "extra_trees_motor",
+      "label": "ET",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.07407407407408,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 98.14814814814815,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 4.896556196899929,
+        "sample_sd": 0.6329600264590156,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 75.5000000000008,
+        "sample_sd": 0.4999999999997229,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 1.8518518518518519,
+        "sample_sd": 0.40093768693724025,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "fcn_bce",
+      "label": "FCN",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6944444444444429,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.07407407407408,
+        "sample_sd": 1.060781410869405,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 6.323367274142292,
+        "sample_sd": 0.7721564887340722,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 66.33333333333387,
+        "sample_sd": 1.2583057392110915,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.23148148148148148,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.6944444444444444,
+        "sample_sd": 0.6944444444444444,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 1.0607814108694076,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "lstm_bce",
+      "label": "LSTM",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.07407407407408,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.07407407407408,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 6.0315195537972635,
+        "sample_sd": 0.6379244948734031,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 70.33333333333402,
+        "sample_sd": 1.1547005383806628,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "mlp_bce",
+      "label": "MLP",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 7.101627861729035,
+        "sample_sd": 0.7015146135541844,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 65.33333333333265,
+        "sample_sd": 0.5773502691893058,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.6944444444444444,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.6944444444444444,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "svm_motor",
+      "label": "SVM",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 7.0043452882806925,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 65.00000000000128,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.6944444444444444,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.6944444444444444,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "tcn_bce",
+      "label": "TCN",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.53703703703704,
+        "sample_sd": 0.8018753738744784,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.07407407407408,
+        "sample_sd": 0.8018753738744784,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 6.0315195537972635,
+        "sample_sd": 1.083292891140156,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 64.9999999999995,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.46296296296296297,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.46296296296296297,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "transformer_bce",
+      "label": "Transformer",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 99.53703703703704,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1
+      },
+      "joint_isolation_percent": {
+        "mean": 99.07407407407408,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1
+      },
+      "FA_per_min": {
+        "mean": 6.193657176211168,
+        "sample_sd": 1.3136149620941109,
+        "n": 3,
+        "ddof": 1
+      },
+      "delay_ms": {
+        "mean": 65.49999999999982,
+        "sample_sd": 0.8660254037849884,
+        "n": 3,
+        "ddof": 1
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.46296296296296297,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.46296296296296297,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.9259259259259259,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "hgb_motor",
+      "label": "HGB",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 62.5,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 62.5,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 2.7938741721854305,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 108.00000000000054,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 37.5,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 37.5,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "hgb_motor",
+      "label": "HGB",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 100.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 97.91666666666667,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 3.7561523184526378,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 72.00000000000006,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 2.0833333333333335,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 2.0833333333333335,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "hgb_motor",
+      "label": "HGB",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 97.22222222222223,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 97.22222222222223,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 6.128802127245606,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 64.9999999999995,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 2.7777777777777777,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 2.7777777777777777,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "label": "RAGB",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 84.72222222222223,
+        "sample_sd": 1.3888888888888928,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 84.25925925925925,
+        "sample_sd": 1.603750747748965,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 3.3112582781456954,
+        "sample_sd": 0.4741903657859932,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 101.00000000000027,
+        "sample_sd": 2.5980762113528977,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 15.277777777777779,
+        "sample_sd": 1.3888888888888893,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.46296296296296297,
+        "sample_sd": 0.8018753738744802,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 15.740740740740742,
+        "sample_sd": 1.603750747748961,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "evidence_hist_gradient_boosting",
+      "label": "RAGB",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 100.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 2.1155340644158533,
+        "sample_sd": 0.49036424711167204,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 69.83333333333312,
+        "sample_sd": 0.7637626158259392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "evidence_hist_gradient_boosting",
+      "label": "RAGB",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 98.8425925925926,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 98.8425925925926,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 3.8913029379337183,
+        "sample_sd": 0.7344673229720556,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 63.33333333333376,
+        "sample_sd": 1.1547005383786115,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 1.1574074074074074,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 1.1574074074074074,
+        "sample_sd": 0.4009376869372401,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "label": "RF",
+      "fault_flights": 72,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 80.55555555555556,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 77.77777777777777,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 2.1730132450331126,
+        "sample_sd": 0.944137396052083,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 114.33333333333361,
+        "sample_sd": 1.443375672974286,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 19.444444444444443,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 2.7777777777777777,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 22.22222222222222,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "frozen_evidence_rf_alone",
+      "label": "RF",
+      "fault_flights": 96,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 100.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 2.849494862274415,
+        "sample_sd": 0.46699999250461816,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 72.50000000000007,
+        "sample_sd": 0.8660254037844715,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 0.6944444444444445,
+        "sample_sd": 0.6014065304058602,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "severity": "Severe",
+      "method_id": "frozen_evidence_rf_alone",
+      "label": "RF",
+      "fault_flights": 144,
+      "shared_controls": 24,
+      "seeds": [
+        20261009,
+        20261010,
+        20261011
+      ],
+      "detection_percent": {
+        "mean": 96.75925925925925,
+        "sample_sd": 0.4009376869372474,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "joint_isolation_percent": {
+        "mean": 96.75925925925925,
+        "sample_sd": 0.4009376869372474,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "FA_per_min": {
+        "mean": 5.739671833452235,
+        "sample_sd": 0.445804756627133,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "delay_ms": {
+        "mean": 65.33333333333294,
+        "sample_sd": 0.5773502691890473,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_freshly_detected_percent": {
+        "mean": 3.240740740740741,
+        "sample_sd": 0.40093768693724025,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "confirmed_not_correct_motor_percent": {
+        "mean": 0.0,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      },
+      "not_correctly_isolated_percent": {
+        "mean": 3.240740740740741,
+        "sample_sd": 0.40093768693724025,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    }
+  ],
+  "event_per_seed": [
+    {
+      "severity": "Mild",
+      "method_id": "extra_trees_motor",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 41,
+      "correct_first_motor": 40,
+      "detection_percent": 56.94444444444444,
+      "joint_isolation_percent": 55.55555555555556,
+      "FA_per_min": 2.4834437086092724,
+      "delay_ms": 123.00000000000111,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 43.05555555555556,
+      "not_correctly_isolated_percent": 44.44444444444444
+    },
+    {
+      "severity": "Mild",
+      "method_id": "extra_trees_motor",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 43,
+      "correct_first_motor": 41,
+      "detection_percent": 59.72222222222222,
+      "joint_isolation_percent": 56.94444444444444,
+      "FA_per_min": 3.569950331125829,
+      "delay_ms": 123.00000000000111,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 40.27777777777778,
+      "not_correctly_isolated_percent": 43.05555555555556
+    },
+    {
+      "severity": "Mild",
+      "method_id": "extra_trees_motor",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 38,
+      "correct_first_motor": 36,
+      "detection_percent": 52.77777777777778,
+      "joint_isolation_percent": 50.0,
+      "FA_per_min": 1.2417218543046362,
+      "delay_ms": 132.00000000000057,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 47.22222222222222,
+      "not_correctly_isolated_percent": 50.0
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "extra_trees_motor",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 94,
+      "correct_first_motor": 94,
+      "detection_percent": 97.91666666666667,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 3.7561523184526378,
+      "delay_ms": 87.00000000000063,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 2.0833333333333335,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Severe",
+      "method_id": "extra_trees_motor",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 142,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 5.545106686555548,
+      "delay_ms": 76.00000000000051,
+      "confirmed_not_correct_motor_percent": 0.6944444444444444,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "extra_trees_motor",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 93,
+      "correct_first_motor": 93,
+      "detection_percent": 96.875,
+      "joint_isolation_percent": 96.875,
+      "FA_per_min": 1.942837406096192,
+      "delay_ms": 87.00000000000152,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 3.125,
+      "not_correctly_isolated_percent": 3.125
+    },
+    {
+      "severity": "Severe",
+      "method_id": "extra_trees_motor",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 141,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 4.28043323172709,
+      "delay_ms": 75.00000000000107,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "extra_trees_motor",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 94,
+      "correct_first_motor": 93,
+      "detection_percent": 97.91666666666667,
+      "joint_isolation_percent": 96.875,
+      "FA_per_min": 2.849494862274415,
+      "delay_ms": 86.0000000000003,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 2.0833333333333335,
+      "not_correctly_isolated_percent": 3.125
+    },
+    {
+      "severity": "Severe",
+      "method_id": "extra_trees_motor",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 142,
+      "correct_first_motor": 141,
+      "detection_percent": 98.61111111111111,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 4.864128672417148,
+      "delay_ms": 75.5000000000008,
+      "confirmed_not_correct_motor_percent": 0.6944444444444444,
+      "not_freshly_detected_percent": 1.3888888888888888,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Mild",
+      "method_id": "fcn_bce",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 29,
+      "correct_first_motor": 28,
+      "detection_percent": 40.27777777777778,
+      "joint_isolation_percent": 38.888888888888886,
+      "FA_per_min": 1.7073675496688745,
+      "delay_ms": 172.99999999999827,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 59.72222222222222,
+      "not_correctly_isolated_percent": 61.111111111111114
+    },
+    {
+      "severity": "Mild",
+      "method_id": "fcn_bce",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 34,
+      "correct_first_motor": 34,
+      "detection_percent": 47.22222222222222,
+      "joint_isolation_percent": 47.22222222222222,
+      "FA_per_min": 1.5521523178807952,
+      "delay_ms": 171.99999999999972,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 52.77777777777778,
+      "not_correctly_isolated_percent": 52.77777777777778
+    },
+    {
+      "severity": "Mild",
+      "method_id": "fcn_bce",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 29,
+      "correct_first_motor": 29,
+      "detection_percent": 40.27777777777778,
+      "joint_isolation_percent": 40.27777777777778,
+      "FA_per_min": 2.0177980132450335,
+      "delay_ms": 195.99999999999972,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 59.72222222222222,
+      "not_correctly_isolated_percent": 59.72222222222222
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "fcn_bce",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 96,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 6.735169674466799,
+      "delay_ms": 74.49999999999957,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Severe",
+      "method_id": "fcn_bce",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 144,
+      "correct_first_motor": 144,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 6.615214994487321,
+      "delay_ms": 67.49999999999989,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "fcn_bce",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 5.1808997495898454,
+      "delay_ms": 73.99999999999984,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "fcn_bce",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 142,
+      "correct_first_motor": 141,
+      "detection_percent": 98.61111111111111,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 6.90706271483235,
+      "delay_ms": 66.50000000000045,
+      "confirmed_not_correct_motor_percent": 0.6944444444444444,
+      "not_freshly_detected_percent": 1.3888888888888888,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "fcn_bce",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 4.533287280891114,
+      "delay_ms": 73.99999999999984,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "fcn_bce",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 5.447824113107205,
+      "delay_ms": 65.00000000000128,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Mild",
+      "method_id": "lstm_bce",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 38,
+      "correct_first_motor": 37,
+      "detection_percent": 52.77777777777778,
+      "joint_isolation_percent": 51.388888888888886,
+      "FA_per_min": 3.8803807947019875,
+      "delay_ms": 156.00000000000057,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 47.22222222222222,
+      "not_correctly_isolated_percent": 48.611111111111114
+    },
+    {
+      "severity": "Mild",
+      "method_id": "lstm_bce",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 34,
+      "correct_first_motor": 32,
+      "detection_percent": 47.22222222222222,
+      "joint_isolation_percent": 44.44444444444444,
+      "FA_per_min": 3.8803807947019875,
+      "delay_ms": 137.50000000000017,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 52.77777777777778,
+      "not_correctly_isolated_percent": 55.55555555555556
+    },
+    {
+      "severity": "Mild",
+      "method_id": "lstm_bce",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 35,
+      "correct_first_motor": 35,
+      "detection_percent": 48.611111111111114,
+      "joint_isolation_percent": 48.611111111111114,
+      "FA_per_min": 2.173013245033113,
+      "delay_ms": 142.00000000000125,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 51.388888888888886,
+      "not_correctly_isolated_percent": 51.388888888888886
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "lstm_bce",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 4.792332268370607,
+      "delay_ms": 84.0000000000014,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "lstm_bce",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 6.712497567935664,
+      "delay_ms": 68.99999999999906,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "lstm_bce",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 94,
+      "correct_first_motor": 94,
+      "detection_percent": 97.91666666666667,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 3.885674812192384,
+      "delay_ms": 80.99999999999952,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 2.0833333333333335,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Severe",
+      "method_id": "lstm_bce",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 5.447824113107205,
+      "delay_ms": 71.0000000000015,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "lstm_bce",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 94,
+      "correct_first_motor": 93,
+      "detection_percent": 97.91666666666667,
+      "joint_isolation_percent": 96.875,
+      "FA_per_min": 5.051377255850099,
+      "delay_ms": 75.99999999999963,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 2.0833333333333335,
+      "not_correctly_isolated_percent": 3.125
+    },
+    {
+      "severity": "Severe",
+      "method_id": "lstm_bce",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 142,
+      "correct_first_motor": 142,
+      "detection_percent": 98.61111111111111,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 5.9342369803489206,
+      "delay_ms": 71.0000000000015,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.3888888888888888,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Mild",
+      "method_id": "mlp_bce",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 48,
+      "correct_first_motor": 48,
+      "detection_percent": 66.66666666666667,
+      "joint_isolation_percent": 66.66666666666667,
+      "FA_per_min": 2.9490894039735105,
+      "delay_ms": 123.50000000000082,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 33.333333333333336,
+      "not_correctly_isolated_percent": 33.333333333333336
+    },
+    {
+      "severity": "Mild",
+      "method_id": "mlp_bce",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 50,
+      "correct_first_motor": 50,
+      "detection_percent": 69.44444444444444,
+      "joint_isolation_percent": 69.44444444444444,
+      "FA_per_min": 3.8803807947019875,
+      "delay_ms": 122.99999999999933,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 30.555555555555557,
+      "not_correctly_isolated_percent": 30.555555555555557
+    },
+    {
+      "severity": "Mild",
+      "method_id": "mlp_bce",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 45,
+      "correct_first_motor": 45,
+      "detection_percent": 62.5,
+      "joint_isolation_percent": 62.5,
+      "FA_per_min": 2.4834437086092724,
+      "delay_ms": 119.99999999999922,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 37.5,
+      "not_correctly_isolated_percent": 37.5
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "mlp_bce",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 96,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 3.885674812192384,
+      "delay_ms": 70.5,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Severe",
+      "method_id": "mlp_bce",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 6.517932421038978,
+      "delay_ms": 65.99999999999895,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "mlp_bce",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 4.921854762110353,
+      "delay_ms": 70.99999999999973,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "mlp_bce",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 6.90706271483235,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "mlp_bce",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 94,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 2.719972368534669,
+      "delay_ms": 69.49999999999967,
+      "confirmed_not_correct_motor_percent": 2.0833333333333335,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Severe",
+      "method_id": "mlp_bce",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 7.8798884493157795,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Mild",
+      "method_id": "svm_motor",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 35,
+      "correct_first_motor": 34,
+      "detection_percent": 48.611111111111114,
+      "joint_isolation_percent": 47.22222222222222,
+      "FA_per_min": 4.656456953642386,
+      "delay_ms": 132.99999999999912,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 51.388888888888886,
+      "not_correctly_isolated_percent": 52.77777777777778
+    },
+    {
+      "severity": "Mild",
+      "method_id": "svm_motor",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 35,
+      "correct_first_motor": 34,
+      "detection_percent": 48.611111111111114,
+      "joint_isolation_percent": 47.22222222222222,
+      "FA_per_min": 4.656456953642386,
+      "delay_ms": 132.99999999999912,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 51.388888888888886,
+      "not_correctly_isolated_percent": 52.77777777777778
+    },
+    {
+      "severity": "Mild",
+      "method_id": "svm_motor",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 35,
+      "correct_first_motor": 34,
+      "detection_percent": 48.611111111111114,
+      "joint_isolation_percent": 47.22222222222222,
+      "FA_per_min": 4.656456953642386,
+      "delay_ms": 132.99999999999912,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 51.388888888888886,
+      "not_correctly_isolated_percent": 52.77777777777778
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "svm_motor",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 3.3675848372333994,
+      "delay_ms": 71.99999999999918,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "svm_motor",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 7.0043452882806925,
+      "delay_ms": 65.00000000000128,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "svm_motor",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 3.3675848372333994,
+      "delay_ms": 71.99999999999918,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "svm_motor",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 7.0043452882806925,
+      "delay_ms": 65.00000000000128,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "svm_motor",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 3.3675848372333994,
+      "delay_ms": 71.99999999999918,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "svm_motor",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 7.0043452882806925,
+      "delay_ms": 65.00000000000128,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Mild",
+      "method_id": "tcn_bce",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 39,
+      "correct_first_motor": 37,
+      "detection_percent": 54.166666666666664,
+      "joint_isolation_percent": 51.388888888888886,
+      "FA_per_min": 3.7251655629139084,
+      "delay_ms": 123.00000000000111,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 45.833333333333336,
+      "not_correctly_isolated_percent": 48.611111111111114
+    },
+    {
+      "severity": "Mild",
+      "method_id": "tcn_bce",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 40,
+      "correct_first_motor": 39,
+      "detection_percent": 55.55555555555556,
+      "joint_isolation_percent": 54.166666666666664,
+      "FA_per_min": 2.328228476821193,
+      "delay_ms": 133.49999999999972,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 44.44444444444444,
+      "not_correctly_isolated_percent": 45.833333333333336
+    },
+    {
+      "severity": "Mild",
+      "method_id": "tcn_bce",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 36,
+      "correct_first_motor": 36,
+      "detection_percent": 50.0,
+      "joint_isolation_percent": 50.0,
+      "FA_per_min": 1.3969370860927157,
+      "delay_ms": 107.50000000000082,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 50.0,
+      "not_correctly_isolated_percent": 50.0
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "tcn_bce",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 96,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 4.921854762110353,
+      "delay_ms": 71.99999999999918,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Severe",
+      "method_id": "tcn_bce",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 142,
+      "correct_first_motor": 142,
+      "detection_percent": 98.61111111111111,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 7.0043452882806925,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.3888888888888888,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "tcn_bce",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 96,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 2.4609273810551766,
+      "delay_ms": 71.99999999999918,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Severe",
+      "method_id": "tcn_bce",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 144,
+      "correct_first_motor": 142,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 4.864128672417148,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "tcn_bce",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 94,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 3.2380623434936533,
+      "delay_ms": 73.99999999999984,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Severe",
+      "method_id": "tcn_bce",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 144,
+      "correct_first_motor": 144,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 6.226084700693949,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Mild",
+      "method_id": "transformer_bce",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 47,
+      "correct_first_motor": 45,
+      "detection_percent": 65.27777777777777,
+      "joint_isolation_percent": 62.5,
+      "FA_per_min": 3.414735099337749,
+      "delay_ms": 112.99999999999955,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 34.72222222222222,
+      "not_correctly_isolated_percent": 37.5
+    },
+    {
+      "severity": "Mild",
+      "method_id": "transformer_bce",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 47,
+      "correct_first_motor": 45,
+      "detection_percent": 65.27777777777777,
+      "joint_isolation_percent": 62.5,
+      "FA_per_min": 4.966887417218545,
+      "delay_ms": 105.00000000000043,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 34.72222222222222,
+      "not_correctly_isolated_percent": 37.5
+    },
+    {
+      "severity": "Mild",
+      "method_id": "transformer_bce",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 53,
+      "correct_first_motor": 52,
+      "detection_percent": 73.61111111111111,
+      "joint_isolation_percent": 72.22222222222223,
+      "FA_per_min": 3.7251655629139084,
+      "delay_ms": 105.00000000000043,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 26.38888888888889,
+      "not_correctly_isolated_percent": 27.77777777777778
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "transformer_bce",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 3.885674812192384,
+      "delay_ms": 70.99999999999973,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "transformer_bce",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 6.226084700693949,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "transformer_bce",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 94,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 4.274242293411622,
+      "delay_ms": 71.99999999999918,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Severe",
+      "method_id": "transformer_bce",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 142,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 7.490758155522408,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.6944444444444444,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "transformer_bce",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 95,
+      "correct_first_motor": 95,
+      "detection_percent": 98.95833333333333,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 3.885674812192384,
+      "delay_ms": 70.99999999999973,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.0416666666666667,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "transformer_bce",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 144,
+      "correct_first_motor": 143,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 4.864128672417148,
+      "delay_ms": 66.50000000000045,
+      "confirmed_not_correct_motor_percent": 0.6944444444444444,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Mild",
+      "method_id": "hgb_motor",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 45,
+      "correct_first_motor": 45,
+      "detection_percent": 62.5,
+      "joint_isolation_percent": 62.5,
+      "FA_per_min": 2.7938741721854305,
+      "delay_ms": 108.00000000000054,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 37.5,
+      "not_correctly_isolated_percent": 37.5
+    },
+    {
+      "severity": "Mild",
+      "method_id": "hgb_motor",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 45,
+      "correct_first_motor": 45,
+      "detection_percent": 62.5,
+      "joint_isolation_percent": 62.5,
+      "FA_per_min": 2.7938741721854305,
+      "delay_ms": 108.00000000000054,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 37.5,
+      "not_correctly_isolated_percent": 37.5
+    },
+    {
+      "severity": "Mild",
+      "method_id": "hgb_motor",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 45,
+      "correct_first_motor": 45,
+      "detection_percent": 62.5,
+      "joint_isolation_percent": 62.5,
+      "FA_per_min": 2.7938741721854305,
+      "delay_ms": 108.00000000000054,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 37.5,
+      "not_correctly_isolated_percent": 37.5
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "hgb_motor",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 94,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 3.7561523184526378,
+      "delay_ms": 72.00000000000006,
+      "confirmed_not_correct_motor_percent": 2.0833333333333335,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "hgb_motor",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 94,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 3.7561523184526378,
+      "delay_ms": 72.00000000000006,
+      "confirmed_not_correct_motor_percent": 2.0833333333333335,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "hgb_motor",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 94,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 97.91666666666667,
+      "FA_per_min": 3.7561523184526378,
+      "delay_ms": 72.00000000000006,
+      "confirmed_not_correct_motor_percent": 2.0833333333333335,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 2.0833333333333335
+    },
+    {
+      "severity": "Severe",
+      "method_id": "hgb_motor",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 140,
+      "correct_first_motor": 140,
+      "detection_percent": 97.22222222222223,
+      "joint_isolation_percent": 97.22222222222223,
+      "FA_per_min": 6.128802127245606,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 2.7777777777777777,
+      "not_correctly_isolated_percent": 2.7777777777777777
+    },
+    {
+      "severity": "Severe",
+      "method_id": "hgb_motor",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 140,
+      "correct_first_motor": 140,
+      "detection_percent": 97.22222222222223,
+      "joint_isolation_percent": 97.22222222222223,
+      "FA_per_min": 6.128802127245606,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 2.7777777777777777,
+      "not_correctly_isolated_percent": 2.7777777777777777
+    },
+    {
+      "severity": "Severe",
+      "method_id": "hgb_motor",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 140,
+      "correct_first_motor": 140,
+      "detection_percent": 97.22222222222223,
+      "joint_isolation_percent": 97.22222222222223,
+      "FA_per_min": 6.128802127245606,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 2.7777777777777777,
+      "not_correctly_isolated_percent": 2.7777777777777777
+    },
+    {
+      "severity": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 60,
+      "correct_first_motor": 60,
+      "detection_percent": 83.33333333333333,
+      "joint_isolation_percent": 83.33333333333333,
+      "FA_per_min": 3.414735099337748,
+      "delay_ms": 102.50000000000003,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 16.666666666666668,
+      "not_correctly_isolated_percent": 16.666666666666668
+    },
+    {
+      "severity": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 61,
+      "correct_first_motor": 60,
+      "detection_percent": 84.72222222222223,
+      "joint_isolation_percent": 83.33333333333333,
+      "FA_per_min": 2.7938741721854305,
+      "delay_ms": 98.00000000000075,
+      "confirmed_not_correct_motor_percent": 1.3888888888888888,
+      "not_freshly_detected_percent": 15.277777777777779,
+      "not_correctly_isolated_percent": 16.666666666666668
+    },
+    {
+      "severity": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 62,
+      "correct_first_motor": 62,
+      "detection_percent": 86.11111111111111,
+      "joint_isolation_percent": 86.11111111111111,
+      "FA_per_min": 3.725165562913907,
+      "delay_ms": 102.50000000000003,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 13.88888888888889,
+      "not_correctly_isolated_percent": 13.88888888888889
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 96,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 2.4609273810551766,
+      "delay_ms": 70.5,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 95,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 2.3314048873154305,
+      "delay_ms": 69.9999999999994,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 95,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 1.5542699248769536,
+      "delay_ms": 68.99999999999994,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 143,
+      "correct_first_motor": 143,
+      "detection_percent": 99.30555555555556,
+      "joint_isolation_percent": 99.30555555555556,
+      "FA_per_min": 4.572280952072119,
+      "delay_ms": 64.00000000000006,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.6944444444444444,
+      "not_correctly_isolated_percent": 0.6944444444444444
+    },
+    {
+      "severity": "Severe",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 142,
+      "correct_first_motor": 142,
+      "detection_percent": 98.61111111111111,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 3.988585511382061,
+      "delay_ms": 62.000000000001165,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.3888888888888888,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Severe",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 142,
+      "correct_first_motor": 142,
+      "detection_percent": 98.61111111111111,
+      "joint_isolation_percent": 98.61111111111111,
+      "FA_per_min": 3.1130423503469746,
+      "delay_ms": 64.00000000000006,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 1.3888888888888888,
+      "not_correctly_isolated_percent": 1.3888888888888888
+    },
+    {
+      "severity": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261009,
+      "fault_flights": 72,
+      "detected_faults": 58,
+      "correct_first_motor": 56,
+      "detection_percent": 80.55555555555556,
+      "joint_isolation_percent": 77.77777777777777,
+      "FA_per_min": 3.259519867549669,
+      "delay_ms": 116.00000000000054,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 19.444444444444443,
+      "not_correctly_isolated_percent": 22.22222222222222
+    },
+    {
+      "severity": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261010,
+      "fault_flights": 72,
+      "detected_faults": 58,
+      "correct_first_motor": 56,
+      "detection_percent": 80.55555555555556,
+      "joint_isolation_percent": 77.77777777777777,
+      "FA_per_min": 1.5521523178807948,
+      "delay_ms": 113.50000000000016,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 19.444444444444443,
+      "not_correctly_isolated_percent": 22.22222222222222
+    },
+    {
+      "severity": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261011,
+      "fault_flights": 72,
+      "detected_faults": 58,
+      "correct_first_motor": 56,
+      "detection_percent": 80.55555555555556,
+      "joint_isolation_percent": 77.77777777777777,
+      "FA_per_min": 1.707367549668874,
+      "delay_ms": 113.50000000000016,
+      "confirmed_not_correct_motor_percent": 2.7777777777777777,
+      "not_freshly_detected_percent": 19.444444444444443,
+      "not_correctly_isolated_percent": 22.22222222222222
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261009,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 96,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 100.0,
+      "FA_per_min": 2.979017356014161,
+      "delay_ms": 73.50000000000011,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 0.0
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261010,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 95,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 3.2380623434936533,
+      "delay_ms": 72.00000000000006,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Moderate",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261011,
+      "fault_flights": 96,
+      "detected_faults": 96,
+      "correct_first_motor": 95,
+      "detection_percent": 100.0,
+      "joint_isolation_percent": 98.95833333333333,
+      "FA_per_min": 2.3314048873154305,
+      "delay_ms": 72.00000000000006,
+      "confirmed_not_correct_motor_percent": 1.0416666666666667,
+      "not_freshly_detected_percent": 0.0,
+      "not_correctly_isolated_percent": 1.0416666666666667
+    },
+    {
+      "severity": "Severe",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261009,
+      "fault_flights": 144,
+      "detected_faults": 139,
+      "correct_first_motor": 139,
+      "detection_percent": 96.52777777777777,
+      "joint_isolation_percent": 96.52777777777777,
+      "FA_per_min": 5.836954406900578,
+      "delay_ms": 64.9999999999995,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 3.4722222222222223,
+      "not_correctly_isolated_percent": 3.4722222222222223
+    },
+    {
+      "severity": "Severe",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261010,
+      "fault_flights": 144,
+      "detected_faults": 139,
+      "correct_first_motor": 139,
+      "detection_percent": 96.52777777777777,
+      "joint_isolation_percent": 96.52777777777777,
+      "FA_per_min": 6.128802127245606,
+      "delay_ms": 65.99999999999895,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 3.4722222222222223,
+      "not_correctly_isolated_percent": 3.4722222222222223
+    },
+    {
+      "severity": "Severe",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261011,
+      "fault_flights": 144,
+      "detected_faults": 140,
+      "correct_first_motor": 140,
+      "detection_percent": 97.22222222222223,
+      "joint_isolation_percent": 97.22222222222223,
+      "FA_per_min": 5.253258966210519,
+      "delay_ms": 65.0000000000004,
+      "confirmed_not_correct_motor_percent": 0.0,
+      "not_freshly_detected_percent": 2.7777777777777777,
+      "not_correctly_isolated_percent": 2.7777777777777777
+    }
+  ],
+  "source_hash_records": [
+    {
+      "cohort": "Mild",
+      "method_id": "extra_trees_motor",
+      "seed": 20261009,
+      "source_results_sha256": "56dcd6e787a7020437b53ad4a15ed270727d7e31f1486e9144f46942334964a6",
+      "run_receipt_sha256": "f7a73be1f69b00ebef293510838ef4a17e68f24df9c0fb5e0a206238ff532b02",
+      "fit_config_sha256": "912c59776358dcf1890bc6d0ce7bde90e9a76b97b88624e4b2965a121cfcbc56",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "extra_trees_motor",
+      "seed": 20261010,
+      "source_results_sha256": "974c656021e9acf3414523cb35d3890ddcd957f2f58c8b55aeb5c56d7c62d08b",
+      "run_receipt_sha256": "4bba458239eb39c8ac890a3bec8352bc294e9d96b63eaf28529fc7e102b2df73",
+      "fit_config_sha256": "c7b4eb4c78180e65aed31215ddc8ca0f973de88d7e0e06f26b1c81489745c691",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "extra_trees_motor",
+      "seed": 20261011,
+      "source_results_sha256": "1424ab3bd4eb6f7c658e81b4b259086223cd2198d3597c667916377d32f3ff46",
+      "run_receipt_sha256": "1e2bfb0f4b4168c6f4cc2e7f84112126d31efb47bdbac3958c0897e0488295b8",
+      "fit_config_sha256": "91f2533350d2fb18734bf0d13f64f297c4a33354c998bd04631b9428bec56097",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "extra_trees_motor",
+      "seed": 20261009,
+      "run_receipt_sha256": "189c4f5f8d1d5f784097e7aa964ae5fe597a9341433f07ed2e9883353f7dc18b",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "extra_trees_motor",
+      "seed": 20261010,
+      "run_receipt_sha256": "cfced2234405435459606c903855c5566e67b77bb95c324aed08631e596c6174",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "extra_trees_motor",
+      "seed": 20261011,
+      "run_receipt_sha256": "e90c9ba93a10ce2fb3ed2ca2f38d55946fe1de70607c20f1f2c4b87689954b27",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "fcn_bce",
+      "seed": 20261009,
+      "source_results_sha256": "726a6d72cf179b8e12d461bc57adfb95b8b958ca87adf02dece562541886c91d",
+      "run_receipt_sha256": "e8c320f48dc413c9336f4d39ca9e2d0cacff78d8178010034231e6b3a242307e",
+      "fit_config_sha256": "e1b214b31eab4bed975b9923553e9392cc86915e1ccdcd7fb10ca57aa68bf3ba",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "fcn_bce",
+      "seed": 20261010,
+      "source_results_sha256": "8a075b57c89e5d6115024468bde3d4a9989053269a3f51104840433b449205a0",
+      "run_receipt_sha256": "976b54d7bb8c55904c40145f6a36f2db87aa6ed2059f0689f8a6c31bd6b0669c",
+      "fit_config_sha256": "773c53d094d04b110659361ab6b7d589193a993084760e313666f01fa18aa944",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "fcn_bce",
+      "seed": 20261011,
+      "source_results_sha256": "fed3f2de98ccece5109ead85c932d66625464398acaf8664b69d63467608213a",
+      "run_receipt_sha256": "73b12835e42cb5bf1d309c34efa9cbad1b9163945cbdfd62f2888d449e380ee3",
+      "fit_config_sha256": "a4e99303d38a1fa6fa89c562a7ba4f1961c2014d05c7ca1a7fcab57f444cba38",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "fcn_bce",
+      "seed": 20261009,
+      "run_receipt_sha256": "9ccbb361af4d8317cafa6cac1740fd1094055ff0dfb73dbc6e0e67b27f2815b4",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "fcn_bce",
+      "seed": 20261010,
+      "run_receipt_sha256": "f343caff25b218fab06d30093e323293f0180d019ff4ba2b5300b429a5bfcbb7",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "fcn_bce",
+      "seed": 20261011,
+      "run_receipt_sha256": "0c98bd17d9c07bfce00cfc4a3dc98f7ecbdf068a0ff5e21a1464ec4c371ebb26",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "lstm_bce",
+      "seed": 20261009,
+      "source_results_sha256": "caa6bc219049e9899a1d0fccf5f204b1def3aa3a71aea321b92d37f001533bcd",
+      "run_receipt_sha256": "efbba7fd5659a495c992774ea80c2748ff9c8058bb530e423f83c6f0c45558b6",
+      "fit_config_sha256": "987bd8f9447dcc08c2586d0068f0d020e83d270c6dead0e1dd5219d6a1774124",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "lstm_bce",
+      "seed": 20261010,
+      "source_results_sha256": "05e137376bce2d3dcf529ebc64930506d2bf92ba78f906f91ff69ce1740c4389",
+      "run_receipt_sha256": "87bfde0f99d713c3144d15d6e84194e2bbd0d4f5aa0ff7baeb68d60d0af18447",
+      "fit_config_sha256": "651046cddd872c5601901c70bfd0e6695b20782dee420f388442b793c284d98d",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "lstm_bce",
+      "seed": 20261011,
+      "source_results_sha256": "a50004a2a747b5ade952fabc004cb61e83afa878b7ea7cdb504a4558a46c0252",
+      "run_receipt_sha256": "046d3d387d5c3d19ad90adad929388fa4f9575369a9252e08a7a2888935bcf2f",
+      "fit_config_sha256": "8b3e631c3b184e13801a8d0916daf81a41ee3389b79c6149a1b026f0910051b2",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "lstm_bce",
+      "seed": 20261009,
+      "run_receipt_sha256": "ea0d6a2a7cf8987d818e022fe8007098726ad222a8eeb10e792f054c410e33cc",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "lstm_bce",
+      "seed": 20261010,
+      "run_receipt_sha256": "2958d731ca9a37cbf0acf5420fc9fc983e68d6f39e35ed89caad1763b8f70667",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "lstm_bce",
+      "seed": 20261011,
+      "run_receipt_sha256": "cc8e387dd6af359467d889668c0d07ea996359cdda22f1eee7e387dd5b7b6bc1",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "mlp_bce",
+      "seed": 20261009,
+      "source_results_sha256": "1876614a7b2bc2db4d7b8b0c4b82245fc43434e5df5e1892e9c19b54a314b5a3",
+      "run_receipt_sha256": "7b316238dff77c059bb585d99ee4808383a55e4de1beea2831c208620f48367d",
+      "fit_config_sha256": "3766521450e7c2b419f1d4ec5cc689a7470c5074ebad7256e962ad0c42d476c2",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "mlp_bce",
+      "seed": 20261010,
+      "source_results_sha256": "681dac1abf3b19c6f381e3079ecc7c5820c7e3f25a79cbd194b163cfa0cc56a5",
+      "run_receipt_sha256": "de9edbac2c30cd588e95a474e3bb8ded94f75407e52cc8ebaa364598ef0a37c1",
+      "fit_config_sha256": "48cc5e0fdea1c9fa044cdeb6306aba2759209666d013e50fd657634eda164a7f",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "mlp_bce",
+      "seed": 20261011,
+      "source_results_sha256": "4f66ded5678e74fd39b15323c2b603d93cd602f884f96fd03351cfeaffb8e137",
+      "run_receipt_sha256": "fe407fa6ee00c0ce03fd1652122f837c099208c88e0a8b0b464df5c0fad072c6",
+      "fit_config_sha256": "c53274aaca81b0a7cd305713dfbd9692024fbc03f6ccbb1a6af15ec3a8c62f76",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "mlp_bce",
+      "seed": 20261009,
+      "run_receipt_sha256": "97ae3b808fe3271a3ece1794de55aa166094f9a95631f945bf40850df829c063",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "mlp_bce",
+      "seed": 20261010,
+      "run_receipt_sha256": "4021e69797a947e17e2c5cb709b968f38c1b814951b62277d1432a70762ab4c3",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "mlp_bce",
+      "seed": 20261011,
+      "run_receipt_sha256": "5f4cb37ee541bca33352a281acdf379b709be2b04e3b27642a17338541968e00",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "svm_motor",
+      "seed": 20261009,
+      "source_results_sha256": "05bdcc554a8225676c2261af7b2fc17ce91fb68766c715872974fba9b41c6a2d",
+      "run_receipt_sha256": "abdf053458c4dbea2c246422f6a3568e7145d5747fcfb93f4e6128f67fe85a32",
+      "fit_config_sha256": "bd3adbd35a0f496ba6d7273ba3d2d57592c5beddbb34f684b6e341a26b271f10",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "svm_motor",
+      "seed": 20261010,
+      "source_results_sha256": "f49b1ca2453f0aebf28ef5e41f5eff31d0b9d31ba12c4fa8b44030b4b981b8f2",
+      "run_receipt_sha256": "ac40ed20c5b5869110822ede192742db6a57e0100bf9d241246397a5549bf38b",
+      "fit_config_sha256": "e5fe77cb9c89ed74acc6a2600f1fa54fcfb8781bd5544219b3340258265becf1",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "svm_motor",
+      "seed": 20261011,
+      "source_results_sha256": "90f228586300f44ec0c0cf0ea714048fff080559508eeee69afc13474b6f787b",
+      "run_receipt_sha256": "205087c22e21b6ab495bc43a6175b916eb7a3b9ca29e6152af6b86502554eff4",
+      "fit_config_sha256": "a399aa468f0d898085d4e1a9fe9e810c6d9695bf855c96f5875fadf3a15da64a",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "svm_motor",
+      "seed": 20261009,
+      "run_receipt_sha256": "b11fd5111b803d14c7146b205b7ed826ca7b360814ab2743f418284597ae1102",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "svm_motor",
+      "seed": 20261010,
+      "run_receipt_sha256": "45aa4d69fc5768741013ec33359d4f955345836d9ba19279a4c57a05da54bb8d",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "svm_motor",
+      "seed": 20261011,
+      "run_receipt_sha256": "b3ac3132ffc034fd9772761ed01aa482e30c1b9260dad6070a544f9165b74f36",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "tcn_bce",
+      "seed": 20261009,
+      "source_results_sha256": "2a0ded066caadbd14c5ab0475f1bec99d96b35172544b9369c886ce847e49cb1",
+      "run_receipt_sha256": "3ddffee0b36c2444eda5cd316235abfbef6c746dc53263de6283243964561c40",
+      "fit_config_sha256": "53438200bb52cf678d2dfe666d8acba045a762aca4b3daccbf7ca992ba83e19a",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "tcn_bce",
+      "seed": 20261010,
+      "source_results_sha256": "d18437536c124bb0f73eef5fdc81898a60dc2d0cf5b16c93b9622e7d92f17a8f",
+      "run_receipt_sha256": "c95a47caa08551a1e2be23d8090d8f008718c57799a939ed4306a147f292656b",
+      "fit_config_sha256": "78203bf3f7c2147a497c74621df679bd71a643c58891d5d9ec85559e30116caa",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "tcn_bce",
+      "seed": 20261011,
+      "source_results_sha256": "ffad1cea5b8e8d3dfb807adee10908588859adebb5d1c9cb75aa4241bcd43a0f",
+      "run_receipt_sha256": "721185823be49f9bcf54cd41f6f03a0e9ad5e66eaffc9a497e7887a611066a9d",
+      "fit_config_sha256": "6afafa629dc80f3a959736dd6d5e208c4b64155f3489bb56a59855f3e01aeac9",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "tcn_bce",
+      "seed": 20261009,
+      "run_receipt_sha256": "f2aa0f8326737102d4ad6ba20ecbb43cef84cdae7d4d23b2be61a5cad2b25012",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "tcn_bce",
+      "seed": 20261010,
+      "run_receipt_sha256": "ac7ffa6c23e8cf6b13ea71dce07554a7f88dbed6575701d8a2350862139fe15d",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "tcn_bce",
+      "seed": 20261011,
+      "run_receipt_sha256": "2de203d738e0155ea59c61db156801b04505f6e01f388987222385fd3502477b",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "transformer_bce",
+      "seed": 20261009,
+      "source_results_sha256": "a3267d7e60eeb98c794885b929e56860dcd0ad0c7da8d58ab469e61e2647ad26",
+      "run_receipt_sha256": "09f211557f9865cb9a1965ec94f964d5feee6835b422b64ed832885e8ca9624f",
+      "fit_config_sha256": "88934b9e8c400ab207b3b39af90a3640e09b8c2d8aab0ac6ea9da91ce66a00d0",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "transformer_bce",
+      "seed": 20261010,
+      "source_results_sha256": "0cf64304b04066b6e92e071b43706daacc1f2f0ca339c94fb67d7382577d560f",
+      "run_receipt_sha256": "3062f9677ae8ae6183c9638fde1c73a168e5df691e35bdc232cce950d1755f30",
+      "fit_config_sha256": "a2ce9bf4a4d658cb4266c15d0539538b95f25d1d3f6e9f843cdc0a03621f5bbf",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "transformer_bce",
+      "seed": 20261011,
+      "source_results_sha256": "c7bd71b335c032bd57c4c774a76bb1853f87356465523a694ad40241c516db37",
+      "run_receipt_sha256": "64ddef9d248c298872a981a584168f11d49057f9d8507a4ac24fd23f97ca5cc5",
+      "fit_config_sha256": "ba41a75d6c4e1776ba37e5a5acda6d7eac46ca6a56a1a05db28187be87da21c2",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      },
+      "checks": {
+        "official_purpose": true,
+        "role_counts": true,
+        "source_commit": true,
+        "manifest": true,
+        "actual_seed": true,
+        "window_size": true,
+        "bundle_config_file_hash": true,
+        "effective_config_matches_frozen_template": true,
+        "effective_config_serialized_hash": true,
+        "formal_budget": true,
+        "source_package_hashes": true,
+        "test_flights": true,
+        "cache_flights": true,
+        "score_coverage": true,
+        "planned_denominators": true,
+        "reload": true,
+        "worker_success": true,
+        "point_metrics_finite": true
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "transformer_bce",
+      "seed": 20261009,
+      "run_receipt_sha256": "41661d3d4e24f3c3ec57adbd79fd359a871cfd76a1b60f40a641f3090666d697",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "transformer_bce",
+      "seed": 20261010,
+      "run_receipt_sha256": "167df779d966aceb6a1383a78e382a39e7214f0d40b3ea93956db492de3cda99",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "transformer_bce",
+      "seed": 20261011,
+      "run_receipt_sha256": "9aff581d7efea7d4d03f8884b85f3831625af47b8c8119a59d1115cfc10ba1b3",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "hgb_motor",
+      "seed": 20261009,
+      "run_receipt_sha256": "ad8fd22b7db36519b2c9546561e4d89cfef61e323612fb7a325445acf44f7448",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "hgb_motor",
+      "seed": 20261010,
+      "run_receipt_sha256": "85c54b2bc01a6eeb1bd74abb6315264d671131abf6c3326586c00eb6f4af7546",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "hgb_motor",
+      "seed": 20261011,
+      "run_receipt_sha256": "e2e57b307549656e25a55ff165960bf7c304c9c3abeaff4ad59e83dc3fbfc616",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "hgb_motor",
+      "seed": 20261009,
+      "run_receipt_sha256": "b3aea2e26e7946b33a238cbf398b7e328fe43368ce18bf453847cc8ce3e331bf",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "hgb_motor",
+      "seed": 20261010,
+      "run_receipt_sha256": "7660faebfb6f78f4aac0732aab47ce72ac5284e2726fcecbb74e0add7d9fb37d",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "hgb_motor",
+      "seed": 20261011,
+      "run_receipt_sha256": "16d87bbfdaa5233c54850ec5e6e204e5955db81dc32a1bb87dd0f64a8679c21d",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261009
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261010
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261011
+    },
+    {
+      "cohort": "Range",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261009
+    },
+    {
+      "cohort": "Range",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261010
+    },
+    {
+      "cohort": "Range",
+      "method_id": "evidence_hist_gradient_boosting",
+      "seed": 20261011
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261009,
+      "run_receipt_sha256": "877458ee2cfa50853394c3ec86074280acde4782c510e57cdbfa226d7ec5d7be",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261010,
+      "run_receipt_sha256": "342ca6ed9c97a3683190ae12d8371d3586b0a37de4b54187a6a8c973e597a807",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      }
+    },
+    {
+      "cohort": "Mild",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261011,
+      "run_receipt_sha256": "4ab78f1ba38c7125b3e1d792510097cfedd5fa06f48776347c65a732208b26fa",
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d",
+      "role_counts": {
+        "fit": 288,
+        "calibration": 96,
+        "evaluation": 96
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261009,
+      "run_receipt_sha256": "290bc2b6be45c9bbefa44e0449fdf725ea0de26532c51efc4acca61e84797f2e",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261010,
+      "run_receipt_sha256": "20bc5ca3db4be7297a5fd3e533f3bdc4ba6064dde3aeb210591bda1786061780",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    },
+    {
+      "cohort": "Range",
+      "method_id": "frozen_evidence_rf_alone",
+      "seed": 20261011,
+      "run_receipt_sha256": "1d7d237bdecb67442f27985878abcb044f1f7135a328904e37bd4cd6e10da8e9",
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c",
+      "role_counts": {
+        "fit": 792,
+        "calibration": 264,
+        "evaluation": 264
+      }
+    }
+  ],
+  "statistic": "Three training seeds on the same physical test flights; sample SD uses ddof=1; delay is the mean of three conditional run medians.",
+  "data_included": false,
+  "checkpoint_included": false
+}

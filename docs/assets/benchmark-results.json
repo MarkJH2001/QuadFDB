@@ -1,0 +1,1100 @@
+{
+  "title": "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
+  "methods": [
+    "RF",
+    "ET",
+    "SVM",
+    "HGB",
+    "MLP",
+    "FCN",
+    "TCN",
+    "LSTM",
+    "Transformer",
+    "RAGB"
+  ],
+  "severities": [
+    "Mild",
+    "Moderate",
+    "Severe"
+  ],
+  "fault_flights": {
+    "Mild": 72,
+    "Moderate": 96,
+    "Severe": 144
+  },
+  "healthy_controls": 24,
+  "runs": 3,
+  "event_results": [
+    {
+      "method": "RF",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 80.55555555555556,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 77.77777777777777,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.1730132450331126,
+          "sample_sd": 0.944137396052083,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 114.33333333333361,
+          "sample_sd": 1.443375672974286,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "ET",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 56.48148148148148,
+          "sample_sd": 3.4952937200327536,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 54.166666666666664,
+          "sample_sd": 3.67465459870082,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.431705298013246,
+          "sample_sd": 1.1649762261173122,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 126.00000000000092,
+          "sample_sd": 5.19615242270632,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "SVM",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 48.611111111111114,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 47.22222222222222,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 4.656456953642386,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 132.99999999999912,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "HGB",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 62.5,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 62.5,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.7938741721854305,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 108.00000000000054,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "MLP",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 66.20370370370371,
+          "sample_sd": 3.495293720032754,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 66.20370370370371,
+          "sample_sd": 3.495293720032754,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.10430463576159,
+          "sample_sd": 0.71128554867899,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 122.16666666666646,
+          "sample_sd": 1.8929694486006818,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "FCN",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 42.592592592592595,
+          "sample_sd": 4.0093768693724,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 42.129629629629626,
+          "sample_sd": 4.4646531300893315,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 1.759105960264901,
+          "sample_sd": 0.23709518289299664,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 180.33333333333258,
+          "sample_sd": 13.576941236277925,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "TCN",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 53.24074074074074,
+          "sample_sd": 2.8912027770362956,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 51.85185185185185,
+          "sample_sd": 2.121562821738814,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.4834437086092724,
+          "sample_sd": 1.1718493018321738,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 121.33333333333388,
+          "sample_sd": 13.07988277215512,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "LSTM",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 49.53703703703704,
+          "sample_sd": 2.8912027770362956,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 48.148148148148145,
+          "sample_sd": 3.495293720032754,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.311258278145696,
+          "sample_sd": 0.9857491144069565,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 145.16666666666734,
+          "sample_sd": 9.647970425604248,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "Transformer",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 68.05555555555556,
+          "sample_sd": 4.811252243246887,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 65.74074074074075,
+          "sample_sd": 5.613127617121365,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 4.035596026490067,
+          "sample_sd": 0.8213218060010117,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 107.6666666666668,
+          "sample_sd": 4.618802153516498,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "RAGB",
+      "severity": "Mild",
+      "metrics": {
+        "detection_percent": {
+          "mean": 84.72222222222223,
+          "sample_sd": 1.3888888888888928,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 84.25925925925925,
+          "sample_sd": 1.603750747748965,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.3112582781456954,
+          "sample_sd": 0.4741903657859932,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 101.00000000000027,
+          "sample_sd": 2.5980762113528977,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "RF",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 100.0,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.849494862274415,
+          "sample_sd": 0.46699999250461816,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 72.50000000000007,
+          "sample_sd": 0.8660254037844715,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "ET",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 97.56944444444444,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 97.22222222222223,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.849494862274415,
+          "sample_sd": 0.9066574561782229,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 86.66666666666748,
+          "sample_sd": 0.5773502691900729,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "SVM",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 98.95833333333333,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 98.95833333333333,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.3675848372333994,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 71.99999999999918,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "HGB",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 100.0,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 97.91666666666667,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.7561523184526378,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 72.00000000000006,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "MLP",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.65277777777777,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 98.95833333333333,
+          "sample_sd": 1.0416666666666643,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.842500647612469,
+          "sample_sd": 1.1015759280004382,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 70.33333333333313,
+          "sample_sd": 0.7637626158260338,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "FCN",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 5.483118901649253,
+          "sample_sd": 1.1316244212141573,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 74.16666666666642,
+          "sample_sd": 0.288675134594657,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "TCN",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.65277777777777,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 1.2028130608117176,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.540281495553061,
+          "sample_sd": 1.2579917351121204,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 72.66666666666606,
+          "sample_sd": 1.1547005383796372,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "LSTM",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 98.26388888888889,
+          "sample_sd": 0.6014065304058547,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 97.91666666666667,
+          "sample_sd": 1.0416666666666643,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 4.57646144547103,
+          "sample_sd": 0.6120994248664978,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 80.33333333333351,
+          "sample_sd": 4.041451884328176,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "Transformer",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 98.95833333333333,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 98.61111111111111,
+          "sample_sd": 0.6014065304058547,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 4.01519730593213,
+          "sample_sd": 0.22433953988026212,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 71.33333333333287,
+          "sample_sd": 0.5773502691893058,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "RAGB",
+      "severity": "Moderate",
+      "metrics": {
+        "detection_percent": {
+          "mean": 100.0,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.6014065304058629,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 2.1155340644158533,
+          "sample_sd": 0.49036424711167204,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 69.83333333333312,
+          "sample_sd": 0.7637626158259392,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "RF",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 96.75925925925925,
+          "sample_sd": 0.4009376869372474,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 96.75925925925925,
+          "sample_sd": 0.4009376869372474,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 5.739671833452235,
+          "sample_sd": 0.445804756627133,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 65.33333333333294,
+          "sample_sd": 0.5773502691890473,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "ET",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.07407407407408,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 98.14814814814815,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 4.896556196899929,
+          "sample_sd": 0.6329600264590156,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 75.5000000000008,
+          "sample_sd": 0.4999999999997229,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "SVM",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 7.0043452882806925,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 65.00000000000128,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "HGB",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 97.22222222222223,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 97.22222222222223,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 6.128802127245606,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 64.9999999999995,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "MLP",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.0,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 7.101627861729035,
+          "sample_sd": 0.7015146135541844,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 65.33333333333265,
+          "sample_sd": 0.5773502691893058,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "FCN",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.30555555555556,
+          "sample_sd": 0.6944444444444429,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.07407407407408,
+          "sample_sd": 1.060781410869405,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 6.323367274142292,
+          "sample_sd": 0.7721564887340722,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 66.33333333333387,
+          "sample_sd": 1.2583057392110915,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "TCN",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.53703703703704,
+          "sample_sd": 0.8018753738744784,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.07407407407408,
+          "sample_sd": 0.8018753738744784,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 6.0315195537972635,
+          "sample_sd": 1.083292891140156,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 64.9999999999995,
+          "sample_sd": 0.0,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "LSTM",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.07407407407408,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.07407407407408,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 6.0315195537972635,
+          "sample_sd": 0.6379244948734031,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 70.33333333333402,
+          "sample_sd": 1.1547005383806628,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "Transformer",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 99.53703703703704,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 99.07407407407408,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 6.193657176211168,
+          "sample_sd": 1.3136149620941109,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 65.49999999999982,
+          "sample_sd": 0.8660254037849884,
+          "n": 3
+        }
+      }
+    },
+    {
+      "method": "RAGB",
+      "severity": "Severe",
+      "metrics": {
+        "detection_percent": {
+          "mean": 98.8425925925926,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "joint_isolation_percent": {
+          "mean": 98.8425925925926,
+          "sample_sd": 0.4009376869372392,
+          "n": 3
+        },
+        "FA_per_min": {
+          "mean": 3.8913029379337183,
+          "sample_sd": 0.7344673229720556,
+          "n": 3
+        },
+        "delay_ms": {
+          "mean": 63.33333333333376,
+          "sample_sd": 1.1547005383786115,
+          "n": 3
+        }
+      }
+    }
+  ],
+  "controlled_results": [
+    {
+      "head": "hgb",
+      "mask": "raw",
+      "severity": "Mild",
+      "joint": {
+        "mean": 62.5,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "residual",
+      "severity": "Mild",
+      "joint": {
+        "mean": 77.77777777777777,
+        "sample_sd": 1.3888888888888928,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "rf",
+      "severity": "Mild",
+      "joint": {
+        "mean": 75.46296296296296,
+        "sample_sd": 2.12156282173881,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "all",
+      "severity": "Mild",
+      "joint": {
+        "mean": 84.25925925925925,
+        "sample_sd": 1.603750747748965,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "raw",
+      "severity": "Mild",
+      "joint": {
+        "mean": 53.24074074074074,
+        "sample_sd": 0.8018753738744784,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "residual",
+      "severity": "Mild",
+      "joint": {
+        "mean": 65.74074074074075,
+        "sample_sd": 2.891202777036297,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "rf",
+      "severity": "Mild",
+      "joint": {
+        "mean": 55.092592592592595,
+        "sample_sd": 2.121562821738814,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "all",
+      "severity": "Mild",
+      "joint": {
+        "mean": 69.9074074074074,
+        "sample_sd": 3.207501495497922,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "raw",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 97.91666666666667,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "residual",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 98.95833333333333,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "rf",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "all",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "raw",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 99.30555555555556,
+        "sample_sd": 1.2028130608117176,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "residual",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 98.95833333333333,
+        "sample_sd": 1.0416666666666643,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "rf",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 98.26388888888889,
+        "sample_sd": 0.6014065304058547,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "all",
+      "severity": "Moderate",
+      "joint": {
+        "mean": 99.30555555555556,
+        "sample_sd": 0.6014065304058629,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "raw",
+      "severity": "Severe",
+      "joint": {
+        "mean": 97.22222222222223,
+        "sample_sd": 0.0,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "residual",
+      "severity": "Severe",
+      "joint": {
+        "mean": 99.53703703703704,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "rf",
+      "severity": "Severe",
+      "joint": {
+        "mean": 98.37962962962963,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "hgb",
+      "mask": "all",
+      "severity": "Severe",
+      "joint": {
+        "mean": 98.8425925925926,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "raw",
+      "severity": "Severe",
+      "joint": {
+        "mean": 97.91666666666667,
+        "sample_sd": 0.6944444444444429,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "residual",
+      "severity": "Severe",
+      "joint": {
+        "mean": 99.53703703703704,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "rf",
+      "severity": "Severe",
+      "joint": {
+        "mean": 97.91666666666667,
+        "sample_sd": 0.6944444444444429,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    },
+    {
+      "head": "mlp",
+      "mask": "all",
+      "severity": "Severe",
+      "joint": {
+        "mean": 99.76851851851852,
+        "sample_sd": 0.4009376869372392,
+        "n": 3,
+        "ddof": 1,
+        "target_n": 3
+      }
+    }
+  ],
+  "statistical_scope": "Means and sample SD across three seeds on fixed physical test flights; delay is the mean of per-run conditional medians."
+}

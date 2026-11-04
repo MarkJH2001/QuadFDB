@@ -1,0 +1,52 @@
+{
+  "status": "passed_portability_checks",
+  "real_data_read": false,
+  "real_model_training_or_TEST_scoring": false,
+  "synthetic_only": true,
+  "checks": {
+    "context_points_AST_equal_except_docstrings_error_naming": true,
+    "response_design_AST_equal_except_docstrings_error_naming": true,
+    "ResponseModel_AST_equal_except_docstrings_error_naming": true,
+    "hypothesis_evidence_AST_equal_except_docstrings_error_naming": true,
+    "CausalEvidence_AST_equal_except_docstrings_error_naming": true,
+    "physical_summary_features_AST_equal_except_docstrings_error_naming": true,
+    "local_cue_features_AST_equal_except_docstrings_error_naming": true,
+    "_flight_folds_AST_equal_except_docstrings_error_naming": true,
+    "LocalMotorCue_AST_equal_except_docstrings_error_naming": true,
+    "native_event_evaluator_byte_identical": true,
+    "201_join_bitwise_equal_to_original": true
+  },
+  "unit_tests": {
+    "passed": 40,
+    "failures": 0,
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "categories": {
+      "native_event_metrics": 31,
+      "representation_and_synthetic_RAGB_roundtrip": 7,
+      "optional_CPU_neural_forward": 2
+    }
+  },
+  "environment": {
+    "numpy": "2.4.2",
+    "scikit_learn": "1.8.0",
+    "torch": "2.10.0"
+  },
+  "environment_limit": "Local structural smoke environment differs from pinned study sklearn1.9.1/torch2.9.1 CUDA. This is not a new result reproduction.",
+  "other_checks": {
+    "training_example_help": true,
+    "compileall": true,
+    "no_machine_absolute_path_or_secret_pattern_in_owned_files": true
+  },
+  "neural_extraction_independent_check": {
+    "five_reference_initializations_and_synthetic_forward_equal_to_original": true,
+    "methods": [
+      "MLP",
+      "FCN",
+      "Transformer",
+      "LSTM",
+      "TCN"
+    ],
+    "new_optimization_steps": 0,
+    "provenance": "Independent extraction agent compared same-seed state_dict tensors and CPU synthetic forwards."
+  }
+}

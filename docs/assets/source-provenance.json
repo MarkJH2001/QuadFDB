@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "project": "QuadFDI",
+  "title": "QuadFDI: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
+  "prepared": "2026-11-04",
+  "scientific_sources": [
+    {
+      "kind": "Current author manuscript v2",
+      "sha256": "4d6575333dc15c530d9b507e45bb8fd20a47468e8e772eb54bb0688a2950f487",
+      "document_distributed": false
+    },
+    {
+      "kind": "Audited aggregate benchmark source",
+      "sha256": "b55c21a89f3334653699ea4b6c4a3797aa6a6485af1c2730838ef7fee55f4e7c",
+      "source_records_distributed": false
+    },
+    {
+      "kind": "Accepted complete54-cell controlled attribution summary",
+      "sha256": "a49cae3865bce7bc551116e6c44c7f874d1c71acfe86f3e8fea39e352b475d09",
+      "source_records_distributed": false
+    }
+  ],
+  "assets": [
+    {
+      "destination": "assets/flight-platform.webp",
+      "source": "dataset_pipeline.pdf \u2014 author research figure",
+      "source_sha256": "01c08572aec0cd37d1d70f2002e82cd04b60d40d7576ed9347a68d53bf0e96d3",
+      "destination_sha256": "3a55874b38afffe775eaa3dd039fcabb35e2d2c8fa8a31d9f8c5332cd7d94dc3",
+      "pixels": [
+        2300,
+        837
+      ],
+      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; no scientific content changed."
+    },
+    {
+      "destination": "assets/fault-response-matrix.webp",
+      "source": "flight_response_matrix.pdf \u2014 author research figure",
+      "source_sha256": "a53d18cb809686b7015740df23375776c2ca2a30f4afa35f78a65de66f4ff7bc",
+      "destination_sha256": "dd515ae051b7d47bf2a4620589bc8e68627bd6dd36f956ac6964e0e7516952c1",
+      "pixels": [
+        2300,
+        808
+      ],
+      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; no scientific content changed."
+    },
+    {
+      "destination": "assets/dataset-coverage.webp",
+      "source": "dataset_coverage.pdf \u2014 author research figure",
+      "source_sha256": "0cd8f8ddc9b93bc7902b85cbb77b171c72cf0f4b5c01687b34868e2cf790448c",
+      "destination_sha256": "e4d16658bc827401b0e5afca72251c67c54e4e7b3b2063f30e94876f8625fb5a",
+      "pixels": [
+        2300,
+        595
+      ],
+      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; no scientific content changed."
+    },
+    {
+      "destination": "assets/flight-demonstration.mp4",
+      "source": "Existing author project asset: real-flight-comparison.mp4",
+      "source_sha256": "ec50f2ad7da5c41d989e8572a80f417cf4bc1ce881c1a8cc11abfb2455f7b0b3",
+      "destination_sha256": "ec50f2ad7da5c41d989e8572a80f417cf4bc1ce881c1a8cc11abfb2455f7b0b3",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "destination": "assets/flight-demonstration.jpg",
+      "source": "Existing author project asset: real-flight-comparison.jpg",
+      "source_sha256": "9fb65f7af5141beef4c1cacc83eb907c87ca199c8a10ccb43f7ced30596b7d9b",
+      "destination_sha256": "9fb65f7af5141beef4c1cacc83eb907c87ca199c8a10ccb43f7ced30596b7d9b",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "destination": "assets/source-sans-3.woff2",
+      "source": "Existing author project asset: source-sans-3.woff2",
+      "source_sha256": "ac057a5593cbe3df0d2585da5dd5f33b8efa84aa30550c710fe061b37fc5c54b",
+      "destination_sha256": "ac057a5593cbe3df0d2585da5dd5f33b8efa84aa30550c710fe061b37fc5c54b",
+      "transformation": "Byte-identical copy."
+    },
+    {
+      "destination": "assets/FONT-LICENSE.txt",
+      "source": "Existing author project asset: FONT-LICENSE.txt",
+      "source_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+      "destination_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+      "transformation": "Byte-identical copy."
+    }
+  ],
+  "public_summary": {
+    "file": "assets/benchmark-results.json",
+    "sha256": "6e8f5728c099caef7225903ea777a8e5243037a28197a89ae9f61fcf265334e5",
+    "content": "Only aggregate means, sample standarddeviations, runcounts and faultflight denominators. No individual records, time series, checkpoints or private filesystem paths.",
+    "methods": 10,
+    "event_groups": 3,
+    "controlled_head_mask_cells": 24
+  },
+  "media_semantics": {
+    "demonstration": "Measured-pose replay above real camera recordings; three M1 examples with targetPWM multiplier0.75.",
+    "playback_rate": "0.25 times physicalspeed, preserved from the existing author comparisonvideo.",
+    "platform_figure": "Simulation model and real flight; control diagram is schematic.",
+    "response_matrix": "Poses rendered from real flight records; M1, three profiles, multipliers0.95/0.75/0.40.",
+    "method_diagram": "Schematic of implementedRAGB informationflow; no synthetic signal traces presented as observations."
+  },
+  "excluded_material": [
+    "manuscriptPDF/LaTeX",
+    "per-flight JSON",
+    "raw telemetry and time series",
+    "NPZ or model checkpoints",
+    "usernames, credentials and absolute local paths"
+  ],
+  "site_scope": "Static project page; no model execution or remote experiment controls."
+}

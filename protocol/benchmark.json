@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "observations": {
+    "sample_period_s": 0.02,
+    "history_points": 16,
+    "span_ms": 300,
+    "channels": [
+      "relative_x_m",
+      "relative_y_m",
+      "relative_z_m",
+      "body_p_rad_s",
+      "body_q_rad_s",
+      "body_r_rad_s",
+      "pre_injection_u1_fraction",
+      "pre_injection_u2_fraction",
+      "pre_injection_u3_fraction",
+      "pre_injection_u4_fraction"
+    ]
+  },
+  "seeds": [
+    20261009,
+    20261010,
+    20261011
+  ],
+  "unique_flights": 1680,
+  "fault_flights": 1560,
+  "healthy_controls": 120,
+  "healthy_control_types": {
+    "ordinary": 80,
+    "sham": 40
+  },
+  "profiles": {
+    "step": {
+      "fault_hold_ms": 200
+    },
+    "ramp": {
+      "ramp_ms": 200,
+      "hold_ms": 100
+    },
+    "intermittent": {
+      "fault_ms": 50,
+      "nominal_ms": 50,
+      "episode_ms": 300
+    }
+  },
+  "tasks": {
+    "mild": {
+      "alphas": [
+        0.9,
+        0.95,
+        0.97
+      ],
+      "fit": 288,
+      "calibration": 96,
+      "test": 96,
+      "fault_test": 72,
+      "manifest_sha256": "e51b045520f23d5f4ba3961bd1a0a2a40e3f3d7a987415ddf4719c6c36d40d7d"
+    },
+    "moderate_severe": {
+      "alphas": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.75,
+        0.8,
+        0.85
+      ],
+      "fit": 792,
+      "calibration": 264,
+      "test": 264,
+      "moderate_fault_test": 96,
+      "severe_fault_test": 144,
+      "manifest_sha256": "e3902ec792f17d2f32cd14309801fc5ca995a10d11ccd93ccd69d43f98e7de0c"
+    }
+  },
+  "severity": {
+    "Mild": [
+      0.9,
+      0.95,
+      0.97
+    ],
+    "Moderate": [
+      0.7,
+      0.75,
+      0.8,
+      0.85
+    ],
+    "Severe": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6
+    ]
+  },
+  "partition": "Six/two/two complete flight repetitions per condition; never split overlapping windows across roles. The tasks share the same 120 healthy controls.",
+  "training_window_selection": {
+    "healthy_windows_per_flight_max": 64,
+    "selection": "All eligible fault endpoints; deterministic evenly spaced eligible healthy endpoints when above the cap. A healthy fitting history must be healthy throughout.",
+    "labels": "Binary bounded-event health; intermittent nominal gaps remain inside the labelled intervention; recovery excluded from fault supervision."
+  },
+  "alarm": {
+    "healthy_calibration_quantile": 0.99,
+    "quantile_method": "higher",
+    "strict_greater": true,
+    "min_consecutive": 2,
+    "valid_endpoint_period_s": 0.02,
+    "fresh_run_start": "At or after onset; confirmation strictly before actual event end",
+    "invalid_endpoint": "Resets the confirmation sequence"
+  },
+  "metric_scope": {
+    "joint_isolation": "Correct unique motor at the first fresh confirmed event alarm / all faulty flights. A later correct prediction does not repair a wrong first alarm.",
+    "false_alarms": "60 times healthy confirmed transitions divided by eligible healthy exposure in seconds; pooled dedicated controls and pre-fault baseline.",
+    "delay": "Conditional median onset-to-confirmation on detected flights, including wrong-motor alarms, then mean across runs. Excludes processing/communication.",
+    "coverage": "Censoring and incomplete observations remain explicit; non-detection does not always mean a fully observed miss.",
+    "uncertainty": "Sample SD across training seeds on fixed physical test flights, not independent partition uncertainty."
+  },
+  "development_scope": "Earlier results on held-out repetitions informed method development; evaluation is retrospective.",
+  "data_availability": "Data and fitted checkpoints are not bundled in this private research repository."
+}
