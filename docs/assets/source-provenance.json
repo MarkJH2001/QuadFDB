@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "QuadFDB",
   "title": "QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
-  "prepared": "2026-11-04",
+  "prepared": "2026-11-05",
   "scientific_sources": [
     {
       "kind": "Author manuscript v2 snapshot used to prepare the page",
@@ -45,17 +45,17 @@
     },
     {
       "destination": "assets/flight-demonstration.mp4",
-      "source": "Existing author project asset: real-flight-comparison.mp4",
+      "source": "Author real flight comparison, replay panes rendered from the same frozen recorded poses",
       "source_sha256": "ec50f2ad7da5c41d989e8572a80f417cf4bc1ce881c1a8cc11abfb2455f7b0b3",
-      "destination_sha256": "ec50f2ad7da5c41d989e8572a80f417cf4bc1ce881c1a8cc11abfb2455f7b0b3",
-      "transformation": "Byte-identical copy."
+      "destination_sha256": "14aa9d5958fd8aa5daac5826059a60fa0ab929ff49d2710e5bfad55d1d21f9d9",
+      "transformation": "Native MuJoCo light-background rerender of the three replay panes; original camera framing, timestamps and real-camera lower panes retained. No playback retiming."
     },
     {
       "destination": "assets/flight-demonstration.jpg",
-      "source": "Existing author project asset: real-flight-comparison.jpg",
-      "source_sha256": "9fb65f7af5141beef4c1cacc83eb907c87ca199c8a10ccb43f7ced30596b7d9b",
-      "destination_sha256": "9fb65f7af5141beef4c1cacc83eb907c87ca199c8a10ccb43f7ced30596b7d9b",
-      "transformation": "Byte-identical copy."
+      "source": "Frame at4.5s of the updated author real flight comparison",
+      "source_sha256": "14aa9d5958fd8aa5daac5826059a60fa0ab929ff49d2710e5bfad55d1d21f9d9",
+      "destination_sha256": "fa913ca598e012852ebfd27975b4efd9783a7f044c649259b92c00249362ce80",
+      "transformation": "Poster extracted from the light-background comparison video."
     },
     {
       "destination": "assets/source-sans-3.woff2",
@@ -70,6 +70,30 @@
       "source_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
       "destination_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
       "transformation": "Byte-identical copy."
+    },
+    {
+      "destination": "assets/quadfdb-overview-milo-20261105.mp4",
+      "source": "Author-produced QuadFDB narrated overview, revised title and contribution items",
+      "source_sha256": "6ae1c9dbb2d757e8b4753c35d60853f43bff104a475e6ab493c8bc86b925798d",
+      "destination_sha256": "ea8df9c7a08912d7cdeeaa74762920b3bd18af595b2bfdc98b2a5b7eaa7f6c7d",
+      "pixels": [
+        3840,
+        2160
+      ],
+      "duration_seconds": 161.4,
+      "fps": 30,
+      "transformation": "Native4K/30web derivative, H.264CRF18/veryfast, AAC payload copied unchanged, faststart. Complete4,842-frame decode passed."
+    },
+    {
+      "destination": "assets/quadfdb-overview-milo-20261105.jpg",
+      "source": "First decoded frame of the revised author-produced overview",
+      "source_sha256": "6ae1c9dbb2d757e8b4753c35d60853f43bff104a475e6ab493c8bc86b925798d",
+      "destination_sha256": "891558f8252021b5ba79397c2a708a339def17f698bb2491f3285f5e25f38eb1",
+      "pixels": [
+        3840,
+        2160
+      ],
+      "transformation": "JPEG poster from actual frame0, with complete title, authors and university mark."
     }
   ],
   "public_summary": {
@@ -94,8 +118,9 @@
     "representatives": 156,
     "final_flights_per_condition": 10,
     "telemetry_distributed": false,
-    "manifest_sha256": "76aadfa5872034caa139e83e04d28bf1a46b7c3dfcf14e8c9dc60d61d0551290",
-    "provenance_sha256": "ff064f2486173a85f217ac1f50dba745781b2ef1f315421d80f7444910877d52",
-    "selected_replay": "156 recorded-pose clips; one selected video loads at a time, with native playback controls."
+    "manifest_sha256": "b25821be18cae1f06b47e1658924074d9ece1a53754ea79de7aa898fa77316cd",
+    "provenance_sha256": "c0c36a9c0534b5cada7b422a76bd3b3a2fcbf412a0ee5fb63eb3bbeb1da0cac1",
+    "selected_replay": "156 recorded-pose clips; one selected video loads at a time, with native playback controls.",
+    "presentation": "Muted, inline automatic playback while visible. Native light-background MuJoCo rerender retains the recorded physical clock, poses, rotor phases and fault colors."
   }
 }

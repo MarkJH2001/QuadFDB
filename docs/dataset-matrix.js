@@ -4,9 +4,6 @@
   if (!browser) return;
   const video = browser.querySelector('[data-matrix-video]');
   // The source render already encodes 0.25x physical speed; play it at rate 1.
-  const playButton = browser.querySelector('[data-matrix-play]');
-  const playText = playButton.querySelector('[data-play-text]');
-  const playIcon = playButton.querySelector('[data-play-icon]');
   const cells = [...browser.querySelectorAll('[data-matrix-cell]')];
   const replay = browser.querySelector('[data-replay-video]');
   const replayFallback = browser.querySelector('[data-replay-fallback]');
@@ -62,25 +59,55 @@
       cells[next].scrollIntoView({block: 'nearest', inline: 'nearest'});
     });
   });
+  video.muted = true;
+  video.defaultMuted = true;
+  video.autoplay = true;
+  video.playsInline = true;
+  video.loop = true;
+  video.preload = 'metadata';
+  video.playbackRate = 1;
+  let matrixVisible = false;
+  let replayWasPlaying = false;
   const updatePlayback = () => {
-    playText.textContent = video.paused ? 'Play matrix' : 'Pause matrix';
-    playIcon.textContent = video.paused ? '▶' : 'Ⅱ';
-    playButton.setAttribute('aria-pressed', String(!video.paused));
-  };
-  playButton.addEventListener('click', () => {
-    if (video.paused) video.play().catch(() => {
-      status.textContent = 'Use Play matrix for the overview, or the replay player below for the selected flight.';
+    if (document.hidden || !matrixVisible) {
+      video.pause();
+      return;
+    }
+    video.play().catch(() => {
+      // Muted autoplay can still be deferred by browser resource policies.
+      // Readiness, visibility and the next matrix interaction retry it.
     });
-    else video.pause();
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      matrixVisible = entries.some(entry => entry.isIntersecting);
+      updatePlayback();
+    });
+    observer.observe(video);
+  } else {
+    const updateVisibility = () => {
+      const bounds = video.getBoundingClientRect();
+      matrixVisible = bounds.bottom > 0 && bounds.top < window.innerHeight;
+      updatePlayback();
+    };
+    window.addEventListener('scroll', updateVisibility, {passive: true});
+    window.addEventListener('resize', updateVisibility, {passive: true});
+    updateVisibility();
+  }
+  video.addEventListener('canplay', updatePlayback);
+  video.addEventListener('playing', () => {
+    if (document.hidden || !matrixVisible) video.pause();
   });
-  video.addEventListener('play', updatePlayback);
-  video.addEventListener('pause', updatePlayback);
+  browser.addEventListener('pointerdown', updatePlayback, {passive: true});
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
+      replayWasPlaying = !replay.paused;
       video.pause();
       replay.pause();
+    } else {
+      updatePlayback();
+      if (replayWasPlaying) replay.play().catch(() => {});
     }
   });
   replay.playbackRate = 1;
-  updatePlayback();
 })();
