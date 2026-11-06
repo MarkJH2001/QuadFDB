@@ -7,6 +7,7 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1] / "docs"
+PUBLIC_PDFS = {"assets/QuadFDB.pdf"}
 ALLOWED = {
     ".html", ".css", ".js", ".json", ".svg", ".png", ".jpg", ".jpeg",
     ".webp", ".woff", ".woff2", ".txt", ".md", ".ico", ".mp4", ".webm",
@@ -47,7 +48,8 @@ for path in files:
         errors.append(f"Public artifact contains symlink: {path.relative_to(ROOT)}")
     if not path.is_file():
         continue
-    if path.name != ".nojekyll" and path.suffix.lower() not in ALLOWED:
+    is_public_pdf = path.relative_to(ROOT).as_posix() in PUBLIC_PDFS
+    if path.name != ".nojekyll" and path.suffix.lower() not in ALLOWED and not is_public_pdf:
         errors.append(f"Unexpected public file type: {path.relative_to(ROOT)}")
     if any(part.startswith(".") and part != ".nojekyll" for part in path.relative_to(ROOT).parts):
         errors.append(f"Hidden file in public artifact: {path.relative_to(ROOT)}")

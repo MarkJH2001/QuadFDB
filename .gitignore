@@ -23,3 +23,6 @@ outputs/
 *.zip
 *.tar
 *.gz
+
+# Public paper PDF only; other manuscript files remain excluded.
+!docs/assets/QuadFDB.pdf

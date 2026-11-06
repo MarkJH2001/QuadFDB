@@ -94,6 +94,13 @@
         2160
       ],
       "transformation": "JPEG poster from actual frame0, with complete title, authors and university mark."
+    },
+    {
+      "destination": "assets/QuadFDB.pdf",
+      "source": "Author manuscript v2, six-page paper with light-background figures",
+      "source_sha256": "fa45100bb48b3d176c99abbafe8b3cc7c7a92a0c1fdc49693610c1160e07de16",
+      "destination_sha256": "fa45100bb48b3d176c99abbafe8b3cc7c7a92a0c1fdc49693610c1160e07de16",
+      "transformation": "Byte-identical copy of the current author PDF; no manuscript source files included."
     }
   ],
   "public_summary": {

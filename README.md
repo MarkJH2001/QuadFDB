@@ -10,7 +10,7 @@ School of Aeronautics and Astronautics, Shanghai Jiao Tong University<br>
 
 QuadFDB (Quadrotor Fault Diagnosis Benchmark) studies detection and motor isolation during short, controlled reductions of one quadrotor motor's PWM command. The study contains 1,560 fault flights and 120 healthy controls, covering four motors, three temporal profiles, thirteen target multipliers, and ten repetitions per fault condition. These are command-level interventions under real sensing and feedback, rather than measurements of physical motor or propeller damage.
 
-This private research repository covers this paper. The broader CrazyFDD research project and its other experiments are maintained separately. Raw flight recordings, prepared flight arrays, fitted checkpoints, and manuscript source/PDF files are **not included**.
+This private research repository covers this paper. The broader CrazyFDD research project and its other experiments are maintained separately. The paper PDF is publicly available through the project page. Code and datasets remain private; raw flight recordings, prepared flight arrays, fitted checkpoints, and manuscript source files are **not included** in the public page.
 
 ## Code and results
 
