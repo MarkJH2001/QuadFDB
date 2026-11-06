@@ -2,7 +2,7 @@
   "schema_version": 1,
   "project": "QuadFDB",
   "title": "QuadFDB: Benchmarking Quadrotor Motor Fault Diagnosis with Real Flight Data",
-  "prepared": "2026-11-05",
+  "prepared": "2026-11-06",
   "scientific_sources": [
     {
       "kind": "Author manuscript v2 snapshot used to prepare the page",
@@ -24,13 +24,13 @@
     {
       "destination": "assets/flight-platform.webp",
       "source": "dataset_pipeline.pdf \u2014 author research figure",
-      "source_sha256": "01c08572aec0cd37d1d70f2002e82cd04b60d40d7576ed9347a68d53bf0e96d3",
-      "destination_sha256": "3a55874b38afffe775eaa3dd039fcabb35e2d2c8fa8a31d9f8c5332cd7d94dc3",
+      "source_sha256": "44056ef106d96ebc643211db2e6310d1a90e31a601aaa25ed9febc453f0df651",
+      "destination_sha256": "06ddc9a820efb37421d59313afd9df6bcb18b12f4648e549b3659e4f861412e7",
       "pixels": [
         2300,
         837
       ],
-      "transformation": "Original one-page figure rasterized with Poppler at2300px width and encoded asWebP quality93; scientific content preserved."
+      "transformation": "Author light-background one-page figure rasterized with Poppler at 2300 px width and encoded as WebP quality 93; figure layout and scientific content preserved."
     },
     {
       "destination": "assets/dataset-coverage.webp",
